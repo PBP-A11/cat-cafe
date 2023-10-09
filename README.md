@@ -1,7 +1,7 @@
 # Cat Cafe 🙀
 
-Kelompok: A11  
-Anggota:
+##### Kelompok: A11  
+##### Anggota:
 - Andi Salsabila Ardian
 - Fariska Fedira Ardhanariswari
 - Febrian Irvansyah
