@@ -28,5 +28,5 @@
 Google Books API
 
 #### Role:
--admin : bisa hapus/nambah buku, bisa melihat peminjam dan buku yang dipinjam
--user: pinjam, kembalikan, lihat preview
+- admin : bisa hapus/nambah buku, bisa melihat peminjam dan buku yang dipinjam  
+- user: pinjam, kembalikan, lihat preview
