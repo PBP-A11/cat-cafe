@@ -15,9 +15,14 @@
 - Login
 - Register
 - Homepage
-- Katalog -> ada stok, ada section
-- Detail buku -> tempat minjem
-- Profile -> data pribadi, udah minjem apa aja-> tempat pengembalian
+- User Modul
+  - Katalog -> ada stok, ada section
+  - Detail buku -> tempat minjem
+  - Profile -> data pribadi, udah minjem apa aja-> tempat pengembalian
+- Admin Modul
+  - Profile -> data pribadi
+  - Hapus/Tambah Buku
+  - Melihat peminjam dan buku yang dipinjam
   
 #### Sumber dataset:
 Google Books API
