@@ -1,6 +1,6 @@
-# Cat Cafe 🙀
+# Tales & Tails Cafe 🏰🐈
 
-#### Kelompok: A11  
+#### Kelompok: A-11  
 #### Anggota:
 - Andi Salsabila Ardian
 - Fariska Fedira Ardhanariswari
@@ -9,7 +9,7 @@
 - Shaquille Athar Adista
 
 #### Cerita Aplikasi:
-
+Tales and Tails Cafe adalah sebuah aplikasi web bertemakan kafe kucing dan tempat membaca buku. Fitur yang dapat dilakukan user pada aplikasi web ini antara lain, registrasi, melihat preview buku, meminjam buku,dan mengembalikan buku. 
 
 #### Modul yang digunakan:
 - Login
