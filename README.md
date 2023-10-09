@@ -13,7 +13,7 @@ Tales and Tails Cafe adalah sebuah Cafe yang mengambil konsep Cat Cafe, tetapi m
 
 #### Modul yang digunakan:
 - Login
-- Register
+- Register -> firstname, lastname, username, email, no. telp, tanggal lahir
 - Homepage
 - User Modul
   - Katalog -> ada stok, ada section
