@@ -9,7 +9,7 @@
 - Shaquille Athar Adista
 
 #### Cerita Aplikasi:
-Tales and Tails Cafe adalah sebuah aplikasi web bertemakan kafe kucing dan tempat membaca buku. Fitur yang dapat dilakukan user pada aplikasi web ini antara lain, registrasi, melihat preview buku, meminjam buku,dan mengembalikan buku. 
+Tales and Tails Cafe adalah sebuah Cafe yang mengambil konsep Cat Cafe, tetapi memiliki sebuah perpustakaan untuk meminjam buku juga. Cafe ini memiliki tujuan untuk memadukan suasana santai kafe dengan kemudahan akses ke koleksi buku yang beragam, hal ini bertujuan untuk menciptakan ruang yang menggabungkan dua kegiatan yang menyenangkan dan mendidik.
 
 #### Modul yang digunakan:
 - Login
