@@ -52,7 +52,7 @@ Google Books API
   - Hapus/nambah buku
   - Melihat list peminjam dan buku yang dipinjam
   - Dapat bernavigasi dalam web
-- User (pengguna yang login):
+- Member (pengguna yang login):
   - Meminjam buku
   - Mengembalikan buku
   - Dapat bernavigasi dalam web
