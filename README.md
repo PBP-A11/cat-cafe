@@ -25,8 +25,8 @@ Tales and Tails Cafe adalah sebuah Cafe yang mengambil konsep Cat Cafe, tetapi m
 - Homepage
 - ##### User Modul
   - Katalog:
-    Menampilkan koleksi buku yang disediakan
-    Atribut:
+    Menampilkan koleksi buku yang disediakan  
+    Atribut:  
     - Menampilkan stok
     - Menampilkan sections sesuai tema buku
   - Detail buku
