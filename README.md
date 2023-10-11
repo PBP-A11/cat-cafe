@@ -50,7 +50,13 @@ Google Books API
 #### Role:
 - Admin:
   - Hapus/nambah buku
-  - Melihat list peminjam dan buku yang dipinjam  
-- User:
+  - Melihat list peminjam dan buku yang dipinjam
+  - Dapat bernavigasi dalam web
+- User (pengguna yang login):
   - Meminjam buku
   - Mengembalikan buku
+  - Dapat bernavigasi dalam web
+- Guest (pengguna yang tidak login):
+  - Dapat bernavigasi dalam web
+  - Tidak mempunyai hak dalam meminjam atau menambah buku
+  
