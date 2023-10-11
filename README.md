@@ -13,20 +13,44 @@ Tales and Tails Cafe adalah sebuah Cafe yang mengambil konsep Cat Cafe, tetapi m
 
 #### Modul yang digunakan:
 - Login
-- Register -> firstname, lastname, username, email, no. telp, tanggal lahir
+  - Field username/email
+  - Field password
+- Register
+  - Field firstname
+  - Field lastname
+  - Field username
+  - Field e-mail
+  - Field no. telp
+  - Field tanggal lahir
 - Homepage
-- User Modul
-  - Katalog -> ada stok, ada section
-  - Detail buku -> tempat minjem
-  - Profile -> data pribadi, udah minjem apa aja-> tempat pengembalian
-- Admin Modul
-  - Profile -> data pribadi
+- ##### User Modul
+  - Katalog:
+    Menampilkan koleksi buku yang disediakan
+    Atribut:
+    - Menampilkan stok
+    - Menampilkan sections sesuai tema buku
+  - Detail buku
+    - Menampilkan metadata dari buku
+    - Tempat user meminjam buku
+  - Profile
+    - Data pribadi
+    - List buku yang sudah dipinjam
+    - Tempat pengembalian buku
+- ##### Admin Modul
+  - Profile
+    - Data pribadi
   - Hapus/Tambah Buku
-  - Melihat peminjam dan buku yang dipinjam
+    - Tempat admin untuk menambah atau menghapus buku dari katalog
+  - List Peminjam
+    - Menampilkan list user serta buku yang dipinjam
   
 #### Sumber dataset:
 Google Books API
 
 #### Role:
-- admin : bisa hapus/nambah buku, bisa melihat peminjam dan buku yang dipinjam  
-- user: pinjam, kembalikan, lihat preview
+- Admin:
+  - Hapus/nambah buku
+  - Melihat list peminjam dan buku yang dipinjam  
+- User:
+  - Meminjam buku
+  - Mengembalikan buku
