@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<nav class="relative flex w-full flex-wrap items-center justify-between bg-sky-500 py-2 shadow-lg lg:py-4">
+    <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="flex">
+            <h1 class="ml-2 text-xl text-white">Tails & Tales</h1>
+            <a href="#" class="text-white pl-8 pt-1">Catalog</a>
+            <a href="#" class="text-white pl-8 pt-1">My Book</a>
+        </div>
+            <div class="flex">
+                <div class="max-w-md pt-1">
+                    <form action="" class="relative mx-auto w-max text-white">
+                      <input type="search" placeholder="Find book" 
+                            class="peer cursor-pointer relative z-10 h-8 w-8 rounded-full focus:border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-slate-300 focus:pl-16 focus:pr-4" />
+                      <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent px-3.5 peer-focus:border-slate-300 peer-focus:stroke-white-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </form>
+                  </div>
+                  <div>
+                    <div class="relative inline-block text-left">
+                        <div>
+                          <button type="button" class="inline-flex w-full justify-center gap-x-1.5 text-white px-3 py-2 font-semibold  hover:underline" id="showPopUp" aria-expanded="true" aria-haspopup="true">
+                            UserName
+                            <svg class="-mr-1 h-6 w-6 text-white-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                          </button>
+                        </div>
+                      
+                        <div class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="modal">
+                          <div class="py-1" role="none">
+                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">My Book</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Edit Profile</a>
+                            <form method="POST" action="#" role="none">
+                              <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Sign out</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        
+    </div>
+  </nav>
+
+  <script>
+        $(document).ready(function() {
+            $("#showPopUp").click(function() {
+                $("#modal").toggleClass("hidden"); // Menggunakan toggleClass untuk mengganti class 'hidden'
+            });
+        });
+
+  </script>
+{% endblock %}
