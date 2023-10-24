@@ -2,7 +2,23 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import permission_required
 from main.models import User, Book
 
-# Create your views here.
+"""
+CTT. (hapus kalo udah selesai, update sesuai kebutuhan)
+1. jika ingin hanya beberapa tipe user yang menjalankan fungsi tertentu gunakan diatas fungsi
+eg.
+
+@permission_required('main.permissionPadaModels')
+def ....
+
+permissionPadaModels bisa diatur di models.py member/admin sesuai kebutuhan pada:
+eg.
+permissions = [
+            ("permissionPadaModels, "contoh aja"),
+        ]
+
+2. bisa juga pengecekan jenis user dengan user.user_type untuk tau role user ADMIN/MEMBER, ctt."user" tergantung var yang digunakan untuk nyimpan.
+"""
+
 def main(request):
     return render(request, "main.html")
 
