@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block content %}
+
+{% for book in books %}
+<p>title={{ book.title }}</p>
+<p>author={{ book.author }}</p>
+<p>link preview={{ book.preview_link }}</p>
+<p>link cover={{ book.image_link }}</p>
+<p>kategori={{ book.category }}</p>
+<p>rating={{ book.rating }}</p>
+<p>tanggal rilis={{ book.date_published }}</p>
+<p>deskripsi={{ book.description }}</p>
+<p>------</p>
+{% endfor %}
+
+{% endblock %}
