@@ -4,7 +4,7 @@ from main.models import User, Book
 
 """
 CTT. (hapus kalo udah selesai, update sesuai kebutuhan)
-1. jika ingin hanya beberapa tipe user yang menjalankan fungsi tertentu gunakan diatas fungsi
+1. jika ingin hanya beberapa tipe user yang menjalankan fungsi tertentu, gunakan @permission_required diatas fungsi tersebut
 eg.
 
 @permission_required('main.permissionPadaModels')
