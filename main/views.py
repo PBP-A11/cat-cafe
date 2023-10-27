@@ -1,10 +1,10 @@
 from django.http import HttpResponse
-from django.shortcuts import render
-from django.contrib.auth.decorators import permission_required
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import permission_required, login_required
 from main.models import User, Book
 from django.core import serializers
-
-
+from django.contrib.auth.forms import UserCreationForm
+from main.forms import RegisterUserForm
 
 
 """
@@ -23,7 +23,7 @@ permissions = [
 
 2. bisa juga pengecekan jenis user dengan user.user_type untuk tau role user ADMIN/MEMBER, ctt."user" tergantung var yang digunakan untuk nyimpan.
 """
-
+@login_required(login_url='/register')
 def main(request):
     return render(request, "main.html")
 
@@ -31,6 +31,18 @@ def profile_user(request):
     users = User.objects.all()
     context = {'users': users}
     return render(request, "profile_user.html", context)
+
+def register(request):
+    form = RegisterUserForm()
+
+    if request.method == "POST":
+        form = RegisterUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # messages.success(request, 'Your account has been successfully created!')
+            return redirect('main:login')
+    context = {'form':form}
+    return render(request, 'register.html', context)
 
 # def katalog(request):
 #     books = Book.objects.all().values()
