@@ -1,6 +1,11 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth.decorators import permission_required
 from main.models import User, Book
+from django.core import serializers
+
+
+
 
 """
 CTT. (hapus kalo udah selesai, update sesuai kebutuhan)
@@ -27,7 +32,12 @@ def profile_user(request):
     context = {'users': users}
     return render(request, "profile_user.html", context)
 
-def katalog(request):
-    books = Book.objects.all().values()
-    context = {'books': books}
-    return render(request, "katalog.html", context)
+# def katalog(request):
+#     books = Book.objects.all().values()
+#     context = {'books': books}
+#     return render(request, "katalog.html", context)
+
+#using ajax
+def get_product_json(request):
+    books_item = Book.objects.all()
+    return HttpResponse(serializers.serialize('json', books_item))

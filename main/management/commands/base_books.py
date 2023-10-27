@@ -7,7 +7,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        API_KEY = open('/Users/febrian/Library/CloudStorage/OneDrive-UNIVERSITASINDONESIA/kuliah/3_PBP/TK-UTS/tales-tails-cafe/static/txt/api_key.txt', 'r').read()
+        API_KEY = "AIzaSyBGjXMDTu7LZoIR7pHj01aDW_-zLp4UTIk"
 
         def search_books(query):
             base_url = 'https://www.googleapis.com/books/v1/volumes'
