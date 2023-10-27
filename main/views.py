@@ -36,8 +36,3 @@ def profile_user(request):
 #     books = Book.objects.all().values()
 #     context = {'books': books}
 #     return render(request, "katalog.html", context)
-
-#using ajax
-def get_product_json(request):
-    books_item = Book.objects.all()
-    return HttpResponse(serializers.serialize('json', books_item))
