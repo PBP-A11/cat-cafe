@@ -30,11 +30,6 @@ permissions = [
 def main(request):
     return render(request, "main.html")
 
-def profile_user(request):
-    users = User.objects.all()
-    context = {'users': users}
-    return render(request, "profile_user.html", context)
-
 def register(request):
     form = RegisterUserForm()
 
