@@ -1,11 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<nav class="relative flex w-full flex-wrap items-center justify-between bg-orange-100 py-2 shadow-lg lg:py-4 border-b-4 border-yellow-900">
+
+<link rel = "stylesheet"
+href = "https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One">
+<link rel = "stylesheet"
+href = "https://fonts.googleapis.com/css2?family=Darumadrop+One">
+
+<style>
+    #card-navbar {
+        font-family: 'Mochiy Pop P One';
+        border-color: #724E2B;
+        background: #FEFADD;
+    }
+</style>
+
+<nav id = "card-navbar" class="relative flex w-full flex-wrap items-center justify-between bg-orange-100 py-2 lg:py-4 border-b-4 border-yellow-900">
     <div class="flex w-full flex-wrap items-center justify-between px-3">
         <div class="flex">
             <h1 class="ml-2 text-xl text-yellow-900">Tails & Tales</h1>
-            <a href="{% url 'catalog:catalog' %}" class="text-yellow-900 pl-8 pt-1">Catalog</a>
+            <a href="{% url 'catalog:catalog' %}" class="text-yellow-900 pl-8 pt-1">Catalogue</a>
             <a href="#" class="text-yellow-900 pl-8 pt-1">My Book</a>
         </div>
             <div class="flex">
@@ -35,7 +49,7 @@
                             <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">My Book</a>
                             <a href="{% url 'user_profile' %}" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Edit Profile</a>
                             <form method="POST" action="#" role="none">
-                              <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Sign out</button>
+                              <button href="{% url 'catalog:catalog' %}"type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Sign out</button>
                             </form>
                           </div>
                         </div>

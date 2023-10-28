@@ -43,6 +43,7 @@ def register(request):
     return render(request, 'register.html', context)
 
 def login_user(request):
+    error_message = None
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -51,9 +52,10 @@ def login_user(request):
             login(request, user)
             return redirect('main:main')
         else:
-            messages.info(request, 'Sorry, incorrect username or password. Please try again.')
-    context = {}
+            error_message = 'Sorry, incorrect username or password. Please try again.'
+    context = {'error_message': error_message}
     return render(request, 'login.html', context)
+
 
 def logout_user(request):
     logout(request)
