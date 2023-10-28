@@ -28,6 +28,7 @@ permissions = [
 """
 
 @login_required(login_url='/login')
+
 def main(request):
     return render(request, "main.html")
 

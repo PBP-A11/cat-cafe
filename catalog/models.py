@@ -13,3 +13,4 @@ class Book(models.Model):
     borrower = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, blank=True)
     date_published = models.CharField(max_length=20)
     image_link = models.URLField(default='N/A')
+    reviews = models.TextField(default='N/A')

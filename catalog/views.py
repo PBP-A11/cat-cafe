@@ -35,7 +35,7 @@ def search_books(request, query):
         # Jika permintaan gagal, Anda bisa mengembalikan pesan kesalahan
         return JsonResponse({'error': 'Gagal dalam mengambil data'}, status=500)
     
-def get_books(request):
+def get_books_json(request):
     data = Book.objects.all()
     return HttpResponse(serializers.serialize('json', data),
         content_type="application/json")
