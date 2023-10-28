@@ -8,13 +8,55 @@
 <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
 
 <style>
+    .circle {
+        width: 15px;
+        height: 15px;
+        background-color: #BC905F;
+        border-radius: 50%;
+        position: absolute;
+        border: 2px solid #724E2B;
+    }
+
+    .top-left {
+        top: 15px;
+        left: 15px;
+    }
+
+    .top-right {
+        top: 15px;
+        right: 15px;
+    }
+
+    .bottom-left {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .bottom-right {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    #card {
+            margin: 100px;
+            border-radius: 20px;
+            border: 6px solid #724E2B;
+            background: #FEFADD;
+            transform: scale(1.2);
+            transform-origin: center;
+        }
+
+    #card-content {
+        /* transform: scale(1.2); */
+        transform-origin: center;
+    }
+
     .form-group {
         margin: 10px 0;
     }
 
     .form-label {
         display: block;
-        /* font-weight: bold; */
         font-family: 'Mochiy Pop P One', sans-serif;
         font-size: 12px;
         color: #2A2136;
@@ -47,19 +89,32 @@
         color: #FEFADD;
     }
 
+    #login-text:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #C85A35;
+    }
+
 </style>
 {% endblock meta %}
 
 {% block content %}  
+
+{% include 'navbar.html' %}
+
 <div class="flex justify-center items-center h-screen" style="background-color: #F39B00;">
     <!-- Center the content vertically and horizontally -->
-    
-    <div class="p-4 rounded-lg shadow-md" style="width: 650px; height: 550x; background-color: #FEFADD; color: #2A2136; border: 4px solid #724E2B;">
+    <div id="card-content">
+    <div id = "card" class="p-4 rounded-lg shadow-md" style="width: 650px; height: 550x; background-color: #FEFADD; color: #2A2136; border: 4px solid #724E2B; margin: 20px;">
+        <div class="circle top-left"></div>
+        <div class="circle top-right"></div>
+        <div class="circle bottom-left"></div>
+        <div class="circle bottom-right"></div>
         <!-- Create a square with a gray background and shadow -->
         
-        <h1 class="text-3xl mb-1 text-center" style="font-family: 'Darumadrop One', sans-serif; font-size: 40px">SIGN UP</h1>  <!-- Add margin to top -->
+        <h1 class="text-3xl mb-4 text-center" style="font-family: 'Darumadrop One', sans-serif; font-size: 40px">SIGN UP</h1>  <!-- Add margin to top -->
         <p class="text-center mb-4" style="font-family: 'Mochiy Pop P One', sans-serif; font-size: 12px;">
-            Already a member? <a href="/login" style="color: #2A2136;"> <span style="color: #C85A35;">Login</span></a>
+            Already a member? <a id = "login-text" href="/login" style="color: #2A2136;"> <span style="color: #C85A35;">Login</span></a>
         </p>
 
         <div class="container ml-3" style="display: flex; justify-content: space-between; align-items: center;">
@@ -112,10 +167,11 @@
                     <div class="text-center">
                         <input type="submit" name="submit" value="Register" class="custom-button" />
                     </div>
-                </form>
-                
+                </form>       
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </div>
 </html>
