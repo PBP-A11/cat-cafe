@@ -1,0 +1,26 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block content %}
+{% include 'navbar.html' %}
+
+<p>Admin Profile</p>
+<p>{{ user.first_name }}</p>
+
+<p>{{ user.last_name }}</p>
+
+<p>{{ user.username }}</p>
+
+<p>{{ user.email }}</p>
+
+<p>{{ user.date_of_birth }}</p>
+
+{% for member_user in member_users %}
+<p>{{ member_user.username }}</p>
+{% endfor %}
+
+{% for book in books %}
+<p>{{ book.title }}</p>
+{% endfor %}
+
+{% endblock %}

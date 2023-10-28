@@ -30,6 +30,7 @@ class Command(BaseCommand):
                                                last_name="last_admin", 
                                                email="admin_user@email.com", 
                                                date_of_birth="2004-01-03",
+                                               password="pbp12345"
                                                )
 
         self.stdout.write(self.style.SUCCESS('Users created successfully.'))
