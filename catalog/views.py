@@ -5,7 +5,10 @@ from django.http import JsonResponse
 import requests
 from django.shortcuts import render
 from dotenv import load_dotenv
+from django.http import HttpResponse
+from django.core import serializers
 import os
+from catalog.models import Book
 
 # Create your views here.
 def catalog(request):
@@ -32,3 +35,7 @@ def search_books(request, query):
         # Jika permintaan gagal, Anda bisa mengembalikan pesan kesalahan
         return JsonResponse({'error': 'Gagal dalam mengambil data'}, status=500)
     
+def get_books(request):
+    data = Book.objects.all()
+    return HttpResponse(serializers.serialize('json', data),
+        content_type="application/json")
