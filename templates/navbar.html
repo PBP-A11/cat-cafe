@@ -22,7 +22,7 @@
                     <div class="relative inline-block text-left">
                         <div>
                           <button type="button" class="inline-flex w-full justify-center gap-x-1.5 text-yellow-900 px-3 py-2 font-semibold  hover:underline" id="showPopUp" aria-expanded="true" aria-haspopup="true">
-                            UserName
+                            {{ username}}
                             <svg class="-mr-1 h-6 w-6 text-yellow-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                               <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                             </svg>
@@ -33,7 +33,7 @@
                           <div class="py-1" role="none">
                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
                             <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">My Book</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Edit Profile</a>
+                            <a href="{% url 'user_profile' %}" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Edit Profile</a>
                             <form method="POST" action="#" role="none">
                               <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Sign out</button>
                             </form>
