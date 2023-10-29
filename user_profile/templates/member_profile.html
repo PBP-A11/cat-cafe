@@ -13,27 +13,6 @@
             .
         </div>
         <div class="ml-10" style="font-family: 'Mochiy Pop P One';" id="user-data">
-            <!--
-            <div class="mb-5">
-                <p class="text-sm">Name</p>
-                <p class="text-xl">{{ user.first_name }} {{ user.last_name }}</p>
-            </div>
-
-            <div class="my-5">
-                <p class="text-sm">Username</p>
-                <p class="text-xl">{{ user.username }}</p>
-            </div>
-            
-            <div class="my-5">
-                <p class="text-sm">Date of Birth</p>
-                <p class="text-xl">{{ user.date_of_birth }}</p>  
-            </div>
-
-            <div class="mt-5">
-                <p class="text-sm">E-mail</p>
-                <p class="text-xl">{{ user.email }}</p>
-            </div>
-            -->
         </div>
     </div>
     <div class="flex justify-center my-10" style="font-family: 'Mochiy Pop P One'; color: #724E2B;">
@@ -41,12 +20,6 @@
         <a class="border-2 rounded mx-5 p-2" style="border-color: #724E2B;" href="#">Change Password</a>
     </div>
 </div>
-
-<div class="flex justify-center">
-    <h1 class="p-5 text-4xl border-4 rounded-xl" style="background-color: #DBBC7F; color: #FEFADD; -webkit-text-stroke: 2px #724E2B; font-family: 'Darumadrop One'; border-color: #724E2B;">List of Borrowed Books</h1>
-</div>
-
-<h2>You borrowed <span>{{ books.count }} books</span> from this site</h2>
 
 {% for book in books %}
 <p>{{ book.title }}</p>
