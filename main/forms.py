@@ -1,8 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm
 from main.models import User
 from django import forms
-import datetime, re
-
 
 class RegisterUserForm(UserCreationForm):
     first_name = forms.CharField(
@@ -25,9 +23,13 @@ class RegisterUserForm(UserCreationForm):
         max_length=255,
         widget=forms.TextInput(attrs={'style': 'width: 255px;'})
     )
+    fav_color = forms.CharField(
+        max_length=255,
+        widget=forms.TextInput(attrs={'style': 'width: 255px;'})
+    )
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={'style': 'width: 255px;'}))
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={'style': 'width: 255px;'}))
 
     class Meta:
         model = User
-        fields = ["first_name", "last_name", "username", "email", "date_of_birth"]
+        fields = ["first_name", "last_name", "username", "email", "date_of_birth", "fav_color"]

@@ -42,6 +42,7 @@ def register(request):
                 first_name=form.cleaned_data["first_name"],
                 last_name=form.cleaned_data["last_name"],
                 date_of_birth=form.cleaned_data["date_of_birth"],
+                fav_color=form.cleaned_data["fav_color"],
             )
 
             user.set_password(form.cleaned_data["password1"])
