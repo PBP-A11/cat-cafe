@@ -315,7 +315,12 @@ async function refreshProducts(){
     document.getElementById("data_books").innerHTML = htmlString
 }
 
+async function getUserData() {
+    return fetch("{% url 'user_profile:get_user_json' %}").then((res) => res.json())
+}
+
 async function detailsProduct(image_link, title, desc, author, publish_date, rating, category, id, is_borrowed) {
+        const user = await getUserData()
         document.getElementById('detail-buku').innerHTML = ""
         htmlString = ` 
         <div class="px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
@@ -382,7 +387,15 @@ async function detailsProduct(image_link, title, desc, author, publish_date, rat
             `
             document.getElementById('detail-buku').innerHTML = htmlString
 
-            if(is_borrowed == 'true') {
+            if(user.user_type == 'ADMIN' && is_borrowed != 'true'){
+                const borrowButton = document.getElementById('borrowButton');
+                borrowButton.innerHTML = 'Delete Book';
+                borrowButton.setAttribute('onclick', `deleteBook(${id})`);
+            } else if(user.user_type == 'ADMIN') {
+                const borrowButton = document.getElementById('borrowButton');
+                borrowButton.innerHTML = 'Not Available';
+                borrowButton.setAttribute('onclick', 'deleteFail()');
+            } else {
                 const borrowButton = document.getElementById('borrowButton');
                 borrowButton.innerHTML = 'Not Available';
                 borrowButton.setAttribute('onclick', 'handleBorrowFail()');
@@ -411,7 +424,20 @@ async function detailsProduct(image_link, title, desc, author, publish_date, rat
         return false;
     }
 
+    function deleteFail(){
+        alert("This book is currently borrowed, you cannot delete it for now.")
+    }
 
+    function deleteBook(id){
+        console.log("cobaa")
+        const url = `delete-book/${id}`
+        const popUp = document.getElementById('detail-buku')
+        fetch(url, {
+            method: "GET",
+        }).then(refreshProducts);
+        popUp.classList.add('hidden')
+        return false;
+    }
 
 refreshProducts()
 
