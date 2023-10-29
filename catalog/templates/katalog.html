@@ -209,9 +209,6 @@ async function refreshProducts(){
     }
     
     async function detailsProduct(image_link, title, desc, author, publish_date, rating, category, id) {
-        // var img_id = document.getElementById("book-img")
-        console.log("tesss")
-
         document.getElementById('detail-buku').innerHTML = ` 
         <div class="px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
             <h3 class="data text-2xl pb-4 pt-3">Book Details</h3>
@@ -283,7 +280,6 @@ async function refreshProducts(){
     function borrowBook(id){
         const url = `borrow-book/${id}`
         const popUp = document.getElementById('detail-buku')
-        console.log(url)
         fetch(url, {
             method: "GET",
         }).then(refreshProducts);
