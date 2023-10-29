@@ -87,14 +87,14 @@
     "pk": 7,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "JK Rowling",
-      "date_published": 2008,
-      "image_link": "http://books.google.com/books/content?id=3sSVzLsHIb8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=3sSVzLsHIb8C&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=7&source=gbs_api",
-      "rating": 4.5,
-      "title": "Harry Potter dan Relikui Kematian",
-      "description": "N/A"
+      "category": "Fiction",
+      "author": "Sir Arthur Conan Doyle, P. James Macaluso",
+      "date_published": "2016-08-31",
+      "image_link": "http://books.google.com/books/content?id=6swhDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=ysLYDwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=3&source=gbs_api",
+      "rating": 3.5,
+      "title": "The Adventure of the Speckled Band",
+      "description": "Sherlock Holmes, the world’s “only unofficial consulting detective”, was first introduced to readers in A Study in Scarlet published by Sir Arthur Conan Doyle in 1887. It was with the publication of The Adventures of Sherlock Holmes, however, that the master sleuth grew tremendously in popularity, later to become one of the most beloved literary characters of all time. In this book series, the short stories comprising The Adventures of Sherlock Holmes have been amusingly illustrated using only Lego® brand minifigures and bricks. The illustrations recreate, through custom designed Lego models, the composition of the black and white drawings by Sidney Paget that accompanied the original publication of these adventures appearing in The Strand Magazine from July 1891 to June 1892. Paget’s iconic illustrations are largely responsible for the popular image of Sherlock Holmes, including his deerstalker cap and Inverness cape, details never mentioned in the writings of Conan Doyle. This uniquely illustrated collection, which features some of the most famous and enjoyable cases investigated by Sherlock Holmes and his devoted friend and biographer Dr. John H. Watson, including A Sandal in Bohemia and The Red-Headed League, is sure to delight Lego enthusiasts, as well as fans of the Great Detective, both old and new. LEGO® is a trademark of the LEGO Group of Companies. The LEGO Group has not been involved in nor has it in any other way licensed or authorised the publication of this book. THE ADVENTURE OF THE SPECKLED BAND: A distraught young woman named Helen Stoner arrives at Baker Street early one morning to ask Sherlock Holmes for help as she fears that her life is being threatened by her stepfather, Dr. Grimesby Roylott. At Stoke Moran, the estate where Miss Stoner and her stepfather live, Holmes carefully inspects the recent, but unnecessary, repairs to the manor-house and in doing so exposesamurderous plot."
     }
   },
   {
@@ -143,126 +143,126 @@
     "pk": 11,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "N/A",
-      "date_published": "N/A",
-      "image_link": "http://books.google.com/books/content?id=Ui28dBtRkGcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=Ui28dBtRkGcC&printsec=frontcover&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=1&source=gbs_api",
-      "rating": "N/A",
-      "title": "Cerita Asli Indonesia : Baru Kelinting",
-      "description": "N/A"
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "2021-01-01",
+      "image_link": "http://books.google.com/books/content?id=FFFHDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=FFFHDgAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=10&source=gbs_api",
+      "rating": 5,
+      "title": "The Adventure of the Red Circle",
+      "description": "The Adventure of the Red Circle' is one of the stories among 56 Sherlock Holmes adventure by Arthur Conan Doyle."
     }
   },
   {
     "pk": 12,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "Tim Elex Media Komputindo, Elang Barruna",
-      "date_published": "N/A",
-      "image_link": "http://books.google.com/books/content?id=g_DW7AN7EzAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=g_DW7AN7EzAC&printsec=frontcover&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=2&source=gbs_api",
+      "category": "Fiction",
+      "author": "Sir Arthur Conan Doyle",
+      "date_published": "2020-09-28",
+      "image_link": "http://books.google.com/books/content?id=zPf8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=zPf8DwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=18&source=gbs_api",
       "rating": "N/A",
-      "title": "Kodok Atau Katak?",
-      "description": "N/A"
+      "title": "The Adventure of the Solitary Cyclist",
+      "description": "iolet Smith, a young music teacher, reached out to Holmes. She was worried because she noticed someone stalking her on her everyday bicycle ride to the train. Holmes took up the case and found out that Violet’s life had changed drastically a few months ago when two friends of her distant uncle arrived in Surrey. Could this event have something to do with Violet’s stalker? Is there some connection between the sudden interest that both of them had in Violet and the deteriorating health of her uncle? \"The Adventure of the Solitary Cyclist\" is a part of \"The Return of Sherlock Holmes\". Sir Arthur Conan Doyle (1859-1930) was born in Scotland and studied medicine at the University of Edinburgh. After his studies, he worked as a ship’s surgeon on various boats. During the Second Boer War, he was an army doctor in South Africa. When he came back to the United Kingdom, he opened his own practice and started writing crime books. He is best known for his thrilling stories about the adventures of Sherlock Holmes. He published four novels and more than 50 short-stories starring the detective and Dr Watson, and they play an important role in the history of crime fiction. Other than the Sherlock Holmes series, Doyle wrote around thirty more books, in genres such as science-fiction, fantasy, historical novels, but also poetry, plays, and non-fiction."
     }
   },
   {
     "pk": 13,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "Tim Elex media komputindo",
-      "date_published": 2010,
-      "image_link": "N/A",
-      "preview_link": "http://books.google.co.id/books?id=aHFdzwEACAAJ&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=3&source=gbs_api",
+      "category": "Fiction",
+      "author": "Enid Blyton",
+      "date_published": "2022-08-01",
+      "image_link": "http://books.google.com/books/content?id=znd_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=znd_EAAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=20&source=gbs_api",
       "rating": "N/A",
-      "title": "Aku baru tahu ternyata-",
-      "description": "N/A"
+      "title": "The Island of Adventure",
+      "description": "DigiCat Publishing presents to you this special edition of \"The Island of Adventure\" by Enid Blyton. DigiCat Publishing considers every written word to be a legacy of humankind. Every DigiCat book has been carefully reproduced for republishing in a new modern format. The books are available in print, as well as ebooks. DigiCat hopes you will treat this work with the acknowledgment and passion it deserves as a classic of world literature."
     }
   },
   {
     "pk": 14,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "N/A",
-      "date_published": "N/A",
-      "image_link": "http://books.google.com/books/content?id=TjkDTTpAOBsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=TjkDTTpAOBsC&printsec=frontcover&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=4&source=gbs_api",
+      "category": "Explorers",
+      "author": "Sir Anthony Sherley",
+      "date_published": "2005",
+      "image_link": "http://books.google.com/books/content?id=PMAf3kLOQecC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=PMAf3kLOQecC&printsec=frontcover&dq=intitle:adventure&hl=&cd=23&source=gbs_api",
       "rating": "N/A",
-      "title": "Cerita Asli Indonesia : Damarwulan",
-      "description": "N/A"
+      "title": "Sir Anthony Sherley and His Persian Adventure",
+      "description": "As well as including Sherley's own account of his journey into Persia in 1600, this valuable edition includes the main works dealing with Anthony Sherley and his life. Original inaccessible texts are reprinted in full and the critical bibliographical introduction provides excellent guidance for the understanding of the various sources (and their merits and limitations), and the context in which Sherley's own account was composed. When first published in 1933, Sherley's narrative (1613) had never before been reprinted."
     }
   },
   {
     "pk": 15,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "N/A",
-      "date_published": "N/A",
-      "image_link": "http://books.google.com/books/content?id=uy4I8U0pCOAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=uy4I8U0pCOAC&printsec=frontcover&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=5&source=gbs_api",
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "016-03-31",
+      "image_link": "http://books.google.com/books/content?id=bxLcCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=bxLcCwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=24&source=gbs_api",
       "rating": "N/A",
-      "title": "Pustaka Pertamaku : 123",
-      "description": "N/A"
+      "title": "The Adventure of Wisteria Lodge - A Sherlock Holmes Short Story",
+      "description": "Danger lurks around every corner in this classic Sherlock Holmes mystery. Join the legendary detective and his trusted companion, Doctor Watson, as they investigate the grisly crimes at Wisteria Lodge. When Mr. Grazia, a wealthy Spanish businessman, receives an invitation to stay at the luxurious Wisteria Lodge, he has no idea of the danger that awaits him. The lodge's idyllic surroundings hide a grisly crime, and he soon finds himself at the mercy of an unknown assailant. With the help of Doctor Watson, Sherlock Holmes sets out to solve the mystery and bring the culprit to justice. First published in 1908, ‘The Adventure of Wisteria Lodge’ is a suspenseful tale by the master of detective fiction, Arthur Conan Doyle. This edition features a specially commissioned introduction."
     }
   },
   {
     "pk": 16,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "N/A",
-      "date_published": "N/A",
-      "image_link": "http://books.google.com/books/content?id=-HA4IXzC5a0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=-HA4IXzC5a0C&printsec=frontcover&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=6&source=gbs_api",
-      "rating": 5,
-      "title": "Cerita Asli Indonesia : Roro Mendut",
-      "description": "N/A"
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "2020-09-28",
+      "image_link": "http://books.google.com/books/content?id=pPb8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=pPb8DwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=27&source=gbs_api",
+      "rating":  "N/A",
+      "title": "The Adventure of the Yellow Face",
+      "description": "Grant Munro reaches out to Holmes because his wife, Effie, is acting strangely lately. First she asked his husband for a large amount of money without explaining why. Then she began going out during the night. One day Munro followed his wife to a neighboring cottage where he lost track of her. What is Effie hiding from her husband? Will Holmes find the answers? Will Munro’s family stay together or it will fall apart? \"The Adventure of the Yellow Face\" is a part of \"The Memoirs of Sherlock Holmes\". Sir Arthur Conan Doyle (1859-1930) was born in Scotland and studied medicine at the University of Edinburgh. After his studies, he worked as a ship’s surgeon on various boats. During the Second Boer War, he was an army doctor in South Africa. When he came back to the United Kingdom, he opened his own practice and started writing crime books. He is best known for his thrilling stories about the adventures of Sherlock Holmes. He published four novels and more than 50 short-stories starring the detective and Dr Watson, and they play an important role in the history of crime fiction. Other than the Sherlock Holmes series, Doyle wrote around thirty more books, in genres such as science-fiction, fantasy, historical novels, but also poetry, plays, and non-fiction."
     }
   },
   {
     "pk": 17,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "N/A",
-      "date_published": "N/A",
-      "image_link": "http://books.google.com/books/content?id=_81X24AlJ0IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=_81X24AlJ0IC&printsec=frontcover&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=7&source=gbs_api",
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "2021-03-01",
+      "image_link": "http://books.google.com/books/content?id=w0UeEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=w0UeEAAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=29&source=gbs_api",
       "rating": "N/A",
-      "title": "Pustaka Pertamaku : Abc",
-      "description": "N/A"
+      "title": "The Adventure of the Norwood Builder",
+      "description": "John McFarlane, a young solicitor, got himself in a mess which could cost him his future. He is afraid that he is about to be arrested for the murder of Jonas Oldacre, a builder who he met a day earlier. The only option McFarlene sees is to get to Holmes and Watson fastest possible before the police find him. Just as John manages to explain his situation to the two friends, the police burst in the room and arrest him. Is John’s life doomed to failure or Holmes and Watson will save the day? \"The Adventure of the Norwood Builder\" is a part of \"The Return of Sherlock Holmes\". Sir Arthur Conan Doyle (1859-1930) was born in Scotland and studied medicine at the University of Edinburgh. After his studies, he worked as a ship’s surgeon on various boats. During the Second Boer War, he was an army doctor in South Africa. When he came back to the United Kingdom, he opened his own practice and started writing crime books. He is best known for his thrilling stories about the adventures of Sherlock Holmes. He published four novels and more than 50 short-stories starring the detective and Dr Watson, and they play an important role in the history of crime fiction. Other than the Sherlock Holmes series, Doyle wrote around thirty more books, in genres such as science-fiction, fantasy, historical novels, but also poetry, plays, and non-fiction."
     }
   },
   {
     "pk": 18,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "N/A",
-      "date_published": "N/A",
-      "image_link": "http://books.google.com/books/content?id=1OSSErK_TCQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=1OSSErK_TCQC&printsec=frontcover&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=8&source=gbs_api",
+      "category": "Fiction",
+      "author": "Sir Arthur Conan Doyle, P. James Macaluso",
+      "date_published": "2016-09-01",
+      "image_link": "http://books.google.com/books/content?id=xCAcDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=xCAcDQAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=12&source=gbs_api",
       "rating": "N/A",
-      "title": "Pustaka Pertamaku : Bentuk & Warna",
-      "description": "N/A"
+      "title": "The Adventure of the Copper Beeches",
+      "description": "Sherlock Holmes, the world’s “only unofficial consulting detective”, was first introduced to readers in A Study in Scarlet published by Sir Arthur Conan Doyle in 1887. It was with the publication of The Adventures of Sherlock Holmes, however, that the master sleuth grew tremendously in popularity, later to become one of the most beloved literary characters of all time. In this book series, the short stories comprising The Adventures of Sherlock Holmes have been amusingly illustrated using only Lego® brand minifigures and bricks. The illustrations recreate, through custom designed Lego models, the composition of the black and white drawings by Sidney Paget that accompanied the original publication of these adventures appearing in The Strand Magazine from July 1891 to June 1892. Paget’s iconic illustrations are largely responsible for the popular image of Sherlock Holmes, including his deerstalker cap and Inverness cape, details never mentioned in the writings of Conan Doyle. This uniquely illustrated collection, which features some of the most famous and enjoyable cases investigated by Sherlock Holmes and his devoted friend and biographer Dr. John H. Watson, including A Sandal in Bohemia and The Red-Headed League, is sure to delight Lego enthusiasts, as well as fans of the Great Detective, both old and new. LEGO® is a trademark of the LEGO Group of Companies. The LEGO Group has not been involved in nor has it in any other way licensed or authorised the publication of this book. THE ADVENTURE OF THE COPPER BEECHES: A young lady named Violet Hunter visits Baker Street seeking the advice of Sherlock Holmes on whether to accept a job as governess which commands a generous salary, but with some peculiar conditions. Two weeks after ultimately accepting the position, Miss Hunter calls Holmes to The Copper Beaches, an estate in Hampshire, to look into the singular, and at times terrifying, behaviour of her employers."
     }
   },
   {
     "pk": 19,
     "model": "catalog.Book",
     "fields": {
-      "category": "N/A",
-      "author": "N/A",
-      "date_published": "N/A",
-      "image_link": "http://books.google.com/books/content?id=iOoASgGyFb4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "preview_link": "http://books.google.co.id/books?id=iOoASgGyFb4C&printsec=frontcover&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=9&source=gbs_api",
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "2020-09-28",
+      "image_link": "http://books.google.com/books/content?id=OPf8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=OPf8DwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=32&source=gbs_api",
       "rating": "N/A",
-      "title": "Pustaka Pertamaku : Binatang",
-      "description": "N/A"
+      "title": "The Adventure of the Three Gables",
+      "description": "The criminal Steve Dixie comes to 221B Baker Street, warning Sherlock Holmes not set a foot in Harlow unless he wants trouble with him. But Holmes has just received a message from Mrs. Maberley, who has been living at the Three Gables in Harlow for almost two years. Her son has just died in Rome and someone is trying to buy her out of her house with a most unconventional contract; Holmes is set on helping her. \"The Adventure of the Three Gables\" is part of \"The Case-Book of Sherlock Holmes\". Sir Arthur Conan Doyle (1859-1930) was born in Scotland and studied medicine at the University of Edinburgh. After his studies, he worked as a ship’s surgeon on various boats. During the Second Boer War, he was an army doctor in South Africa. When he came back to the United Kingdom, he opened his own practice and started writing crime books. He is best known for his thrilling stories about the adventures of Sherlock Holmes. He published four novels and more than 50 short-stories starring the detective and Dr Watson, and they play an important role in the history of crime fiction. Other than the Sherlock Holmes series, Doyle wrote around thirty more books, in genres such as science-fiction, fantasy, historical novels, but also poetry, plays, and non-fiction."
     }
   },
   {
@@ -1313,6 +1313,90 @@
       "rating": "N/A",
       "title": "Lelah, Tapi untuk Masa Depan",
       "description": "Kadang ngerasa capek banget sama keadaan, lalu berpikir bahwa menyerah adalah solusi terbaik. Merasa nggak sanggup dan nggak mungkin bisa, apalagi faktor keadaan yang memang buat semuanya jadi makin rumit. Mereka kurang mendukung kita untuk mencapai hal yang kita inginkan Tapi di satu sisi ada hal yang buat memikir kalo nyerah itu ga mungkin karena harapan orang sekitar udah sangat tinggi ke kita. Harapan juga bukan cuma dateng dari orang tua aja, karena orang sekitar pun kadang berharap sama kita. Jika udah seperti ini yang buat capek kayanya bukan lagi hal yang dilakukan deh, tapi yang bikin capek malah harapan dari orang sekitar yang ujung-ujungnya buat kita overthinking dan ga maksimal dalam ngelakuin banyak hal yang jadi tujuan kita, karena kita jadi takut jika hasilnya ga sesuai ekspektasi mereka. Buku persembahan penerbit GagasMedia #GagasMedia"
+    }
+  },
+  {
+    "pk": 95,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Juvenile Fiction",
+      "author": "Robert Louis Stevenson",
+      "date_published": "2004-12-28",
+      "image_link": "http://books.google.com/books/content?id=zR7TeYTMcSsC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=zR7TeYTMcSsC&dq=intitle:adventure&hl=&cd=33&source=gbs_api",
+      "rating": "N/A",
+      "title": "Treasure Island Adventure Classic",
+      "description": "When Jim Hawkins joins the crew of the Hispaniola as a cabin boy, little does he know of the danger that awaits him. With three red crosses on an old map as their only guide, he and a motley crew set sail for the mysterious Treasure Island. Paired with a snap–in–place model of the pirate ship, this Adventure Classic is perfect for young would–be deckhands. A rough and tumble seafaring saga complete with mutiny, pirates, and a one–legged cook, Treasure Island is one voyage kids will never forget! Ages 8 – 12"
+    }
+  },
+  {
+    "pk": 96,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Travel",
+      "author": "Charles Glass",
+      "date_published": "2012-09-13",
+      "image_link": "http://books.google.com/books/content?id=t3OGgy_jFgYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=t3OGgy_jFgYC&printsec=frontcover&dq=intitle:adventure&hl=&cd=37&source=gbs_api",
+      "rating": "N/A",
+      "title": "Tribes with Flags: Adventure and Kidnap in Greater Syria",
+      "description": "`Tribes With Flags` is the gripping story of Charles Glass's dramatic journey through Greater Syria which provides background context to a troubled region once again in the headlines."
+    }
+  },
+  {
+    "pk": 97,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "James Oliver Curwood",
+      "date_published": "2023-09-08",
+      "image_link": "http://books.google.com/books/content?id=hOLVEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=hOLVEAAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=34&source=gbs_api",
+      "rating": "N/A",
+      "title": "Nomads of the North; A Story of Romance and Adventure under the Open Stars",
+      "description": "Reproduction of the original. The publishing house Megali specialises in reproducing historical works in large print to make reading easier for people with impaired vision."
+    }
+  },
+  {
+    "pk": 98,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Lewis Carrol",
+      "date_published": "2020-10-29",
+      "image_link": "http://books.google.com/books/content?id=JCjZDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=JCjZDQAAQBAJ&printsec=frontcover&dq=intitle:what&hl=&cd=3&source=gbs_api",
+      "rating": "N/A",
+      "title": "Through the Looking-Glass and What Alice Found There",
+      "description": "Once again, Alice finds herself in a peculiar place. In this sequel to `Alice Adventures in Wonderland`, Alice has climbed through a mirror and arrived in a world in which everything is reversed, like a reflection - including logic. It makes for another absurdly funny story full of wonder and snark that, like the first book, never talks down to its young audience. The popular Tim Burton movie, ‘Alice in Wonderland’ (2010), starring Johnny Depp, Helena Bonham Carter, and Anne Hathaway, to name is few, is loosely based on both this and the previous novel. In some ways, ‘Through the Looking-Glass and What Alice Found There’ (1871) has had an even bigger impact on today’s popular culture than the first book. Lewis Caroll, pseudonym of Charles Lutwidge Dodgson, (1832-1898), was a British mathematician, photographer, and children’s book author. The idea for his most famous work, 'Alice's Adventures in Wonderland', came to Carroll when he was on a boat with friends, having to entertain three young girls, one of whose name was Alice. Despite his success as a children’s book author, Carroll considered himself, first and foremost, a man of science and mathematics."
+    }
+  },
+  {
+    "pk": 99,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "History",
+      "author": "James Raven",
+      "date_published": "2018-01-08",
+      "image_link": "http://books.google.com/books/content?id=6PdFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=6PdFDwAAQBAJ&printsec=frontcover&dq=intitle:what&hl=&cd=12&source=gbs_api",
+      "rating": "N/A",
+      "title": "What is the History of the Book?",
+      "description": "James Raven, a leading historian of the book, offers a fresh and accessible guide to the global study of the production, dissemination and reception of written and printed texts across all societies and in all ages. Students, teachers, researchers and general readers will benefit from the book's investigation of the subject's origins, scope and future direction. Based on original research and a wide range of sources, What is the History of the Book? shows how book history crosses disciplinary boundaries and intersects with literary, historical, media, library, conservation and communications studies. Raven uses examples from around the world to explore different traditions in bibliography, palaeography and manuscript studies. He analyses book history's growing global ambition and demonstrates how the study of reading practices opens up new horizons in social history and the history of knowledge. He shows how book history is contributing to debates about intellectual and popular culture, colonialism and the communication of ideas. The first global, accessible introduction to the field of book history from ancient to modern times, What is the History of the Book? is essential reading for all those interested in one of society's most important cultural artefacts."
+    }
+  },
+  {
+    "pk": 100,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Language Arts & Disciplines",
+      "author": "Reuven Tsur",
+      "date_published": "1992",
+      "image_link": "http://books.google.com/books/content?id=1yh4p69MaI4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=1yh4p69MaI4C&printsec=frontcover&dq=intitle:what&hl=&cd=18&source=gbs_api",
+      "rating": "N/A",
+      "title": "What Makes Sound Patterns Expressive?",
+      "description": "Poets, academics, and those who simply speak a language are subject to mysterious intuitions about the perceptual qualities and emotional symbolism of the sounds of speech. Such intuitions are Reuven Tsur's point of departure in this investigation into the expressive effect of sound patterns, addressing questions of great concern for literary theorists and critics as well as for linguists and psychologists. Research in recent decades has established two distinct types of aural perception: a nonspeech mode, in which the acoustic signals are received in the manner of musical sounds or natural noises; and a speech mode, in which acoustic signals are excluded from awareness and only an abstract phonetic category is perceived. Here, Tsur proposes a third type of speech perception, a poetic mode in which some part of the acoustic signal becomes accessible, however faintly, to consciousness. Using Roman Jakobson's model of childhood acquisition of the phonological system, Tsur shows how the nonreferential babbling sounds made by infants form a basis for aesthetic valuation of language. He tests the intersubjective and intercultural validity of various spatial and tactile metaphors for certain sounds. Illustrating his insights with reference to particular literary texts, Tsur considers the relative merits of cognitive and psychoanalytic approaches to the emotional symbolism of speech sounds."
     }
   }
 ]
