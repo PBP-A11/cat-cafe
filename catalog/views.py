@@ -22,7 +22,7 @@ def search_books(request, query):
     load_dotenv()
     max_result = 40
     # Membuat permintaan ke Google Books API
-    url = f"https://www.googleapis.com/books/v1/volumes?q=inpublisher:{query}&key={os.getenv('api_key')}&maxResults={max_result}"
+    url = f"https://www.googleapis.com/books/v1/volumes?q=intitle:{query}&key={os.getenv('api_key')}&maxResults={max_result}"
     response = requests.get(url)
 
     # Periksa apakah permintaan berhasil
