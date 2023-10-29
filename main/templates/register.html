@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block meta %}
+{% block content %} 
 <title>Register</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
@@ -54,6 +54,35 @@
     .form-group {
         margin: 10px 0;
     }
+    
+    .circle {
+        width: 15px;
+        height: 15px;
+        background-color: #BC905F;
+        border-radius: 50%;
+        position: absolute;
+        border: 2px solid #724E2B;
+    }
+
+    .top-left {
+            top: 15px;
+            left: 15px;
+        }
+
+        .top-right {
+            top: 15px;
+            right: 15px;
+        }
+
+        .bottom-left {
+            bottom: 15px;
+            left: 15px;
+        }
+
+        .bottom-right {
+            bottom: 15px;
+            right: 15px;
+        }
 
     .form-label {
         display: block;
@@ -63,24 +92,23 @@
     }
 
     .form-group input {
+        background-color: #DBBC7F;
+        color: #724E2B;
         border: 2px solid #724E2B;
         border-radius: 5px;
-        background-color: #DBBC7F;
         font-family: 'Mochiy Pop P One', sans-serif;
         font-size: 12px;
         padding: 2px 4px;
-        color: #FEFADD;
     }
 
     .custom-button {
         background-color: #FEFADD;
         color: #724E2B;
         border: 2px solid #724E2B;
-        font-weight: bold;
+        border-radius: 5px;
         font-family: 'Mochiy Pop P One', sans-serif; 
         font-size: 13px;
         padding: 6px 12px;
-        border-radius: 5px;
         cursor: pointer;
         text-align: center; 
     }
@@ -96,29 +124,22 @@
     }
 
 </style>
-{% endblock meta %}
 
-{% block content %}  
-
+<body>
 {% include 'navbar.html' %}
 
-<div class="flex justify-center items-center h-screen" style="background-color: #F39B00;">
-    <!-- Center the content vertically and horizontally -->
-    <div id="card-content">
-    <div id = "card" class="p-4 rounded-lg shadow-md" style="width: 650px; height: 550x; background-color: #FEFADD; color: #2A2136; border: 4px solid #724E2B; margin: 20px;">
-        <div class="circle top-left"></div>
-        <div class="circle top-right"></div>
-        <div class="circle bottom-left"></div>
-        <div class="circle bottom-right"></div>
-        <!-- Create a square with a gray background and shadow -->
-        
-        <h1 class="text-3xl mb-4 text-center" style="font-family: 'Darumadrop One', sans-serif; font-size: 40px">SIGN UP</h1>  <!-- Add margin to top -->
-        <p class="text-center mb-4" style="font-family: 'Mochiy Pop P One', sans-serif; font-size: 12px;">
-            Already a member? <a id = "login-text" href="/login" style="color: #2A2136;"> <span style="color: #C85A35;">Login</span></a>
-        </p>
-
-        <div class="container ml-3" style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="flex: 1;">
+    <div class="flex justify-center items-center h-screen">
+        <div class="p-4 rounded-lg shadow-md card" style="width: 650px; background-color: #FEFADD; color: #2A2136; border: 8px solid #724E2B; position: relative; border-radius: 20px;">
+            <div class="circle top-left"></div>
+            <div class="circle top-right"></div>
+            <div class="circle bottom-left"></div>
+            <div class="circle bottom-right"></div>
+            
+            <h1 class="text-3xl mb-1 text-center" style="font-family: 'Darumadrop One', sans-serif; font-size: 48px">SIGN UP</h1>
+            <p class="text-center mb-4" style="font-family: 'Mochiy Pop P One', sans-serif; font-size: 12px;">
+                Already a member? <a href="/login" style="color: #2A2136;"> <span style="color: #C85A35;">Login</span></a>
+            </p>
+            <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                 <form method="POST">
                     {% csrf_token %}
                     <table>
@@ -139,27 +160,27 @@
                             </td>
                         </tr>
                     </table>
-                
+
                     <div class="form-group">
                         <label for="{{ form.username.id_for_label }}" class="form-label">Username</label>
                         {{ form.username }}
                     </div>
-                
+
                     <div class="form-group">
                         <label for="{{ form.email.id_for_label }}" class="form-label">Email</label>
                         {{ form.email }}
                     </div>
-                
+
                     <div class="form-group">
                         <label for="{{ form.date_of_birth.id_for_label }}" class="form-label">Date of Birth (YYYY-MM-DD)</label>
                         {{ form.date_of_birth }}
                     </div>
-                
+
                     <div class="form-group">
                         <label for="{{ form.password1.id_for_label }}" class="form-label">Password</label>
                         {{ form.password1 }}
                     </div>
-                
+
                     <div class="form-group">
                         <label for="{{ form.password2.id_for_label }}" class="form-label">Confirm Password</label>
                         {{ form.password2 }}
@@ -167,14 +188,25 @@
                     <div class="text-center">
                         <input type="submit" name="submit" value="Register" class="custom-button" />
                     </div>
-                </form>       
+
+                </form>
+                <div class="text-center mt-2" style="font-family: 'Mochiy Pop P One', sans-serif; font-size: 12px; color: red;">
+                    {% if form.errors %}
+                        <div class="error">
+                            <ul>
+                                {% for error in form.non_field_errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                                {% for error in form.email.errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-</div>
-</html>
-
+</body>
 
 {% endblock content %}

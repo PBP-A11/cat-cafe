@@ -28,12 +28,11 @@ permissions = [
 """
 
 @login_required(login_url='/login')
+
 def main(request):
     return render(request, "main.html")
 
 def register(request):
-    form = RegisterUserForm()
-
     if request.method == "POST":
         form = RegisterUserForm(request.POST)
         if form.is_valid():
@@ -44,11 +43,15 @@ def register(request):
                 last_name=form.cleaned_data["last_name"],
                 date_of_birth=form.cleaned_data["date_of_birth"],
             )
+
             user.set_password(form.cleaned_data["password1"])
             user.save()
             login(request, user)
-            return redirect('main:login')
-    context = {'form':form}
+            return redirect('main:login')           
+    else:
+        form = RegisterUserForm()
+
+    context = {'form': form}
     return render(request, 'register.html', context)
 
 def login_user(request):
