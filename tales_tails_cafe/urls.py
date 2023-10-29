@@ -25,6 +25,7 @@ urlpatterns = [
     path('catalog/', include('catalog.urls')),
     path('user_profile/', include('user_profile.urls')),
     path('mybooks/', include('mybooks.urls')),
+    path('review/', include('review.urls')),
 ]
 
 if settings.DEBUG:
