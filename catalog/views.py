@@ -5,10 +5,12 @@ from django.http import JsonResponse
 import requests
 from django.shortcuts import render
 from dotenv import load_dotenv
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse, HttpResponseNotFound
 from django.core import serializers
 import os
 from catalog.models import Book
+from main.models import BookReview
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 def catalog(request):
@@ -39,3 +41,23 @@ def get_books_json(request):
     data = Book.objects.all()
     return HttpResponse(serializers.serialize('json', data),
         content_type="application/json")
+
+@csrf_exempt
+def add_book_reviews_ajax(request, book_id):
+    if request.method == 'POST':
+        book = Book.objects.get(book_id = book_id)
+        user = request.POST.get("user")
+        content = request.POST.get("content")
+        stars = request.POST.get("stars")
+        date_added = request.user
+
+        new_book_review = BookReview(book = book, user = user, content = content, stars = stars, date_added = date_added)
+        new_book_review.save()
+
+        return HttpResponse(b"CREATED", status=201)
+
+    return HttpResponseNotFound()
+
+def get_book_reviews_json(request, book_id):
+    book_review = BookReview.objects.filter(book_id = book_id)
+    return HttpResponse(serializers.serialize('json', book_review))

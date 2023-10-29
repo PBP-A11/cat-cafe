@@ -1,4 +1,4 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, User
 from django.db import models
 from django.conf import settings
 from catalog.models import Book
@@ -8,7 +8,7 @@ class User(AbstractUser):
              ('ADMIN', 'Admin')]
     user_type = models.CharField(max_length=20, choices=ROLES, default='MEMBER')
     first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255) 
     username = models.CharField(max_length=255, unique=True)
     email = models.EmailField(unique=True)
     date_of_birth = models.DateField(null=True, blank=True)
@@ -34,7 +34,6 @@ class Admin(models.Model):
 class BookReview(models.Model):
     book = models.ForeignKey(Book, related_name = 'reviews', on_delete = models.CASCADE)
     user = models.ForeignKey(User, related_name = 'reviews', on_delete = models.CASCADE)
-
     content = models.TextField(blank = True, null = True)
     stars = models.IntegerField()
     date_added = models.DateTimeField(auto_now_add = True)
