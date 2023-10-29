@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %} 
+<title>Register</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
+<style>
+    .circle {
+        width: 15px;
+        height: 15px;
+        background-color: #BC905F;
+        border-radius: 50%;
+        position: absolute;
+        border: 2px solid #724E2B;
+    }
+
+    .top-left {
+        top: 15px;
+        left: 15px;
+    }
+
+    .top-right {
+        top: 15px;
+        right: 15px;
+    }
+
+    .bottom-left {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .bottom-right {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    #card {
+            margin: 100px;
+            border-radius: 20px;
+            border: 6px solid #724E2B;
+            background: #FEFADD;
+            transform: scale(1.2);
+            transform-origin: center;
+        }
+
+    #card-content {
+        /* transform: scale(1.2); */
+        transform-origin: center;
+    }
+
+    .form-group {
+        margin: 10px 0;
+    }
+    
+    .circle {
+        width: 15px;
+        height: 15px;
+        background-color: #BC905F;
+        border-radius: 50%;
+        position: absolute;
+        border: 2px solid #724E2B;
+    }
+
+    .top-left {
+            top: 15px;
+            left: 15px;
+        }
+
+        .top-right {
+            top: 15px;
+            right: 15px;
+        }
+
+        .bottom-left {
+            bottom: 15px;
+            left: 15px;
+        }
+
+        .bottom-right {
+            bottom: 15px;
+            right: 15px;
+        }
+
+    .form-label {
+        display: block;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        font-size: 12px;
+        color: #2A2136;
+    }
+
+    .form-group input {
+        background-color: #DBBC7F;
+        color: #724E2B;
+        border: 2px solid #724E2B;
+        border-radius: 5px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        font-size: 12px;
+        padding: 2px 4px;
+    }
+
+    .custom-button {
+        background-color: #FEFADD;
+        color: #724E2B;
+        border: 2px solid #724E2B;
+        border-radius: 5px;
+        font-family: 'Mochiy Pop P One', sans-serif; 
+        font-size: 13px;
+        padding: 6px 12px;
+        cursor: pointer;
+        text-align: center; 
+    }
+    .custom-button:hover {
+        background-color: #724E2B;
+        color: #FEFADD;
+    }
+
+    #login-text:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #C85A35;
+    }
+
+</style>
+
+<body>
+{% include 'navbar.html' %}
+
+    <div class="flex justify-center items-center h-screen">
+        <div class="p-4 rounded-lg shadow-md card" style="width: 650px; background-color: #FEFADD; color: #2A2136; border: 8px solid #724E2B; position: relative; border-radius: 20px;">
+            <div class="circle top-left"></div>
+            <div class="circle top-right"></div>
+            <div class="circle bottom-left"></div>
+            <div class="circle bottom-right"></div>
+            
+            <h1 class="text-3xl mb-1 text-center" style="font-family: 'Darumadrop One', sans-serif; font-size: 48px">Add Book</h1>
+
+            <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="{{ form.title.id_for_label }}" class="form-label">Title</label>
+                        {{ form.title }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.author.id_for_label }}" class="form-label">Author</label>
+                        {{ form.author }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.description.id_for_label }}" class="form-label">Description</label>
+                        {{ form.description }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.category.id_for_label }}" class="form-label">Category</label>
+                        {{ form.category }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.date_published.id_for_label }}" class="form-label">Date Published</label>
+                        {{ form.date_published }}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ form.title.id_for_label }}" class="form-label">Image Link</label>
+                        {{ form.image_link }}
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" name="submit" value="Add Book" class="custom-button" />
+                    </div>
+                </form>
+                <div class="text-center mt-2" style="font-family: 'Mochiy Pop P One', sans-serif; font-size: 12px; color: red;">
+                    {% if form.errors %}
+                        <div class="error">
+                            <ul>
+                                {% for field in form %}
+                                    {% for error in field.errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                {% endfor %}
+                            </ul>
+                        
+                            {% for error in form.non_field_errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock content %}
