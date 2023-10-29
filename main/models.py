@@ -12,6 +12,7 @@ class User(AbstractUser):
     username = models.CharField(max_length=255, unique=True)
     email = models.EmailField(unique=True)
     date_of_birth = models.DateField(null=True, blank=True)
+    fav_color = models.CharField(max_length=255)
 
 class Member(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

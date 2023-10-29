@@ -1,0 +1,15 @@
+[
+  {
+    "pk": 1,
+    "model": "main.User",
+    "fields": {
+      "user_type": "ADMIN",
+      "first_name": "adm_first_name",
+      "last_name": "adm_last_name",
+      "username": "admin_user",
+      "email": "admin_user@email.com",
+      "date_of_birth": "2004-01-01",
+      "password": "pbkdf2_sha256$600000$fKucU05JZtDdXSkD3HqhHD$lZFgd2e/SMFarUEWprONYR6mVl2oJgJ9oEIakbuG9G4="
+    }
+  }
+]

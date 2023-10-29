@@ -2,8 +2,233 @@
 {% load static %}
 
 {% block content %}
+<style>
+     .data{
+        font-family: 'Mochiy Pop P One';
+    } 
+</style>
+
 {% include 'navbar.html' %}
 
+<div class="">
+    <div class="flex flex-col justify-center text-center pt-5">
+        <div class="flex justify-center w-100 h-50 pt-10">
+            <h1 class="px-60 py-2 text-6xl border-4 rounded-xl" style="background-color: #DBBC7F; color: #FEFADD; -webkit-text-stroke: 2px #724E2B; font-family: 'Darumadrop One'; border-color: #724E2B;">About us</h1>
+        </div>
+        <p class="data text-center text-4xl px-80 pt-10 leading-10" style="color: #724E2B;">
+            Tales and Tails Cafe adalah sebuah Cafe yang mengambil 
+            konsep Cat Cafe, tetapi memiliki sebuah perpustakaan untuk meminjam buku juga. 
+            Cafe ini memiliki tujuan untuk memadukan suasana santai kafe dengan kemudahan akses ke 
+            koleksi buku yang beragam, hal ini bertujuan untuk menciptakan ruang yang menggabungkan dua 
+            kegiatan yang menyenangkan dan mendidik.
+        </p>
+        <div class="pt-20 py-60" style="display: flex; justify-content: center; align-items: center;">
+            <div class="flex border-4 rounded-xl justify-center pt-10" style="background-color: #FEFADD; font-family: 'Darumadrop One'; border-color: #724E2B; width: 800px; height: 700px;">
+                <div class="flex flex-col">
+                    <h1 class="data py-2 text-6xl text-slate-900">DISCOVER BOOKS</h1>
+                    <h2 class="data py-2 text-2xl text-amber-700">Just one click away!</h2>
+                    <div id="data_books" class="flex flex-wrap justify-center py-5 px-4 grow-0 w-100" >
 
-<p>test</p>
+                    </div>
+                    <div class="rounded shadow-lg bg-amber-500 h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-opacity-50 hidden" id="detail-buku">
+   
+                    </div>
+                    <button class="bg-orange-700 border-4 border-yellow-900 rounded-md ">
+                        <a href="{% url 'catalog:catalog' %}" class="text-2xl text-white pt-1 pb-1 block w-full h-full">See More</a>
+                    </button>
+                </div>
+               
+
+            </div>
+                
+        </div>  
+    </div>
+    
+   
+</div>
+
+<script>
+async function getProducts() {
+    return fetch("{% url 'main:get_books_json_preview' %}").then((res) => res.json())
+}
+
+async function refreshProducts(){
+    const product = await getProducts()
+    document.getElementById("data_books").innerHTML = ""
+    let htmlString = ""
+    product.forEach((item) => {
+        if (item.fields.is_borrowed) {
+            htmlString += `<div class="relative px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center border-4 border-yellow-900" style="background-color: #FEFADD;">
+            
+            <div class=" px-20 pt-4">
+                <img src="${item.fields.image_link}" alt="no image">
+            </div>
+            <div>
+                <div class= "data pr-1 pt-2 tag">
+                    <h1 class="truncate">${item.fields.title}</h1>
+                
+                </div>
+                <p class=" data pt-3 text-sm pb-2 text-rose-600">Not Available</p>
+            
+                <div class="w-full pb-2">
+                <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" onclick="detailsProduct('${item.fields.image_link}',
+                    '${item.fields.title.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.description.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.author.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.date_published.replace(/'/g, "\\'").replace(/"/g, '&quot;')}',
+                    '${item.fields.rating.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.category.replace(/'/g, "\\'").replace(/"/g, '&quot;')}',
+                    '${item.pk}', '${item.fields.is_borrowed}')">
+                    Details
+                </button>
+            </div>
+            
+                <div class="w-full pb-2">
+                    <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded">
+                        Review
+                    </button>
+                </div>
+            </div>
+        </div>      
+        `
+        } else {
+            htmlString += `<div class="relative px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center border-4 border-yellow-900 style="background-color: #FEFADD;"">
+            
+            <div class=" px-20 pt-4">
+                <img src="${item.fields.image_link}" alt="no image">
+            </div>
+            <div>
+                <div class= "data pr-1 pt-2 tag">
+                    <h1 class="truncate">${item.fields.title}</h1>
+                
+                </div>
+                <p class=" data pt-3 text-sm pb-2 text-emerald-500">Available</p>
+            
+                <div class="w-full pb-2">
+                <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" onclick="detailsProduct('${item.fields.image_link}',
+                    '${item.fields.title.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.description.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.author.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.date_published.replace(/'/g, "\\'").replace(/"/g, '&quot;')}',
+                    '${item.fields.rating.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.category.replace(/'/g, "\\'").replace(/"/g, '&quot;')}',
+                    '${item.pk}', '${item.fields.is_borrowed}')">
+                    Details
+                </button>
+            </div>
+            
+                <div class="w-full pb-2">
+                    <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded">
+                        Review
+                    </button>
+                </div>
+            </div>
+        </div>      
+        `
+        }
+    })
+    document.getElementById("data_books").innerHTML = htmlString
+}
+
+async function detailsProduct(image_link, title, desc, author, publish_date, rating, category, id, is_borrowed) {
+        document.getElementById('detail-buku').innerHTML = ""
+        htmlString = ` 
+        <div class="px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
+            <h3 class="data text-2xl pb-4 pt-3">Book Details</h3>
+            <div class="text-center">
+                <div class="px-20 pt-4 inline-block">
+                    <img src="${image_link}" alt="no image">
+                </div>
+            </div>
+            <div class="flex flex-row pb-6">
+                <div class="text-center">
+                    <div class="pb-5">
+                        <h2 class="data text-lg">${title}</h2>
+                    </div>
+                <div class="pb-5 text-left">
+                    <h3 class="dec font-medium text-sm px-2"><t/>${desc}</h3>
+                </div>
+                <div class="text-center">
+                    <p class = "dec font-bold text-left mb-2 ml-2 text-sm"> Detail </p>
+                    <table class="dec font-semibold text-sm text-justify ml-2">
+                        <tr>
+                            <td>
+                                <h3>Author:</h3>
+                            </td>
+                            <td>
+                                <h3 class="ml-2">${author}</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 >Published Date:</h3>
+                            </td>
+                            <td>
+                                <h3 class="ml-2">${publish_date}</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3>Category:</h3>
+                            </td>
+                            <td>
+                                <h3 class="ml-2">${category}</h3>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+
+            </div>
+            </div>
+            <div class="flex flex-row justify-center w-full pb-4">
+                <div class="mr-3">
+                    <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" onclick="backButton()">
+                        Back
+                    </button>
+                </div>
+                <div class="ml-3">
+                    <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" id="borrowButton" onclick="borrowBook(${id})">
+                        Borrow Book
+                    </button>
+                </div>
+            </div>
+            `
+            document.getElementById('detail-buku').innerHTML = htmlString
+
+            if(is_borrowed == 'true') {
+                const borrowButton = document.getElementById('borrowButton');
+                borrowButton.innerHTML = 'Not Available';
+                borrowButton.setAttribute('onclick', 'handleBorrowFail()');
+            }
+        
+        const popUp = document.getElementById('detail-buku')
+        popUp.classList.remove('hidden')
+    }
+
+    async function backButton(){
+        const popUp = document.getElementById('detail-buku')
+        popUp.classList.add('hidden')
+    }
+
+    async function handleBorrowFail(){
+        alert("This book is currently not available or you need to login first")
+    }
+
+    function borrowBook(id){
+        const url = `catalog/borrow-book/${id}`
+        const popUp = document.getElementById('detail-buku')
+        fetch(url, {
+            method: "GET",
+        }).then(refreshProducts);
+        popUp.classList.add('hidden')
+        return false;
+    }
+
+
+
+refreshProducts()
+</script>
+
 {% endblock %}

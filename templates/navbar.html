@@ -21,8 +21,10 @@ href = "https://fonts.googleapis.com/css2?family=Darumadrop+One">
             <h1 class="ml-2 text-xl text-yellow-900"><a href="../">Tails & Tales</a></h1>
             <a href="{% url 'catalog:catalog' %}" class="text-yellow-900 pl-8 pt-1">Catalogue</a>
             {% if user.user_type == 'ADMIN' %}
-            <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">List of Borrower</a>
-            <button class="text-yellow-900 pl-8 pt-1" onclick="addBook()">Add new Book</button>
+
+            <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">List of Users</a>
+            <a href="#" class="text-yellow-900 pl-8 pt-1">Add new Book</a>
+
             {% else %}
             <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">My Book</a>
             {% endif %}

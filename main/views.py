@@ -42,6 +42,7 @@ def register(request):
                 first_name=form.cleaned_data["first_name"],
                 last_name=form.cleaned_data["last_name"],
                 date_of_birth=form.cleaned_data["date_of_birth"],
+                fav_color=form.cleaned_data["fav_color"],
             )
 
             user.set_password(form.cleaned_data["password1"])
@@ -72,3 +73,9 @@ def login_user(request):
 def logout_user(request):
     logout(request)
     return redirect('main:login')
+
+
+def get_books_json_preview(request):
+    data = Book.objects.all()[:2]  # Mengambil hanya 4 data pertama
+    return HttpResponse(serializers.serialize('json', data),
+        content_type="application/json")
