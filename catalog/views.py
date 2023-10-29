@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 import requests
 from django.conf import settings
 from django.http import JsonResponse, HttpResponseNotFound
@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from django.http import HttpResponse
 from django.core import serializers
 import os
+from catalog.forms import CreateBookForm
 from catalog.models import Book
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
@@ -80,3 +81,23 @@ def delete_book(request, id):
         data.delete()
         return HttpResponse(b"DELETED", status=201)
     return HttpResponseNotFound()
+
+def add_book(request):
+    if request.method == "POST":
+        form = CreateBookForm(request.POST)
+        if form.is_valid():
+            book = Book(
+                title=form.cleaned_data["title"],
+                author=form.cleaned_data["author"],
+                description=form.cleaned_data["description"],
+                category=form.cleaned_data["category"],
+                date_published=form.cleaned_data["date_published"],
+                image_link=form.cleaned_data["image_link"],
+            )
+
+            book.save()
+            return redirect('main:main')           
+    else:
+        form = CreateBookForm()
+    context = {'form': form}
+    return render(request, 'addBook.html', context)

@@ -182,9 +182,7 @@
 
 </div>
 
-<div class="rounded shadow-lg bg-amber-500 h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-opacity-50 hidden" id="detail-buku">
-   
-</div>
+<div class="rounded shadow-lg bg-amber-500 h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-opacity-50 hidden" id="detail-buku"></div>
 
 <script>
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -444,6 +442,7 @@ async function detailsProduct(image_link, title, desc, author, publish_date, rat
         popUp.classList.add('hidden')
         return false;
     }
+
 
 refreshProducts()
 
