@@ -1,7 +1,7 @@
 from django.shortcuts import render
 import requests
 from django.conf import settings
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseNotFound
 import requests
 from django.shortcuts import render
 from dotenv import load_dotenv
@@ -9,6 +9,8 @@ from django.http import HttpResponse
 from django.core import serializers
 import os
 from catalog.models import Book
+from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def catalog(request):
@@ -59,4 +61,14 @@ def search_book(request):
         context = {'search': search_title, 'books': books}
     
     return render(request, 'katalog.html', context)
-         
+
+@csrf_exempt
+def book_borrowed(request, id):
+    if request.method == 'GET':
+        data = Book.objects.get(pk=id)
+        data.is_borrowed = True
+        data.borrower = request.user
+        data.save()
+        return HttpResponse(b"SUCCESS", status=201)
+    return HttpResponseNotFound()
+
