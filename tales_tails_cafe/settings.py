@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'catalog',
+    'review',
     'user_profile'
 ]
 
