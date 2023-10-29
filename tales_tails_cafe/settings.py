@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'main',
     'catalog',
     'user_profile',
-    'mybooks'
+    'mybooks',
+    'review'
 ]
 
 MIDDLEWARE = [
