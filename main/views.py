@@ -6,6 +6,7 @@ from django.core import serializers
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages  
 from main.forms import RegisterUserForm
+
 from django.contrib.auth import authenticate, login, logout
 
 
@@ -27,22 +28,34 @@ permissions = [
 """
 
 @login_required(login_url='/login')
+
 def main(request):
     return render(request, "main.html")
 
 def register(request):
-    form = RegisterUserForm()
-
     if request.method == "POST":
         form = RegisterUserForm(request.POST)
         if form.is_valid():
-            form.save()
-            messages.success(request, 'Your account has been successfully created!')
-            return redirect('main:login')
-    context = {'form':form}
+            user = User(
+                username=form.cleaned_data["username"],
+                email=form.cleaned_data["email"],
+                first_name=form.cleaned_data["first_name"],
+                last_name=form.cleaned_data["last_name"],
+                date_of_birth=form.cleaned_data["date_of_birth"],
+            )
+
+            user.set_password(form.cleaned_data["password1"])
+            user.save()
+            login(request, user)
+            return redirect('main:login')           
+    else:
+        form = RegisterUserForm()
+
+    context = {'form': form}
     return render(request, 'register.html', context)
 
 def login_user(request):
+    error_message = None
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -51,9 +64,10 @@ def login_user(request):
             login(request, user)
             return redirect('main:main')
         else:
-            messages.info(request, 'Sorry, incorrect username or password. Please try again.')
-    context = {}
+            error_message = 'Sorry, incorrect username or password. Please try again.'
+    context = {'error_message': error_message}
     return render(request, 'login.html', context)
+
 
 def logout_user(request):
     logout(request)

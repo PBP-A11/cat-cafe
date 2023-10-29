@@ -52,3 +52,24 @@ def book_borrowed(request, id):
         data.save()
         return HttpResponse(b"SUCCESS", status=201)
     return HttpResponseNotFound()
+
+def search_book(request):
+    search_title = request.GET.get('searchTitle')
+    search_author = request.GET.get('searchAuthor')
+    search_category = request.GET.get('searchCategory')
+    
+    if search_title:
+        books = Book.objects.filter(title__icontains=search_title)
+        context = {'search': search_title, 'books': books}
+    elif search_author:
+        books = Book.objects.filter(author__icontains=search_author)
+        context = {'search': search_author, 'books': books}
+    elif search_category:
+        books = Book.objects.filter(category__icontains=search_category)
+        context = {'search': search_category, 'books': books}
+    else:
+        books = Book.objects.all()
+        context = {'search': search_title, 'books': books}
+    
+    return render(request, 'katalog.html', context)
+         
