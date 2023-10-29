@@ -12,7 +12,8 @@
         <div class="border-4 rounded w-25 h-25 px-20" style="background-color: #DBBC7F; border-color: #724E2B; color: #DBBC7F;">
             .
         </div>
-        <div class="ml-10" style="font-family: 'Mochiy Pop P One';">
+        <div class="ml-10" style="font-family: 'Mochiy Pop P One';" id="user-data">
+            <!--
             <div class="mb-5">
                 <p class="text-sm">Name</p>
                 <p class="text-xl">{{ user.first_name }} {{ user.last_name }}</p>
@@ -32,17 +33,125 @@
                 <p class="text-sm">E-mail</p>
                 <p class="text-xl">{{ user.email }}</p>
             </div>
+            -->
         </div>
     </div>
     <div class="flex justify-center my-10" style="font-family: 'Mochiy Pop P One'; color: #724E2B;">
-        <a class="border-2 rounded mx-5 p-2" style="border-color: #724E2B;" href="#">Edit Profile</a>
+        <a id="openModal" class="border-2 rounded mx-5 p-2" style="border-color: #724E2B;" href="#">Edit Profile</a>
         <a class="border-2 rounded mx-5 p-2" style="border-color: #724E2B;" href="#">Change Password</a>
     </div>
-
 </div>
+
+<div class="flex justify-center">
+    <h1 class="p-5 text-4xl border-4 rounded-xl" style="background-color: #DBBC7F; color: #FEFADD; -webkit-text-stroke: 2px #724E2B; font-family: 'Darumadrop One'; border-color: #724E2B;">List of Borrowed Books</h1>
+</div>
+
+<h2>You borrowed <span>{{ books.count }} books</span> from this site</h2>
 
 {% for book in books %}
 <p>{{ book.title }}</p>
 {% endfor %}
+
+<!-- Modal Edit Profile -->
+<div id="myModal" class="modal fixed hidden inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="modal-content bg-white p-4 rounded max-w-md mx-auto">
+        <!-- Modal Header -->
+        <div class="modal-header mb-4">
+            <span id="closeModal" class="modal-close cursor-pointer text-2xl">&times;</span>
+            <h2 class="text-lg font-bold">Modal Title</h2>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+            <form id="form" onsubmit="return false;">
+                
+            </form>
+            <button type="button" id="button_save">Save Changes</button>
+        </div>
+    </div>
+</div>
+
+<script>
+async function getUserData() {
+        return fetch("{% url 'user_profile:get_user_json' %}").then((res) => res.json())
+    }
+
+async function refreshUserData() {
+    document.getElementById("user-data").innerHTML = ""
+    document.getElementById("form").innerHTML = ""
+    const user = await getUserData()
+    let htmlStringUserData = `
+        <div class="mb-5">
+                <p class="text-sm">Name</p>
+                <p class="text-xl">${ user.first_name } ${ user.last_name }</p>
+            </div>
+
+            <div class="my-5">
+                <p class="text-sm">Username</p>
+                <p class="text-xl">${ user.username }</p>
+            </div>
+            
+            <div class="my-5">
+                <p class="text-sm">Date of Birth</p>
+                <p class="text-xl">${ user.date_of_birth }</p>  
+            </div>
+
+            <div class="mt-5">
+                <p class="text-sm">E-mail</p>
+                <p class="text-xl">${ user.email }</p>
+            </div>
+        </div>
+    `
+    document.getElementById("user-data").innerHTML = htmlStringUserData
+
+    let htmlStringModalForm = `
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="first_name" class="col-form-label">First Name:</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" value="${ user.first_name }"></input>
+                </div>
+                <div class="mb-3">
+                    <label for="last_name" class="col-form-label">Last Name:</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" value="${ user.last_name }"></input>
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="col-form-label">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username" value="${ user.username }"></input>
+                </div>
+                <div class="mb-3">
+                    <label for="date_of_birth" class="col-form-label">Date of Birth:</label>
+                    <input type="text" class="form-control" id="date_of_birth" name="date_of_birth" value="${ user.date_of_birth }"></input>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="col-form-label">E-mail:</label>
+                    <input type="text" class="form-control" id="email" name="email" value="${ user.email }"></input>
+                </div>
+    `
+    document.getElementById("form").innerHTML = htmlStringModalForm
+}
+
+refreshUserData()
+
+function editProfile() {
+        fetch("{% url 'user_profile:edit_profile' %}", {
+            method: "POST",
+            body: new FormData(document.querySelector('#form'))
+        }).then(refreshUserData)
+
+        document.getElementById("form").reset()
+        document.getElementById('myModal').classList.add('hidden');
+        return false
+    }
+
+document.getElementById("button_save").onclick = editProfile
+
+document.getElementById('openModal').addEventListener('click', function() {
+    document.getElementById('myModal').classList.remove('hidden');
+});
+
+document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('myModal').classList.add('hidden');
+});
+
+</script>
 
 {% endblock %}
