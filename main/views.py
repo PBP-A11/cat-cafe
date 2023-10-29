@@ -72,3 +72,9 @@ def login_user(request):
 def logout_user(request):
     logout(request)
     return redirect('main:login')
+
+
+def get_books_json_preview(request):
+    data = Book.objects.all()[:2]  # Mengambil hanya 4 data pertama
+    return HttpResponse(serializers.serialize('json', data),
+        content_type="application/json")
