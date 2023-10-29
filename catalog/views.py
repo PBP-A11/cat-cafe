@@ -63,6 +63,7 @@ def search_book(request):
     return render(request, 'katalog.html', context)
 
 @csrf_exempt
+@login_required
 def book_borrowed(request, id):
     if request.method == 'GET':
         data = Book.objects.get(pk=id)
