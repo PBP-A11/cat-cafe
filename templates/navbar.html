@@ -22,7 +22,7 @@ href = "https://fonts.googleapis.com/css2?family=Darumadrop+One">
             <a href="{% url 'catalog:catalog' %}" class="text-yellow-900 pl-8 pt-1">Catalogue</a>
             {% if user.user_type == 'ADMIN' %}
             <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">List of Borrower</a>
-            <a href="#" class="text-yellow-900 pl-8 pt-1">Add new Book</a>
+            <button class="text-yellow-900 pl-8 pt-1" onclick="addBook()">Add new Book</button>
             {% else %}
             <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">My Book</a>
             {% endif %}
@@ -68,12 +68,21 @@ href = "https://fonts.googleapis.com/css2?family=Darumadrop+One">
     </div>
   </nav>
 
-  <script>
-        $(document).ready(function() {
-            $("#showPopUp").click(function() {
-                $("#modal").toggleClass("hidden"); // Menggunakan toggleClass untuk mengganti class 'hidden'
-            });
-        });
+  <div id="add-book" class="rounded shadow-lg bg-amber-500 h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-opacity-50 hidden"></div>
 
+  <script>
+  $(document).ready(function() {
+      $("#showPopUp").click(function() {
+          $("#modal").toggleClass("hidden"); // Menggunakan toggleClass untuk mengganti class 'hidden'
+      });
+  });
+
+  async function addBook(){
+    
+    const popUp = document.getElementById('add-book')
+    popUp.classList.remove('hidden')
+  }
+
+        
   </script>
 {% endblock %}

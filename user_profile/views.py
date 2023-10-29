@@ -26,15 +26,20 @@ def user_profile(request):
     return render(request, 'member_profile.html', context)
 
 def get_user_json(request):
-    user = request.user
-    user_data = {
-        'first_name': user.first_name,
-        'last_name': user.last_name,
-        'username': user.username,
-        'email': user.email,
-        'date_of_birth': user.date_of_birth,
-    }
-    return JsonResponse(user_data)
+    if request.method == 'GET':
+        if request.user.is_authenticated:
+            user = request.user
+            user_data = {
+                'first_name': user.first_name,
+                'last_name': user.last_name,
+                'username': user.username,
+                'email': user.email,
+                'date_of_birth': user.date_of_birth,
+                'user_type' : user.user_type,
+            }
+            return JsonResponse(user_data)
+        else:
+            return JsonResponse({'message': 'User is not authenticated'})
 
 def edit_profile(request):
     if request.method == 'POST':

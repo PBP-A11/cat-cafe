@@ -73,3 +73,10 @@ def book_borrowed(request, id):
         return HttpResponse(b"SUCCESS", status=201)
     return HttpResponseNotFound()
 
+@csrf_exempt
+def delete_book(request, id):
+    if request.method == 'GET':
+        data = Book.objects.get(pk=id)
+        data.delete()
+        return HttpResponse(b"DELETED", status=201)
+    return HttpResponseNotFound()
