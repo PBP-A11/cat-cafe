@@ -23,7 +23,7 @@ href = "https://fonts.googleapis.com/css2?family=Darumadrop+One">
             {% if user.user_type == 'ADMIN' %}
 
             <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">List of Users</a>
-            <a href="{% url 'catalog:add-book' %}" class="text-yellow-900 pl-8 pt-1">Add new Book</a>
+            <a href="{% url 'catalog:add_book' %}" class="text-yellow-900 pl-8 pt-1">Add new Book</a>
 
             {% else %}
             <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">My Book</a>
