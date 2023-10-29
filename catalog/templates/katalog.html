@@ -395,7 +395,13 @@ async function detailsProduct(image_link, title, desc, author, publish_date, rat
                 const borrowButton = document.getElementById('borrowButton');
                 borrowButton.innerHTML = 'Not Available';
                 borrowButton.setAttribute('onclick', 'deleteFail()');
-            } else {
+            } else if(user.user_type == 'MEMBER' && is_borrowed == 'true'){
+                const borrowButton = document.getElementById('borrowButton');
+                borrowButton.innerHTML = 'Not Available';
+                borrowButton.setAttribute('onclick', 'handleBorrowFail()');
+            } else if(user.user_type == 'MEMBER'){
+                const borrowButton = document.getElementById('borrowButton');
+            }else{
                 const borrowButton = document.getElementById('borrowButton');
                 borrowButton.innerHTML = 'Not Available';
                 borrowButton.setAttribute('onclick', 'handleBorrowFail()');
