@@ -21,7 +21,7 @@ href = "https://fonts.googleapis.com/css2?family=Darumadrop+One">
             <h1 class="ml-2 text-xl text-yellow-900"><a href="../">Tails & Tales</a></h1>
             <a href="{% url 'catalog:catalog' %}" class="text-yellow-900 pl-8 pt-1">Catalogue</a>
             {% if user.user_type == 'ADMIN' %}
-            <a href="#" class="text-yellow-900 pl-8 pt-1">List of Borrower</a>
+            <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">List of Borrower</a>
             <a href="#" class="text-yellow-900 pl-8 pt-1">Add new Book</a>
             {% else %}
             <a href="{% url 'mybooks:mybooks' %}" class="text-yellow-900 pl-8 pt-1">My Book</a>
@@ -52,9 +52,9 @@ href = "https://fonts.googleapis.com/css2?family=Darumadrop+One">
                           <div class="py-1" role="none">
                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
                             {% if user.user_type == 'ADMIN' %}
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">List of Borrower</a>
+                            <a href="{% url 'mybooks:mybooks' %}" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">List of Borrower</a>
                             {% else %}
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">My Book</a>
+                            <a href="{% url 'mybooks:mybooks' %}" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">My Book</a>
                             {% endif %}
                             <a href="{% url 'user_profile:user_profile' %}" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Edit Profile</a>
                             <a href="{% url 'main:logout' %}" type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Sign out</a>

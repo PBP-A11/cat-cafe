@@ -11,11 +11,23 @@ from django.contrib.auth import authenticate, login, logout
 
 @login_required(login_url='/login')
 def mybooks(request):
-    books = Book.objects.filter(borrower=request.user)
-    context ={
-        'books': books
-    }
-    return render(request, "mybooks.html", context)
+    user = request.user
+    if user.user_type == 'ADMIN':
+        all_borrowed_books = Book.objects.filter(is_borrowed = True).values()
+        all_member_user = User.objects.filter(user_type = 'MEMBER')
+        context = {
+            'user': user,
+            'member_users': all_member_user,
+            'books': all_borrowed_books,
+        }
+        return render(request, 'listpeminjam.html', context)
+    else :
+        books = Book.objects.filter(borrower=request.user)
+        context ={
+            'books': books
+        }
+        return render(request, "mybooks.html", context)
+        
 
 def get_mybooks_json(request):
     data = Book.objects.filter(borrower=request.user)
