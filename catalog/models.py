@@ -8,7 +8,7 @@ class Book(models.Model):
     author = models.CharField(max_length=255, default='N/A')
     preview_link = models.URLField(default='N/A')
     description = models.TextField(default='N/A')
-    category = models.CharField(max_length=10, default='N/A')
+    category = models.CharField(max_length=100, default='N/A')
     rating = models.CharField(max_length=10, default='N/A')
     is_borrowed = models.BooleanField(default=False)
     borrower = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, blank=True)
