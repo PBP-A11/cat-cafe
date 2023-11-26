@@ -8,6 +8,9 @@
 - Muhammad Madhani Putra
 - Shaquille Athar Adista
 
+#### Link
+[Website](https://talesandtailscafe-a11-tk.pbp.cs.ui.ac.id/)
+
 #### Cerita Aplikasi:
 Tales and Tails Cafe adalah sebuah Cafe yang mengambil konsep Cat Cafe, tetapi memiliki sebuah perpustakaan untuk meminjam buku juga. Cafe ini memiliki tujuan untuk memadukan suasana santai kafe dengan kemudahan akses ke koleksi buku yang beragam, hal ini bertujuan untuk menciptakan ruang yang menggabungkan dua kegiatan yang menyenangkan dan mendidik.
 
