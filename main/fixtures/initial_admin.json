@@ -9,7 +9,7 @@
       "username": "admin_user",
       "email": "admin_user@email.com",
       "date_of_birth": "2004-01-01",
-      "password": "pbkdf2_sha256$600000$DaAXPjAKndmV3AnokHPDjy$cI2IgRkJKKLPEHPm3n3UC7cm0dM4+yKm+1rKg94vRwc="
+      "password": "pbkdf2_sha256$600000$YGEKF9E5JWHwULfUCclX5a$t6Xn0Oy3B2YX//VcqHVr9eJ28WpsTOw/M0h3hJ2N1iE="
     }
   }
 ]
