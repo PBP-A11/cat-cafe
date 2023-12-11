@@ -1,5 +1,5 @@
 from django.urls import path
-from catalog.views import catalog, search_books, get_books_json, search_book, book_borrowed, delete_book, add_book
+from catalog.views import catalog, search_books, get_books_json, search_book, book_borrowed, delete_book, add_book, add_book_flutter
 from user_profile.views import get_user_json
 
 app_name = 'catalog'
@@ -13,4 +13,5 @@ urlpatterns = [
     path("delete-book/<int:id>", delete_book, name='delete_book'),
     path('get-user/', get_user_json, name='get_user_json'),
     path('add-book/', add_book, name='add_book'),
+    path('add-book-flutter/', add_book_flutter, name='add_book_flutter'),
 ]
