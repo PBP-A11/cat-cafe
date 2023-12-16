@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'mybooks',
     'review',
     'corsheaders',
+    'authentication',
 ]
 
 MIDDLEWARE = [

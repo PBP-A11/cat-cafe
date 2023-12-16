@@ -26,7 +26,8 @@ urlpatterns = [
     path('user_profile/', include('user_profile.urls')),
     path('mybooks/', include('mybooks.urls')),
     path('review/', include('review.urls')),
+    path('auth/', include('authentication.urls')),
 ]
 
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  
