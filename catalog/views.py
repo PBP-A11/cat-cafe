@@ -75,16 +75,20 @@ def book_borrowed(request, id):
     return HttpResponseNotFound()
 
 @csrf_exempt
+# @login_required(login_url='/auth/login')
 def book_borrowed_flutter(request, id):
-    if request.method == 'POST':
-        data = Book.objects.get(pk = id)
-        data.is_borrowed = True
-        data.borrower = request.user
-        data.save()
-    
-        return JsonResponse({"status": "success"}, status=200)
-    else:
-        return JsonResponse({"status": "error"}, status=401)
+    if request.user.is_authenticated:
+        if request.method == 'GET':
+            data = Book.objects.get(pk = id)
+            if not data.is_borrowed:
+                data.is_borrowed = True
+                data.borrower = request.user
+                data.save()
+                return JsonResponse({"status": "success"}, status=200)
+            
+            return JsonResponse({"status": "error"}, status=400)
+        
+    return JsonResponse({"status": "need_login"}, status=401)
 
 @csrf_exempt
 def delete_book(request, id):
