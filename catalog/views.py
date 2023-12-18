@@ -79,6 +79,7 @@ def book_borrowed_flutter(request, id):
     if request.method == 'POST':
         data = Book.objects.get(pk = id)
         data.is_borrowed = True
+        data.borrower = request.user
         data.save()
     
         return JsonResponse({"status": "success"}, status=200)
