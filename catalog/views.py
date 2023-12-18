@@ -144,4 +144,4 @@ def add_book_flutter(request):
 def delete_book_flutter(request, id):
     data = Book.objects.get(pk=id)
     data.delete()
-    return JsonResponse({"message": "Data deleted successfully"}, status=200)
+    return JsonResponse({"message": "Book deleted successfully"}, status=200)
