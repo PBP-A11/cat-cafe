@@ -75,6 +75,17 @@ def book_borrowed(request, id):
     return HttpResponseNotFound()
 
 @csrf_exempt
+def book_borrowed_flutter(request, id):
+    if request.method == 'POST':
+        data = Book.objects.get(pk = id)
+        data.is_borrowed = True
+        data.save()
+    
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
+
+@csrf_exempt
 def delete_book(request, id):
     if request.method == 'GET':
         data = Book.objects.get(pk=id)
