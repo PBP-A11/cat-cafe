@@ -15,7 +15,7 @@ class CreateBookForm(ModelForm):
         max_length=255,
         widget=forms.TextInput(attrs={'style': 'width: 255px;'})
     )
-    category = forms.EmailField(
+    category = forms.CharField(
         max_length=255,
         widget=forms.TextInput(attrs={'style': 'width: 255px;'})
     )
