@@ -123,3 +123,9 @@ def add_book_flutter(request):
         return JsonResponse({"status": "success"}, status=200)
     else:
         return JsonResponse({"status": "error"}, status=401)
+    
+@csrf_exempt
+def delete_book_flutter(request, id):
+    data = Book.objects.get(pk=id)
+    data.delete()
+    return JsonResponse({"message": "Data deleted successfully"}, status=200)
