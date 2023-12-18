@@ -72,3 +72,18 @@ def edit_profile_flutter(request):
         return JsonResponse({"status": "success"}, status=200)
 
     return HttpResponseNotFound()
+
+@csrf_exempt 
+def edit_profile_flutter_user(request):
+    if request.method == 'POST':
+    
+        data = json.loads(request.body)
+        username = data.get('username')
+
+        user = request.user
+        user.username= username
+        user.save()
+
+        return JsonResponse({"status": "success"}, status=200)
+
+    return HttpResponseNotFound()
