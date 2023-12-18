@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "pk": 1,
@@ -12,4 +13,20 @@
       "password": "pbkdf2_sha256$600000$SVAATcW6x2KbdBcs6rgfB2$2+HprIqIsNIVNRKZfrrMng77eQizqa1FtDIfo26lm4Y="
     }
   }
+=======
+[
+  {
+    "pk": 1,
+    "model": "main.User",
+    "fields": {
+      "user_type": "ADMIN",
+      "first_name": "adm_first_name",
+      "last_name": "adm_last_name",
+      "username": "admin_user",
+      "email": "admin_user@email.com",
+      "date_of_birth": "2004-01-01",
+      "password": "pbkdf2_sha256$600000$NhCzzgmbLPAmBQNEdnHCy1$otNW9QQoT7Ulx+vzjIe2sUvHJffDyTdDNMWU4fx4+gk="
+    }
+  }
+>>>>>>> 8f4268792a9bac6fea5905c4438d44b5e2878bb1
 ]
