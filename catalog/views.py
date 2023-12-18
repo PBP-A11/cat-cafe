@@ -88,7 +88,7 @@ def book_borrowed_flutter(request, id):
             
             return JsonResponse({"status": "error"}, status=400)
         
-    return JsonResponse({"status": "need_login"}, status=401)
+    return JsonResponse({"status": "not_login"}, status=401)
 
 @csrf_exempt
 def delete_book(request, id):
