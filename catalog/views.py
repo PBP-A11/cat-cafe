@@ -1,3 +1,4 @@
+import json
 from django.shortcuts import redirect, render
 import requests
 from django.conf import settings
@@ -75,6 +76,22 @@ def book_borrowed(request, id):
     return HttpResponseNotFound()
 
 @csrf_exempt
+# @login_required(login_url='/auth/login')
+def book_borrowed_flutter(request, id):
+    if request.user.is_authenticated:
+        if request.method == 'GET':
+            data = Book.objects.get(pk = id)
+            if not data.is_borrowed:
+                data.is_borrowed = True
+                data.borrower = request.user
+                data.save()
+                return JsonResponse({"status": "success"}, status=200)
+            
+            return JsonResponse({"status": "error"}, status=400)
+        
+    return JsonResponse({"status": "not_login"}, status=401)
+
+@csrf_exempt
 def delete_book(request, id):
     if request.method == 'GET':
         data = Book.objects.get(pk=id)
@@ -101,3 +118,30 @@ def add_book(request):
         form = CreateBookForm()
     context = {'form': form}
     return render(request, 'addBook.html', context)
+
+
+@csrf_exempt
+def add_book_flutter(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+
+        book = Book(
+            title=data["title"],
+            author=data["author"],
+            description=data["description"],
+            category=data["category"],
+            date_published=data["date_published"],
+            image_link=data["image_link"],
+        )
+
+        book.save()
+
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
+    
+@csrf_exempt
+def delete_book_flutter(request, id):
+    data = Book.objects.get(pk=id)
+    data.delete()
+    return JsonResponse({"message": "Book deleted successfully"}, status=200)

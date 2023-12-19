@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'mybooks',
     'review',
     'corsheaders',
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -117,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+CSRF_TRUSTED_ORIGINS  = ['https://talesandtailscafe-a11-tk.pbp.cs.ui.ac.id']
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CSRF_COOKIE_SECURE = True
