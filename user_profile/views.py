@@ -41,7 +41,7 @@ def get_user_json(request):
             }
             return JsonResponse(user_data)
         else:
-            return JsonResponse({'message': 'User is not authenticated'})
+            return JsonResponse({'user_type': 'Not authenticated'})
 
 def edit_profile(request):
     if request.method == 'POST':
@@ -76,12 +76,19 @@ def edit_profile_flutter(request):
 @csrf_exempt 
 def edit_profile_flutter_user(request):
     if request.method == 'POST':
-    
         data = json.loads(request.body)
-        username = data.get('username')
+        new_username = data.get('username')
+        
+        # Memeriksa apakah username sudah ada dalam basis data
+        existing_user = User.objects.filter(username=new_username).exists()
 
+        if existing_user:
+            # Username sudah ada, kirim respons bahwa username sudah digunakan
+            return JsonResponse({"status": "error", "message": "Username sudah digunakan"}, status=400)
+
+        # Username belum ada, lanjutkan untuk menyimpan perubahan
         user = request.user
-        user.username= username
+        user.username = new_username
         user.save()
 
         return JsonResponse({"status": "success"}, status=200)
