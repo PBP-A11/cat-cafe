@@ -37,6 +37,20 @@ def get_mybooks_json(request):
     return HttpResponse(serializers.serialize('json', data),
         content_type="application/json")
 
+def get_mybooks_json_flutter(request, username):
+    # Retrieve the user object based on the provided username
+    try:
+        user = User.objects.get(username=username)
+    except User.DoesNotExist:
+        # Handle the case where the user doesn't exist
+        return HttpResponse(status=404)
+
+    # Filter books based on the obtained user object
+    data = Book.objects.filter(borrower=user)
+
+    # Serialize and return the data
+    return HttpResponse(serializers.serialize('json', data), content_type="application/json")
+
 def book_return(request, id):
     if request.method == 'GET':
         data = Book.objects.get(pk=id)
