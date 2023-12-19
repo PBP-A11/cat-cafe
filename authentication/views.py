@@ -4,6 +4,8 @@ from django.contrib.auth import logout as auth_logout
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
+from main.models import User
+
 @csrf_exempt
 def login(request):
     username = request.POST['username']
@@ -48,3 +50,23 @@ def logout(request):
         "status": False,
         "message": "Logout gagal."
         }, status=401)
+
+@csrf_exempt
+def register(request):
+    username = request.POST.get('username')
+    email = request.POST.get('email')
+    first_name = request.POST.get('first_name')
+    last_name = request.POST.get('last_name')
+    fav_color = request.POST.get('fav_color')
+    date_of_birth = request.POST.get('date_of_birth')
+    password = request.POST.get('password1')
+
+    if User.objects.filter(username=username).exists():
+        return JsonResponse({"status": False, "message": "Register gagal, username sudah digunakan."}, status=400)
+
+    user = User.objects.create_user(
+        username=username, email=email, first_name=first_name, last_name=last_name, fav_color=fav_color, date_of_birth=date_of_birth)
+    user.set_password(password)
+    user.save()
+
+    return JsonResponse({"username": user.username, "status": True, "message": "Register berhasil!"}, status=201)
