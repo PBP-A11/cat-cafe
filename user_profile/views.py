@@ -1,8 +1,10 @@
+import json
 from django.shortcuts import render
 from main.models import Book, User
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseNotFound, JsonResponse
 from django.core import serializers
+from django.views.decorators.csrf import csrf_exempt
 
 @login_required(login_url='/login')
 def user_profile(request):
@@ -46,10 +48,42 @@ def edit_profile(request):
         user = request.user
         user.first_name = request.POST.get("first_name")
         user.last_name = request.POST.get("last_name")
-        user.username = request.POST.get("username")
-        user.date_of_birth = request.POST.get("date_of_birth")
+        # user.username = request.POST.get("username")
+        # user.date_of_birth = request.POST.get("date_of_birth")
         user.save()
 
         return HttpResponse(b"CREATED", status=201)
+
+    return HttpResponseNotFound()
+
+@csrf_exempt 
+def edit_profile_flutter(request):
+    if request.method == 'POST':
+    
+        data = json.loads(request.body)
+        first_name = data.get('first_name')
+        last_name = data.get('last_name')
+
+        user = request.user
+        user.first_name = first_name
+        user.last_name = last_name
+        user.save()
+
+        return JsonResponse({"status": "success"}, status=200)
+
+    return HttpResponseNotFound()
+
+@csrf_exempt 
+def edit_profile_flutter_user(request):
+    if request.method == 'POST':
+    
+        data = json.loads(request.body)
+        username = data.get('username')
+
+        user = request.user
+        user.username= username
+        user.save()
+
+        return JsonResponse({"status": "success"}, status=200)
 
     return HttpResponseNotFound()

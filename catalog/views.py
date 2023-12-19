@@ -1,4 +1,5 @@
-from django.shortcuts import render
+import json
+from django.shortcuts import redirect, render
 import requests
 from django.conf import settings
 from django.http import JsonResponse, HttpResponseNotFound
@@ -8,6 +9,7 @@ from dotenv import load_dotenv
 from django.http import HttpResponse
 from django.core import serializers
 import os
+from catalog.forms import CreateBookForm
 from catalog.models import Book
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
@@ -74,9 +76,72 @@ def book_borrowed(request, id):
     return HttpResponseNotFound()
 
 @csrf_exempt
+# @login_required(login_url='/auth/login')
+def book_borrowed_flutter(request, id):
+    if request.user.is_authenticated:
+        if request.method == 'GET':
+            data = Book.objects.get(pk = id)
+            if not data.is_borrowed:
+                data.is_borrowed = True
+                data.borrower = request.user
+                data.save()
+                return JsonResponse({"status": "success"}, status=200)
+            
+            return JsonResponse({"status": "error"}, status=400)
+        
+    return JsonResponse({"status": "not_login"}, status=401)
+
+@csrf_exempt
 def delete_book(request, id):
     if request.method == 'GET':
         data = Book.objects.get(pk=id)
         data.delete()
         return HttpResponse(b"DELETED", status=201)
     return HttpResponseNotFound()
+
+def add_book(request):
+    if request.method == "POST":
+        form = CreateBookForm(request.POST)
+        if form.is_valid():
+            book = Book(
+                title=form.cleaned_data["title"],
+                author=form.cleaned_data["author"],
+                description=form.cleaned_data["description"],
+                category=form.cleaned_data["category"],
+                date_published=form.cleaned_data["date_published"],
+                image_link=form.cleaned_data["image_link"],
+            )
+
+            book.save()
+            return redirect('main:main')           
+    else:
+        form = CreateBookForm()
+    context = {'form': form}
+    return render(request, 'addBook.html', context)
+
+
+@csrf_exempt
+def add_book_flutter(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+
+        book = Book(
+            title=data["title"],
+            author=data["author"],
+            description=data["description"],
+            category=data["category"],
+            date_published=data["date_published"],
+            image_link=data["image_link"],
+        )
+
+        book.save()
+
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
+    
+@csrf_exempt
+def delete_book_flutter(request, id):
+    data = Book.objects.get(pk=id)
+    data.delete()
+    return JsonResponse({"message": "Book deleted successfully"}, status=200)
