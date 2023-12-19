@@ -1,3 +1,4 @@
+import json
 from django.shortcuts import redirect, render
 import requests
 from django.conf import settings
@@ -118,3 +119,29 @@ def add_book(request):
     context = {'form': form}
     return render(request, 'addBook.html', context)
 
+
+@csrf_exempt
+def add_book_flutter(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+
+        book = Book(
+            title=data["title"],
+            author=data["author"],
+            description=data["description"],
+            category=data["category"],
+            date_published=data["date_published"],
+            image_link=data["image_link"],
+        )
+
+        book.save()
+
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
+    
+@csrf_exempt
+def delete_book_flutter(request, id):
+    data = Book.objects.get(pk=id)
+    data.delete()
+    return JsonResponse({"message": "Book deleted successfully"}, status=200)
