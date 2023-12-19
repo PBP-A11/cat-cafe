@@ -54,6 +54,9 @@ def promote_to_admin(request, id):
         book.is_borrowed = False
         book.borrower = None
         book.save()
-    user.user_type = 'ADMIN'
+    if (user.user_type == "MEMBER"):
+        user.user_type = "ADMIN"
+    else:
+        user.user_type= "MEMBER"
     user.save()
     return redirect('mybooks:mybooks')
