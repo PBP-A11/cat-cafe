@@ -1,0 +1,626 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block content %}
+<style>
+    .data{
+        font-family: 'Mochiy Pop P One';
+    } 
+    .dec{
+        font-family: 'Poppins', sans-serif;
+    }
+    .tag {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 18em;
+    text-align: center;
+}
+
+</style>
+<div>
+    {% include 'navbar.html' %}
+
+    <div class='max-w-6xl mx-auto mt-20 flex'>
+        <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-orange-100 overflow-hidden border-4 border-yellow-900">
+            <div class="grid place-items-center h-full w-12 text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        <form method=GET id="searchForm" action="{% url 'catalog:search_book' %}" class="w-full">
+            <input
+            class="peer h-full w-full outline-none text-sm text-gray-700 px-2 bg-orange-100"
+            type="text"
+            id="search"
+            name="searchTitle"
+            placeholder="Search title..." /> 
+
+        </form>
+        </div>
+        
+        <div class="relative inline-block">
+            <div>
+                <button id="showPopUpFilter" type="button">
+                    <svg width="34" height="24" viewBox="0 0 49 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-2 mt-2">
+                        <path d="M14.1594 4.24951H44.6378H14.1594Z" fill="white"/>
+                        <path d="M14.1594 4.24951H44.6378" stroke="#FEFADD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 4.2748L4.0254 4.24658L4 4.2748Z" fill="white"/>
+                        <path d="M4 4.2748L4.0254 4.24658" stroke="#FEFADD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 19.514L4.0254 19.4858L4 19.514Z" fill="white"/>
+                        <path d="M4 19.514L4.0254 19.4858" stroke="#FEFADD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 34.7533L4.0254 34.7251L4 34.7533Z" fill="white"/>
+                        <path d="M4 34.7533L4.0254 34.7251" stroke="#FEFADD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.1594 19.4888H44.6378H14.1594Z" fill="white"/>
+                        <path d="M14.1594 19.4888H44.6378" stroke="#FEFADD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.1594 34.728H44.6378H14.1594Z" fill="white"/>
+                        <path d="M14.1594 34.728H44.6378" stroke="#FEFADD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                </button>
+            </div>
+
+            <div class="absolute hidden right-0 z-10 mt-5 w-56 origin-top-right rounded-md bg-orange-100 border-4 border-yellow-900 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="modalFilter">
+                <div class="py-1" role="none">
+                  <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                  <p class=" ml-2 text-yellow-900">Search filtered by (only can choose one)</p>
+                  <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                  
+                    <div class="inline-flex items-center">
+                        <label
+                        class="relative flex items-center p-3 rounded-full cursor-pointer"
+                        for="author">
+                        <input
+                            id="author"
+                            type="checkbox"
+                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-4 border-yellow-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:border-yellow-900 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:bg-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
+                        />
+                        <div class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3.5 w-3.5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            ></path>
+                            </svg>
+                        </div>
+                        </label>
+                        <label
+                        class="mr-5 text-yellow-900 cursor-pointer select-none"
+                        for="author"
+                        >
+                        Author
+                        </label> 
+                    </div>      
+                    <div class="inline-flex items-center">
+                        <label
+                        class="relative flex items-center p-3 rounded-full cursor-pointer"
+                        for="category">
+                        <input
+                            id="category"
+                            type="checkbox"
+                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-4 border-yellow-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:border-yellow-900 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:bg-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
+                        />
+                        <div class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-3.5 w-3.5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-width="1"
+                            >
+                            <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                            ></path>
+                            </svg>
+                        </div>
+                        </label>
+                        <label
+                        class="mr-5 text-yellow-900 cursor-pointer select-none"
+                        for="category"
+                        >
+                        Category
+                        </label> 
+                    </div>   
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div>
+        {% if search %}
+        <div id="data_book" class="flex flex-wrap justify-center py-5 px-4 grow-0 w-100">
+            {% for book in books %}
+            {% if book.is_borrowed %}
+            <div class="relative px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
+        
+                <div class=" px-20 pt-4">
+                    <img src="{{book.image_link}}" alt="no image">
+                </div>
+                <div>
+                    <div class= "data pr-1 pt-2 tag">
+                        <h1 class="truncate">{{book.title}}</h1>
+                    
+                    </div>
+                    <p class=" data pt-3 text-sm pb-2 text-rose-600">Not Available</p>
+                
+                    <div class="w-full pb-2">
+                        <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded " id="buttonDetails" type="button">
+                            Details
+                        </button>
+                    </div>
+                
+                    <div class="w-full pb-2">
+                        <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded">
+                            <a href = "../review/${item.pk}">
+                                Review
+                            </a>
+                        </button>
+                    </div>
+                </div>
+        
+        
+            </div>    
+            {% else %}  
+            <div class="relative px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
+        
+                <div class=" px-20 pt-4">
+                    <img src="{{book.image_link}}" alt="no image">
+                </div>
+                <div>
+                    <div class= "data pr-1 pt-2 tag">
+                        <h1 class="truncate">{{book.title}}</h1>
+                    
+                    </div>
+                    <p class=" data pt-3 text-sm pb-2 text-green-600">Available</p>
+                
+                    <div class="w-full pb-2">
+                        <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded " id="buttonDetails" type="button">
+                            Details
+                        </button>
+                    </div>
+                
+                    <div class="w-full pb-2">
+                        <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded">
+                            Review
+                        </button>
+                    </div>
+                </div>
+        
+        
+            </div> 
+            {% endif %}
+            {% endfor %}
+            
+        </div>
+        {% for book in books %}
+            {% if book.is_borrowed %}
+            <div class="rounded shadow-lg bg-amber-500 h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-opacity-50 hidden" id="detailsBuku">
+                <div class="px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
+                    <h3 class="data text-2xl pb-4 pt-3">Book Details</h3>
+                    <div class="text-center">
+                        <div class="px-20 pt-4 inline-block">
+                            <img src="{{book.image_link}}" alt="no image">
+                        </div>
+                    </div>
+                    <div class="flex flex-row pb-6">
+                        <div class="text-center">
+                            <div class="pb-5 text-center">
+                                <h2 class="data text-lg text-center">{{book.title}}</h2>
+                            </div>
+                        <div class="pb-5 text-left">
+                            <h3 class="dec font-medium text-sm px-2">{{book.description}}</h3>
+                        </div>
+                        <div class="text-center">
+                            <p class = "dec font-bold text-left mb-2 ml-2 text-sm"> Detail </p>
+                            <table class="dec font-semibold text-sm text-justify ml-2">
+                                <tr>
+                                    <td>
+                                        <h3>Author:</h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="ml-2">{{book.author}}</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3 >Published Date:</h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="ml-2">{{book.date_published}}</h3>
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td>
+                                        <h3>Category:</h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="ml-2">{{book.category}}</h3>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+        
+                    </div>
+                    </div>
+                    <div class="flex flex-row justify-center w-full pb-4">
+                        <div class="mr-3">
+                            <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" id="backButton">
+                                Back
+                            </button>
+                        </div>
+                        <div class="ml-3">
+                            <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" id="borrowButton">
+                                Not Available
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            {% else %}
+            <div class="rounded shadow-lg bg-amber-500 h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-opacity-50 hidden" id="detailsBuku">
+                <div class="px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
+                    <h3 class="data text-2xl pb-4 pt-3">Book Details</h3>
+                    <div class="text-center">
+                        <div class="px-20 pt-4 inline-block">
+                            <img src="{{book.image_link}}" alt="no image">
+                        </div>
+                    </div>
+                    <div class="flex flex-row pb-6">
+                        <div class="text-center">
+                            <div class="pb-5 text-center">
+                                <h2 class="data text-lg text-center">{{book.title}}</h2>
+                            </div>
+                        <div class="pb-5 text-left">
+                            <h3 class="dec font-medium text-sm px-2">{{book.description}}</h3>
+                        </div>
+                        <div class="text-center">
+                            <p class = "dec font-bold text-left mb-2 ml-2 text-sm"> Detail </p>
+                            <table class="dec font-semibold text-sm text-justify ml-2">
+                                <tr>
+                                    <td>
+                                        <h3>Author:</h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="ml-2">{{book.author}}</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3 >Published Date:</h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="ml-2">{{book.date_published}}</h3>
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td>
+                                        <h3>Category:</h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="ml-2">{{book.category}}</h3>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+        
+                    </div>
+                    </div>
+                    <div class="flex flex-row justify-center w-full pb-4">
+                        <div class="mr-3">
+                            <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" id="backButton">
+                                Back
+                            </button>
+                        </div>
+                        <div class="ml-3">
+                            <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" id="borrowButtonSearch">
+                                Borrow Book
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        {% else %}
+        <div id="data_books" class="flex flex-wrap justify-center py-5 px-4 grow-0 w-100" >
+            
+        </div>
+        
+
+        {% endif %}  
+    </div>
+
+</div>
+
+<div class="rounded shadow-lg bg-amber-500 h-screen w-full fixed left-0 top-0 flex justify-center items-center bg-opacity-50 hidden" id="detail-buku"></div>
+
+<script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+// Menambahkan event listener untuk setiap checkbox
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            // Membatalkan pilihan pada checkbox lain
+            checkboxes.forEach(otherCheckbox => {
+                if (otherCheckbox !== this) {
+                    otherCheckbox.checked = false;
+                }
+            });
+        }
+    });
+});
+
+$(document).ready(function() {
+            $("#showPopUpFilter").click(function() {
+                $("#modalFilter").toggleClass("hidden"); // Menggunakan toggleClass untuk mengganti class 'hidden'
+            });
+            $("#author, #category").on('change',function(){
+                let author = $("#author").is(":checked");
+                let category = $("#category").is(":checked");
+
+                if(author){
+                    $("#search").attr("placeholder", "Search author...");
+                    $("#search").attr("name", "searchAuthor")
+                } else if(category){
+                    $("#search").attr("placeholder", "Search category...");
+                    $("#search").attr("name", "searchCategory")
+                } else {
+                    $("#search").attr("placeholder", "Search title...");
+                    $("#search").attr("name", "searchTitle")
+                }
+            });
+            $("#search").keypress(function(e){
+                if(e.which === 13){
+                    event.preventDefault();
+                    $("#searchForm").submit();
+         
+                }
+            }); 
+                $("#buttonDetails").click(function() {
+                $("#detailsBuku").show(); 
+            });
+                $("#backButton").click(function() {
+                $("#detailsBuku").hide(); 
+            });
+        });
+    
+
+
+async function getProducts() {
+    return fetch("{% url 'catalog:get_books_json' %}").then((res) => res.json())
+}
+
+async function refreshProducts(){
+    const product = await getProducts()
+    document.getElementById("data_books").innerHTML = ""
+    let htmlString = ""
+    product.forEach((item) => {
+        if (item.fields.is_borrowed) {
+            htmlString += `<div class="relative px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
+            
+            <div class=" px-20 pt-4">
+                <img src="${item.fields.image_link}" alt="no image">
+            </div>
+            <div>
+                <div class= "data pr-1 pt-2 tag">
+                    <h1 class="truncate">${item.fields.title}</h1>
+                
+                </div>
+                <p class=" data pt-3 text-sm pb-2 text-rose-600">Not Available</p>
+            
+                <div class="w-full pb-2">
+                <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" onclick="detailsProduct('${item.fields.image_link}',
+                    '${item.fields.title.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.description.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.author.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.date_published.replace(/'/g, "\\'").replace(/"/g, '&quot;')}',
+                    '${item.fields.rating.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.category.replace(/'/g, "\\'").replace(/"/g, '&quot;')}',
+                    '${item.pk}', '${item.fields.is_borrowed}')">
+                    Details
+                </button>
+            </div>
+            
+                <div class="w-full pb-2">
+                    <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded">
+                        <a href = "../review/${item.pk}">
+                        Review
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>      
+        `
+        } else {
+            htmlString += `<div class="relative px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
+            
+            <div class=" px-20 pt-4">
+                <img src="${item.fields.image_link}" alt="no image">
+            </div>
+            <div>
+                <div class= "data pr-1 pt-2 tag">
+                    <h1 class="truncate">${item.fields.title}</h1>
+                
+                </div>
+                <p class=" data pt-3 text-sm pb-2 text-emerald-500">Available</p>
+            
+                <div class="w-full pb-2">
+                <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" onclick="detailsProduct('${item.fields.image_link}',
+                    '${item.fields.title.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.description.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.author.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.date_published.replace(/'/g, "\\'").replace(/"/g, '&quot;')}',
+                    '${item.fields.rating.replace(/'/g, "\\'").replace(/"/g, '&quot;')}', 
+                    '${item.fields.category.replace(/'/g, "\\'").replace(/"/g, '&quot;')}',
+                    '${item.pk}', '${item.fields.is_borrowed}')">
+                    Details
+                </button>
+            </div>
+            
+                <div class="w-full pb-2">
+                    <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded">
+                        <a href = "../review/${item.pk}">
+                            Review
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>      
+        `
+        }
+    })
+    document.getElementById("data_books").innerHTML = htmlString
+}
+
+async function getUserData() {
+    return fetch("{% url 'user_profile:get_user_json' %}").then((res) => res.json())
+}
+
+async function detailsProduct(image_link, title, desc, author, publish_date, rating, category, id, is_borrowed) {
+        const user = await getUserData()
+        document.getElementById('detail-buku').innerHTML = ""
+        htmlString = ` 
+        <div class="px-2 flex flex-col rounded-lg shadow-md w-100 m-6 overflow-hidden text-center bg-orange-100 border-4 border-yellow-900">
+            <h3 class="data text-2xl pb-4 pt-3">Book Details</h3>
+            <div class="text-center">
+                <div class="px-20 pt-4 inline-block">
+                    <img src="${image_link}" alt="no image">
+                </div>
+            </div>
+            <div class="flex flex-row pb-6">
+                <div class="text-center">
+                    <div class="pb-5">
+                        <h2 class="data text-lg">${title}</h2>
+                    </div>
+                <div class="pb-5 text-left">
+                    <h3 class="dec font-medium text-sm px-2"><t/>${desc}</h3>
+                </div>
+                <div class="text-center">
+                    <p class = "dec font-bold text-left mb-2 ml-2 text-sm"> Detail </p>
+                    <table class="dec font-semibold text-sm text-justify ml-2">
+                        <tr>
+                            <td>
+                                <h3>Author:</h3>
+                            </td>
+                            <td>
+                                <h3 class="ml-2">${author}</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 >Published Date:</h3>
+                            </td>
+                            <td>
+                                <h3 class="ml-2">${publish_date}</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3>Category:</h3>
+                            </td>
+                            <td>
+                                <h3 class="ml-2">${category}</h3>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+
+            </div>
+            </div>
+            <div class="flex flex-row justify-center w-full pb-4">
+                <div class="mr-3">
+                    <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" onclick="backButton()">
+                        Back
+                    </button>
+                </div>
+                <div class="ml-3">
+                    <button class="data text-yellow-900 w-40 border-4 border-yellow-900 rounded" id="borrowButton" onclick="borrowBook(${id})">
+                        Borrow Book
+                    </button>
+                </div>
+            </div>
+            `
+            document.getElementById('detail-buku').innerHTML = htmlString
+
+            if(user.user_type == 'ADMIN' && is_borrowed != 'true'){
+                const borrowButton = document.getElementById('borrowButton');
+                borrowButton.innerHTML = 'Delete Book';
+                borrowButton.setAttribute('onclick', `deleteBook(${id})`);
+            } else if(user.user_type == 'ADMIN') {
+                const borrowButton = document.getElementById('borrowButton');
+                borrowButton.innerHTML = 'Not Available';
+                borrowButton.setAttribute('onclick', 'deleteFail()');
+            } else if(user.user_type == 'MEMBER' && is_borrowed == 'true'){
+                const borrowButton = document.getElementById('borrowButton');
+                borrowButton.innerHTML = 'Not Available';
+                borrowButton.setAttribute('onclick', 'handleBorrowFail()');
+            } else if(user.user_type == 'MEMBER'){
+                const borrowButton = document.getElementById('borrowButton');
+            }else{
+                const borrowButton = document.getElementById('borrowButton');
+                borrowButton.innerHTML = 'Not Available';
+                borrowButton.setAttribute('onclick', 'handleBorrowFail()');
+            }
+        
+        const popUp = document.getElementById('detail-buku')
+        popUp.classList.remove('hidden')
+    }
+
+    async function backButton(){
+        const popUp = document.getElementById('detail-buku')
+        popUp.classList.add('hidden')
+    }
+
+    async function handleBorrowFail(){
+        alert("This book is currently not available or you need to login first")
+    }
+
+    function borrowBook(id){
+        const url = `borrow-book/${id}`
+        const popUp = document.getElementById('detail-buku')
+        fetch(url, {
+            method: "GET",
+        }).then(refreshProducts);
+        popUp.classList.add('hidden')
+        return false;
+    }
+
+    function deleteFail(){
+        alert("This book is currently borrowed, you cannot delete it for now.")
+    }
+
+    function deleteBook(id){
+        console.log("cobaa")
+        const url = `delete-book/${id}`
+        const popUp = document.getElementById('detail-buku')
+        fetch(url, {
+            method: "GET",
+        }).then(refreshProducts);
+        popUp.classList.add('hidden')
+        return false;
+    }
+
+
+refreshProducts()
+
+</script>
+
+{% endblock %}

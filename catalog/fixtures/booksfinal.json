@@ -1,0 +1,1402 @@
+[
+  {
+    "pk": 1,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Juvenile Fiction",
+      "author": "Franz Kafka",
+      "date_published": "2016-07-19",
+      "image_link": "http://books.google.com/books/content?id=AUtFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=AUtFDwAAQBAJ&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=1&source=gbs_api",
+      "rating": "N/A",
+      "title": "Proses",
+      "description": "Di apartemennya, Josef K tiba-tiba ditangkap dua petugas. K yang merasa tak punya kesalahan pun kebingungan. Ia ditangkap dan diajukan ke pengadilan. Kejanggalan demi kejanggalan mulai terjadi. Saat di ‘ruang sidang’, K menemukan orang-orang yang dibayar untuk tepuk tangan dan berteriak. Proses sidang pun berlarut-larut. Pertemuan K dengan empat perempuan menambah pelik kasus yang tengah ia hadapi. Kebobrokan mental para petugas pengadilan menambah parah situasi. Apakah K akhirnya akan lolos dari jeratan hukum dan masuk penjara? Proses adalah novel karya Franz Kafka, salah satu penulis besar abad XX. Novel ini ditulis Kafka pada kurun 1914-1915 namun terbit pertama kali pada 1925. Buku ini diterjemahkan langsung dari bahasa Jerman ke bahasa Indonesia oleh Sigit Susanto, dieditori oleh penulis Eka Kurniawan dan Ika Yuliana Kurniasih."
+    }
+  },
+  {
+    "pk": 2,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Yann Martel",
+      "date_published": "2017-07-10",
+      "image_link": "http://books.google.com/books/content?id=seI8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=seI8DwAAQBAJ&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=2&source=gbs_api",
+      "rating": "N/A",
+      "title": "Kisah Pi (Life Of Pi)",
+      "description": "Pada tanggal 21 Juni 1977, kapal barang Tsimtsum berlayar dari Madras menuju Canada. Pada bulan Juli, kapal itu tenggelam di Samudra Pasifik. Hanya satu sekoci berhasil diturunkan, membawa penumpang seekor hyena, seekor zebra yang kakinya patah, seekor orang-utan betina, seekor harimau Royal Bengal seberat 225 kg, dan Pi––anak lelaki India berusia 16 tahun. Selama lebih dari tujuh bulan sekoci itu terombang-ambing di Samudra Pasifik yang biru dan ganas. Di samudra inilah sebagian Kisah Pi berlangsung. Kisah yang luar biasa, penuh keajaiban, dan seperti ucapan salah satu tokoh di dalamnya, kisah ini akan membuat orang percaya pada Tuhan"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Juvenile Fiction",
+      "author": "Fyodor Dostoyevsky",
+      "date_published": "2016-08-22",
+      "image_link": "http://books.google.com/books/content?id=ktRCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=ktRCDwAAQBAJ&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=3&source=gbs_api",
+      "rating": "N/A",
+      "title": "Catatan dari Bawah Tanah",
+      "description": "Catatan dari Bawah Tanah membisikkan suara manusia yang telah menarik diri dari lingkungan masyarakat setelah mengorbankan cinta dan bakatnya. Karya sastra yang menyoroti relung-relung kejiwaan secara falsafi ini menampilkan tokoh seorang pemuda yang peka, yang merasakan penolakan dari lingkungan kehidupannya, padahal ia merasa lebih unggul dalam inteligensi. Karena kehilangan daya untuk mencintai dan dicintai, ia pun mengobarkan cita-citanya dengan tujuan despotisme. Fyodor Mikhailovitsy Dostoyevski dilahirkan pada 11 November 1821. Ia anak seorang dokter tentara. Sepeninggal ibunya, ia pindah ke St. Petersburg untuk mengikuti pendidikan teknik permesinan militer. Setahun bekerja pada Dinas Teknik Permesinan Angkatan Darat, ia lantas mencurahkan bakatnya pada kesusastraan. Buku karangannya yang terkenal, di antaranya, Si Miskin, Si Kembar, Tuan Proklarchin, Maling Jujur yang kemudian dikembangkan menjadi Kejahatan dan Hukuman, Malam Putih, Impian Pamanku, Si Edan, dan Karamazov Bersaudara."
+    }
+  },
+  {
+    "pk": 4,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Juvenile Nonfiction",
+      "author": "Yudi Latif",
+      "date_published": "2016-01-11",
+      "image_link": "http://books.google.com/books/content?id=bL48DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=bL48DwAAQBAJ&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=4&source=gbs_api",
+      "rating": "5",
+      "title": "Negara Paripurna (Cover Baru)",
+      "description": "“Sangatlah melegakan dan membanggakan bahwa dalam keterpurukan yang sedang dialami oleh bangsa kita, muncul seorang intelektual muda, Yudi Latif, yang mampu menjabarkan dan memperkaya Pancasila sampai pada akar-akar sejarahnya. Buku ini patut disebarluaskan dan dijadikan bacaan wajib bagi setiap warga negara Indonesia.” –Kwik Kian Gie– Ekonom, Penggerak Pendidikan dan Mantan Menteri Koordinator Perekonomian “Buku ini menunjukkan posisi dan kelas Yudi Latif sebagai intelektual-aktivis yang memiliki panggilan moral-intelektual tinggi untuk memantapkan Pancasila sebagai jati diri bangsa Indonesia dengan pendekatan ilmiah. Saya yakin buku ini akan menjadi karya klasik yang selalu bisa jadi rujukan siapa pun yang ingin mengenal dan mendalami jati diri bangsa Indonesia. Buku ini wajib dimiliki dan dibaca oleh para aktivis sosial, politisi, dan penyelenggara pemerintahan.” –Prof. Dr. Komaruddin Hidayat– Mantan Rektor UIN Syarif Hidayatullah Jakarta “Dalam buku Negara Paripurna ini, Yudi Latif tidak hanya menunjukkan keluasan pengetahuan namun juga kejernihan dan ketajaman seorang intelektual merdeka yang dilahirkan bangsa ini. Membaca buku ini, kita disadarkan bahwa para pendiri bangsa, dengan keluasan wawasan, ketulusan niat, kesungguhan mencapai yang terbaik serta tanggung jawabnya kepada nusa dan bangsa, telah mewariskan kepada kita suatu dasar falsafah dan pandangan hidup negara yang begitu visioner. Sebuah buku yang bisa menjadi lentera untuk memandu bangsa ini keluar dari kegelapan dan keterpurukan.” –Prof. Dr. Ahmad Syafii Maarif– Mantan Ketua Umum PP Muhammadiyah dan Pendiri Maarif Institute “Yudi Latif mampu menafsirkan Pancasila secara kontekstual dan sarat dengan napas pluralisme dan inklusivisme. Ketuhanan Yang Maha Esa dia ‘reword’ menjadi Ketuhanan yang Berkebudayaan. Pancasila menjadi begitu hidup! Buku ini sungguh wajib dibaca oleh berbagai kalangan profesi, dihayati, dan kemudian kita jalani dalam kehidupan sehari-hari.” –Sudhamek AWS– Ketua Majelis Buddhayana Indonesia"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Young Adult Fiction",
+      "author": "George Orwell",
+      "date_published": "2021-12-29",
+      "image_link": "http://books.google.com/books/content?id=9-BWEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=9-BWEAAAQBAJ&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=5&source=gbs_api",
+      "rating": "N/A",
+      "title": "Classics: Terpuruk dan Melarat di Paris dan London (Down and Out in Paris and London)",
+      "description": "Sebelum menjadi pengarang terkenal lewat buku Animal Farm dan 1984, George Orwell pernah hidup miskin di dua kota besar—Paris dan London. Di Paris, dia menjadi tukang cuci piring, dan di London, sambil mencari pekerjaan, dia banyak bergaul dengan gelandangan dan orang-orang jalanan, dan tinggal di rumah-rumah penampungan. Dengan narasi yang jujur dan seringkali humoris, buku semi autobiografi ini mengisahkan kehidupan Orwell pada masa-masa sulit sebagai orang melarat dan berbagai masalah yang mesti dihadapinya."
+    }
+  },
+  {
+    "pk": 6,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Political Science",
+      "author": "Klaus Schwab",
+      "date_published": "2019-05-20",
+      "image_link": "http://books.google.com/books/content?id=HWKhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=HWKhDwAAQBAJ&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=6&source=gbs_api",
+      "rating": "N/A",
+      "title": "Revolusi Industri Keempat",
+      "description": "Revolusi industri keempat telah mengubah cara kita hidup, bekerja, dan berhubungan dengan yang lain. Dalam hal skala, cakupan, serta kompleksitasnya, revolusi industri keempat ini belum pernah dialami umat manusia sebelumnya. Teknologi yang berkembang dalam revolusi industri keempat menggabungkan dunia fisik, digital, dan biologis, yang di satu sisi membuka peluang besar untuk kemajuan, tetapi di sisi lain juga memunculkan potensi bahaya yang tidak kecil. Revolusi ini memaksa kita untuk memikirkan ulang bagaimana negara dapat berkembang, bagaimana organisasi menciptakan nilai, dan bahkan apa artinya menjadi manusia. Klaus Schwab, sebagai pendiri dan Ketua Eksekutif Forum Ekonomi Dunia (World Economic Forum), telah berkecimpung dalam berbagai persoalan global selama lebih dari 40 tahun. Setelah mengamati langsung bagaimana para pemimpin dunia menavigasi revolusi digital, Schwab yakin bahwa kita sedang berada di awal periode yang menantang. Dalam buku ini, Schwab menunjukkan karakter kunci dari teknologi-teknologi terkini dan menyoroti peluang serta dilema yang ditimbulkannya. Lebih penting lagi, Schwab mengeksplorasi bagaimana kita dapat mengontrol revolusi industri keempat. Schwab menguraikan bagaimana bentuk-bentuk baru kolaborasi, yang disertai narasi bersama yang positif, dapat membentuk revolusi industri keempat yang memberikan manfaat bagi semua. Jika kita mengambil tanggung jawab bersama untuk membentuk masa depan, di mana inovasi dan teknologi dapat menjadi pelayan bagi masyarakat, kita akan mengangkat kemanusiaan ke tingkat kesadaran moral yang baru."
+    }
+  },
+  {
+    "pk": 7,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Sir Arthur Conan Doyle, P. James Macaluso",
+      "date_published": "2016-08-31",
+      "image_link": "http://books.google.com/books/content?id=6swhDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=ysLYDwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=3&source=gbs_api",
+      "rating": "3.5",
+      "title": "The Adventure of the Speckled Band",
+      "description": "Sherlock Holmes, the world’s “only unofficial consulting detective”, was first introduced to readers in A Study in Scarlet published by Sir Arthur Conan Doyle in 1887. It was with the publication of The Adventures of Sherlock Holmes, however, that the master sleuth grew tremendously in popularity, later to become one of the most beloved literary characters of all time. In this book series, the short stories comprising The Adventures of Sherlock Holmes have been amusingly illustrated using only Lego® brand minifigures and bricks. The illustrations recreate, through custom designed Lego models, the composition of the black and white drawings by Sidney Paget that accompanied the original publication of these adventures appearing in The Strand Magazine from July 1891 to June 1892. Paget’s iconic illustrations are largely responsible for the popular image of Sherlock Holmes, including his deerstalker cap and Inverness cape, details never mentioned in the writings of Conan Doyle. This uniquely illustrated collection, which features some of the most famous and enjoyable cases investigated by Sherlock Holmes and his devoted friend and biographer Dr. John H. Watson, including A Sandal in Bohemia and The Red-Headed League, is sure to delight Lego enthusiasts, as well as fans of the Great Detective, both old and new. LEGO® is a trademark of the LEGO Group of Companies. The LEGO Group has not been involved in nor has it in any other way licensed or authorised the publication of this book. THE ADVENTURE OF THE SPECKLED BAND: A distraught young woman named Helen Stoner arrives at Baker Street early one morning to ask Sherlock Holmes for help as she fears that her life is being threatened by her stepfather, Dr. Grimesby Roylott. At Stoke Moran, the estate where Miss Stoner and her stepfather live, Holmes carefully inspects the recent, but unnecessary, repairs to the manor-house and in doing so exposesamurderous plot."
+    }
+  },
+  {
+    "pk": 8,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Business & Economics",
+      "author": "Philip Kotler, Hermawan Kartajaya, Iwan Setiawan",
+      "date_published": "2019-01-07",
+      "image_link": "http://books.google.com/books/content?id=i-qGDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=i-qGDwAAQBAJ&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=8&source=gbs_api",
+      "rating": "N/A",
+      "title": "Marketing 4.0: Bergerak dari Tradisional ke Digital",
+      "description": "“Dewasa ini, dunia teknologi bergerak begitu cepat sehingga setiap perubahan mempercepat perubahan berikutnya. Menjadi penting di lingkungan seperti itu untuk memiliki garis dasar dan titik referensi guna membantu pemasar menemukan jalan ke depan. Marketing 4.0 menawarkan pengetahuan baru yang akan menjadi titik awal dan sumber daya yang berharga untuk semua orang yang mencoba menciptakan serta memahami masa depan digital dan mobile.” —Howard Tullman, CEO Chicagoland Entrepreneurial Center/1871 “Internet dan IT mengubah pemasaran secara radikal. Buku ini adalah pembuka mata bagi pemasaran di era baru.” —Hermann Simon, Pendiri dan Ketua Simon-Kucher & Partners “Tidak ada orang yang sedemikian paham akan pemasaran seperti Phil Kotler. Kemampuannya untuk mengidentifikasi serta menafsirkan tren dan perkembangan pemasaran yang baru sungguh mencengangkan. Sekali lagi, dengan Marketing 4.0, Kotler dan rekan penulisnya membantu melakukan sesuatu yang belum pernah dilakukan sebelumnya untuk kesuksesan pemasaran. Ini sudah pasti merupakan buku pemasaran yang HARUS Anda baca tahun ini.” —Kevin Lane Keller, E.B. Osborn Profesor Pemasaran, Tuck School of Business “Panduan yang hebat pada transformasi yang sudah tampak di ufuk dan menantang praktik pemasaran. Pemasar yang bingung akan belajar cara menavigasi pergeseran kekuatan dan kemungkinan konektivitas digital dan mengubahnya menjadi keuntungan.” —George S. Day, Geoffrey T. Boisi Profesor Emeritus, Wharton School of the University of Pennsylvania"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "American fiction",
+      "author": "Arthur Golden",
+      "date_published": 2003,
+      "image_link": "http://books.google.com/books/content?id=fV3gjsaie1cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=fV3gjsaie1cC&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=9&source=gbs_api",
+      "rating": "N/A",
+      "title": "Memoar seorang geisha",
+      "description": "N/A"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Indonesian fiction",
+      "author": "Arswendo Atmowiloto",
+      "date_published": 2003,
+      "image_link": "http://books.google.com/books/content?id=CXxIpo-ZgBMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=CXxIpo-ZgBMC&printsec=frontcover&dq=inpublisher:gramedia&hl=&cd=10&source=gbs_api",
+      "rating": "5",
+      "title": "Senopati Pamungkas",
+      "description": "N/A"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "2021-01-01",
+      "image_link": "http://books.google.com/books/content?id=FFFHDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=FFFHDgAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=10&source=gbs_api",
+      "rating": "5",
+      "title": "The Adventure of the Red Circle",
+      "description": "The Adventure of the Red Circle' is one of the stories among 56 Sherlock Holmes adventure by Arthur Conan Doyle."
+    }
+  },
+  {
+    "pk": 12,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Sir Arthur Conan Doyle",
+      "date_published": "2020-09-28",
+      "image_link": "http://books.google.com/books/content?id=zPf8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=zPf8DwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=18&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Adventure of the Solitary Cyclist",
+      "description": "iolet Smith, a young music teacher, reached out to Holmes. She was worried because she noticed someone stalking her on her everyday bicycle ride to the train. Holmes took up the case and found out that Violet’s life had changed drastically a few months ago when two friends of her distant uncle arrived in Surrey. Could this event have something to do with Violet’s stalker? Is there some connection between the sudden interest that both of them had in Violet and the deteriorating health of her uncle? \"The Adventure of the Solitary Cyclist\" is a part of \"The Return of Sherlock Holmes\". Sir Arthur Conan Doyle (1859-1930) was born in Scotland and studied medicine at the University of Edinburgh. After his studies, he worked as a ship’s surgeon on various boats. During the Second Boer War, he was an army doctor in South Africa. When he came back to the United Kingdom, he opened his own practice and started writing crime books. He is best known for his thrilling stories about the adventures of Sherlock Holmes. He published four novels and more than 50 short-stories starring the detective and Dr Watson, and they play an important role in the history of crime fiction. Other than the Sherlock Holmes series, Doyle wrote around thirty more books, in genres such as science-fiction, fantasy, historical novels, but also poetry, plays, and non-fiction."
+    }
+  },
+  {
+    "pk": 13,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Enid Blyton",
+      "date_published": "2022-08-01",
+      "image_link": "http://books.google.com/books/content?id=znd_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=znd_EAAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=20&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Island of Adventure",
+      "description": "DigiCat Publishing presents to you this special edition of \"The Island of Adventure\" by Enid Blyton. DigiCat Publishing considers every written word to be a legacy of humankind. Every DigiCat book has been carefully reproduced for republishing in a new modern format. The books are available in print, as well as ebooks. DigiCat hopes you will treat this work with the acknowledgment and passion it deserves as a classic of world literature."
+    }
+  },
+  {
+    "pk": 14,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Explorers",
+      "author": "Sir Anthony Sherley",
+      "date_published": "2005",
+      "image_link": "http://books.google.com/books/content?id=PMAf3kLOQecC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=PMAf3kLOQecC&printsec=frontcover&dq=intitle:adventure&hl=&cd=23&source=gbs_api",
+      "rating": "N/A",
+      "title": "Sir Anthony Sherley and His Persian Adventure",
+      "description": "As well as including Sherley's own account of his journey into Persia in 1600, this valuable edition includes the main works dealing with Anthony Sherley and his life. Original inaccessible texts are reprinted in full and the critical bibliographical introduction provides excellent guidance for the understanding of the various sources (and their merits and limitations), and the context in which Sherley's own account was composed. When first published in 1933, Sherley's narrative (1613) had never before been reprinted."
+    }
+  },
+  {
+    "pk": 15,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "016-03-31",
+      "image_link": "http://books.google.com/books/content?id=bxLcCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=bxLcCwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=24&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Adventure of Wisteria Lodge - A Sherlock Holmes Short Story",
+      "description": "Danger lurks around every corner in this classic Sherlock Holmes mystery. Join the legendary detective and his trusted companion, Doctor Watson, as they investigate the grisly crimes at Wisteria Lodge. When Mr. Grazia, a wealthy Spanish businessman, receives an invitation to stay at the luxurious Wisteria Lodge, he has no idea of the danger that awaits him. The lodge's idyllic surroundings hide a grisly crime, and he soon finds himself at the mercy of an unknown assailant. With the help of Doctor Watson, Sherlock Holmes sets out to solve the mystery and bring the culprit to justice. First published in 1908, ‘The Adventure of Wisteria Lodge’ is a suspenseful tale by the master of detective fiction, Arthur Conan Doyle. This edition features a specially commissioned introduction."
+    }
+  },
+  {
+    "pk": 16,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "2020-09-28",
+      "image_link": "http://books.google.com/books/content?id=pPb8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=pPb8DwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=27&source=gbs_api",
+      "rating":  "N/A",
+      "title": "The Adventure of the Yellow Face",
+      "description": "Grant Munro reaches out to Holmes because his wife, Effie, is acting strangely lately. First she asked his husband for a large amount of money without explaining why. Then she began going out during the night. One day Munro followed his wife to a neighboring cottage where he lost track of her. What is Effie hiding from her husband? Will Holmes find the answers? Will Munro’s family stay together or it will fall apart? \"The Adventure of the Yellow Face\" is a part of \"The Memoirs of Sherlock Holmes\". Sir Arthur Conan Doyle (1859-1930) was born in Scotland and studied medicine at the University of Edinburgh. After his studies, he worked as a ship’s surgeon on various boats. During the Second Boer War, he was an army doctor in South Africa. When he came back to the United Kingdom, he opened his own practice and started writing crime books. He is best known for his thrilling stories about the adventures of Sherlock Holmes. He published four novels and more than 50 short-stories starring the detective and Dr Watson, and they play an important role in the history of crime fiction. Other than the Sherlock Holmes series, Doyle wrote around thirty more books, in genres such as science-fiction, fantasy, historical novels, but also poetry, plays, and non-fiction."
+    }
+  },
+  {
+    "pk": 17,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "2021-03-01",
+      "image_link": "http://books.google.com/books/content?id=w0UeEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=w0UeEAAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=29&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Adventure of the Norwood Builder",
+      "description": "John McFarlane, a young solicitor, got himself in a mess which could cost him his future. He is afraid that he is about to be arrested for the murder of Jonas Oldacre, a builder who he met a day earlier. The only option McFarlene sees is to get to Holmes and Watson fastest possible before the police find him. Just as John manages to explain his situation to the two friends, the police burst in the room and arrest him. Is John’s life doomed to failure or Holmes and Watson will save the day? \"The Adventure of the Norwood Builder\" is a part of \"The Return of Sherlock Holmes\". Sir Arthur Conan Doyle (1859-1930) was born in Scotland and studied medicine at the University of Edinburgh. After his studies, he worked as a ship’s surgeon on various boats. During the Second Boer War, he was an army doctor in South Africa. When he came back to the United Kingdom, he opened his own practice and started writing crime books. He is best known for his thrilling stories about the adventures of Sherlock Holmes. He published four novels and more than 50 short-stories starring the detective and Dr Watson, and they play an important role in the history of crime fiction. Other than the Sherlock Holmes series, Doyle wrote around thirty more books, in genres such as science-fiction, fantasy, historical novels, but also poetry, plays, and non-fiction."
+    }
+  },
+  {
+    "pk": 18,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Sir Arthur Conan Doyle, P. James Macaluso",
+      "date_published": "2016-09-01",
+      "image_link": "http://books.google.com/books/content?id=xCAcDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=xCAcDQAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=12&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Adventure of the Copper Beeches",
+      "description": "Sherlock Holmes, the world’s “only unofficial consulting detective”, was first introduced to readers in A Study in Scarlet published by Sir Arthur Conan Doyle in 1887. It was with the publication of The Adventures of Sherlock Holmes, however, that the master sleuth grew tremendously in popularity, later to become one of the most beloved literary characters of all time. In this book series, the short stories comprising The Adventures of Sherlock Holmes have been amusingly illustrated using only Lego® brand minifigures and bricks. The illustrations recreate, through custom designed Lego models, the composition of the black and white drawings by Sidney Paget that accompanied the original publication of these adventures appearing in The Strand Magazine from July 1891 to June 1892. Paget’s iconic illustrations are largely responsible for the popular image of Sherlock Holmes, including his deerstalker cap and Inverness cape, details never mentioned in the writings of Conan Doyle. This uniquely illustrated collection, which features some of the most famous and enjoyable cases investigated by Sherlock Holmes and his devoted friend and biographer Dr. John H. Watson, including A Sandal in Bohemia and The Red-Headed League, is sure to delight Lego enthusiasts, as well as fans of the Great Detective, both old and new. LEGO® is a trademark of the LEGO Group of Companies. The LEGO Group has not been involved in nor has it in any other way licensed or authorised the publication of this book. THE ADVENTURE OF THE COPPER BEECHES: A young lady named Violet Hunter visits Baker Street seeking the advice of Sherlock Holmes on whether to accept a job as governess which commands a generous salary, but with some peculiar conditions. Two weeks after ultimately accepting the position, Miss Hunter calls Holmes to The Copper Beaches, an estate in Hampshire, to look into the singular, and at times terrifying, behaviour of her employers."
+    }
+  },
+  {
+    "pk": 19,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Arthur Conan Doyle",
+      "date_published": "2020-09-28",
+      "image_link": "http://books.google.com/books/content?id=OPf8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=OPf8DwAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=32&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Adventure of the Three Gables",
+      "description": "The criminal Steve Dixie comes to 221B Baker Street, warning Sherlock Holmes not set a foot in Harlow unless he wants trouble with him. But Holmes has just received a message from Mrs. Maberley, who has been living at the Three Gables in Harlow for almost two years. Her son has just died in Rome and someone is trying to buy her out of her house with a most unconventional contract; Holmes is set on helping her. \"The Adventure of the Three Gables\" is part of \"The Case-Book of Sherlock Holmes\". Sir Arthur Conan Doyle (1859-1930) was born in Scotland and studied medicine at the University of Edinburgh. After his studies, he worked as a ship’s surgeon on various boats. During the Second Boer War, he was an army doctor in South Africa. When he came back to the United Kingdom, he opened his own practice and started writing crime books. He is best known for his thrilling stories about the adventures of Sherlock Holmes. He published four novels and more than 50 short-stories starring the detective and Dr Watson, and they play an important role in the history of crime fiction. Other than the Sherlock Holmes series, Doyle wrote around thirty more books, in genres such as science-fiction, fantasy, historical novels, but also poetry, plays, and non-fiction."
+    }
+  },
+  {
+    "pk": 20,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Mahābhārata",
+      "author": "R. A. Kosasih",
+      "date_published": 2000,
+      "image_link": "N/A",
+      "preview_link": "http://books.google.co.id/books?id=UVY5zQEACAAJ&dq=inpublisher:Elex+Media+Komputindo&hl=&cd=10&source=gbs_api",
+      "rating": "N/A",
+      "title": "Mahabharata",
+      "description": "N/A"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Judith Lewis Herman",
+      "date_published": "2015-07-07",
+      "image_link": "http://books.google.com/books/content?id=TVw4DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=TVw4DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=1&source=gbs_api",
+      "rating": "N/A",
+      "title": "Trauma and Recovery",
+      "description": "In this groundbreaking book, a leading clinical psychiatrist redefines how we think about and treat victims of trauma. A \"stunning achievement\" that remains a \"classic for our generation.\" (Bessel van der Kolk, M.D., author of The Body Keeps the Score). Trauma and Recovery is revered as the seminal text on understanding trauma survivors. By placing individual experience in a broader political frame, Harvard psychiatrist Judith Herman argues that psychological trauma is inseparable from its social and political context. Drawing on her own research on incest, as well as a vast literature on combat veterans and victims of political terror, she shows surprising parallels between private horrors like child abuse and public horrors like war. Hailed by the New York Times as \"one of the most important psychiatry works to be published since Freud,\" Trauma and Recovery is essential reading for anyone who seeks to understand how we heal and are healed."
+    }
+  },
+  {
+    "pk": 22,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Social Science",
+      "author": "Jackson Lears",
+      "date_published": "1995-11-03",
+      "image_link": "http://books.google.com/books/content?id=BvE4DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=BvE4DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=2&source=gbs_api",
+      "rating": "N/A",
+      "title": "Fables Of Abundance",
+      "description": "Fables of Abundance ranges from the traveling peddlers of early modern Europe to the twentieth-century American corporation, exploring the ways that advertising collaborated with other cultural institutions to produce the dominant aspirations and anxieties in the modern United States."
+    }
+  },
+  {
+    "pk": 23,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Business & Economics",
+      "author": "Thomas Sowell",
+      "date_published": "2014-12-02",
+      "image_link": "http://books.google.com/books/content?id=rVc4DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=rVc4DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=3&source=gbs_api",
+      "rating": "N/A",
+      "title": "Basic Economics",
+      "description": "The bestselling citizen's guide to economics Basic Economics is a citizen's guide to economics, written for those who want to understand how the economy works but have no interest in jargon or equations. Bestselling economist Thomas Sowell explains the general principles underlying different economic systems: capitalist, socialist, feudal, and so on. In readable language, he shows how to critique economic policies in terms of the incentives they create, rather than the goals they proclaim. With clear explanations of the entire field, from rent control and the rise and fall of businesses to the international balance of payments, this is the first book for anyone who wishes to understand how the economy functions. This fifth edition includes a new chapter explaining the reasons for large differences of wealth and income between nations. Drawing on lively examples from around the world and from centuries of history, Sowell explains basic economic principles for the general public in plain English."
+    }
+  },
+  {
+    "pk": 24,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Science",
+      "author": "Ernst Mayr",
+      "date_published": "2008-03-18",
+      "image_link": "http://books.google.com/books/content?id=uNY4DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=uNY4DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=4&source=gbs_api",
+      "rating": "N/A",
+      "title": "What Evolution Is",
+      "description": "At once a spirited defense of Darwinian explanations of biology and an elegant primer on evolution for the general reader, What Evolution Is poses the questions at the heart of evolutionary theory and considers how our improved understanding of evolution has affected the viewpoints and values of modern man. Science Masters Series"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Social Science",
+      "author": "Clifford Geertz",
+      "date_published": "1973-10-25",
+      "image_link": "http://books.google.com/books/content?id=cAtHAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=cAtHAAAAMAAJ&dq=inpublisher:basic&hl=&cd=5&source=gbs_api",
+      "rating": "5",
+      "title": "Interpretation Of Cultures",
+      "description": "In The Interpretation of Cultures, the most original anthropologist of his generation moved far beyond the traditional confines of his discipline to develop an important new concept of culture. This groundbreaking book, winner of the 1974 Sorokin Award of the American Sociological Association, helped define for an entire generation of anthropologists what their field is ultimately about."
+    }
+  },
+  {
+    "pk": 26,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Cooking",
+      "author": "Mark Pendergrast",
+      "date_published": "2019-07-09",
+      "image_link": "http://books.google.com/books/content?id=Mx6XDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=Mx6XDwAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=6&source=gbs_api",
+      "rating": "N/A",
+      "title": "Uncommon Grounds",
+      "description": "The definitive history of the world's most popular drug Uncommon Grounds tells the story of coffee from its discovery on a hill in ancient Abyssinia to the advent of Starbucks. Mark Pendergrast reviews the dramatic changes in coffee culture over the past decade, from the disastrous \"Coffee Crisis\" that caused global prices to plummet to the rise of the Fair Trade movement and the \"third-wave\" of quality-obsessed coffee connoisseurs. As the scope of coffee culture continues to expand, Uncommon Grounds remains more than ever a brilliantly entertaining guide to the currents of one of the world's favorite beverages."
+    }
+  },
+  {
+    "pk": 27,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Computer-assisted instruction",
+      "author": "Out Of Print",
+      "date_published": "1982-02-04",
+      "image_link": "http://books.google.com/books/content?id=qaYX8_oXmdQC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=qaYX8_oXmdQC&dq=inpublisher:basic&hl=&cd=7&source=gbs_api",
+      "rating": "5",
+      "title": "Mindstorms",
+      "description": "Describes learning environments which allow children to master mathematical concepts through the use of computer assisted instruction."
+    }
+  },
+  {
+    "pk": 28,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Political Science",
+      "author": "James Q. Wilson",
+      "date_published": "2019-08-13",
+      "image_link": "http://books.google.com/books/content?id=LkSUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=LkSUDwAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=8&source=gbs_api",
+      "rating": "N/A",
+      "title": "Bureaucracy",
+      "description": "The classic book on the way American government agencies work and how they can be made to work better -- the \"masterwork\" of political scientist James Q. Wilson (The Economist) In Bureaucracy, the distinguished scholar James Q. Wilson examines a wide range of bureaucracies, including the US Army, the FBI, the CIA, the FCC, and the Social Security Administration, providing the first comprehensive, in-depth analysis of what government agencies do, why they operate the way they do, and how they might become more responsible and effective. It is the essential guide to understanding how American government works."
+    }
+  },
+  {
+    "pk": 29,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Science",
+      "author": "Richard P. Feynman",
+      "date_published": "2015-09-29",
+      "image_link": "http://books.google.com/books/content?id=NIg5DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=NIg5DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=9&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Feynman Lectures on Physics, Vol. II",
+      "description": "The whole thing was basically an experiment,"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Robert M. Axelrod",
+      "date_published": "1984-04-15",
+      "image_link": "http://books.google.com/books/content?id=UertAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=UertAAAAMAAJ&dq=inpublisher:basic&hl=&cd=10&source=gbs_api",
+      "rating": "N/A",
+      "title": "Evolution Of Cooperation",
+      "description": "Author is an alumnus of Evanston Township High School, class of 1961."
+    }
+  },
+  {
+    "pk": 31,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "History",
+      "author": "Jeffrey A. Lockwood",
+      "date_published": "2009-04-28",
+      "image_link": "http://books.google.com/books/content?id=Ews4DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=Ews4DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=11&source=gbs_api",
+      "rating": "N/A",
+      "title": "Locust",
+      "description": "Throughout the nineteenth century, swarms of locusts regularly swept across the continent, turning noon into dusk, demolishing farm communities, and bringing trains to a halt as the crushed bodies of insects greased the rails. In 1876, the U.S. Congress declared the locust \"the single greatest impediment to the settlement of the country.\" From the Dakotas to Texas, from California to Iowa, the swarms pushed thousands of settlers to the brink of starvation, prompting the federal government to enlist some of the greatest scientific minds of the day and thereby jumpstarting the fledgling science of entomology. Over the next few decades, the Rocky Mountain locust suddenly -- and mysteriously -- vanished. A century later, Jeffrey Lockwood set out to discover why. Unconvinced by the reigning theories, he searched for new evidence in musty books, crumbling maps, and crevassed glaciers, eventually piecing together the elusive answer: A group of early settlers unwittingly destroyed the locust's sanctuaries just as the insect was experiencing a natural population crash. Drawing on historical accounts and modern science, Locust brings to life the cultural, economic, and political forces at work in America in the late-nineteenth century, even as it solves one of the greatest ecological mysteries of our time."
+    }
+  },
+  {
+    "pk": 32,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "History",
+      "author": "Fatima Mernissi",
+      "date_published": "2009-03-05",
+      "image_link": "http://books.google.com/books/content?id=tAM4DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=tAM4DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=12&source=gbs_api",
+      "rating": "N/A",
+      "title": "Islam And Democracy",
+      "description": "Is Islam compatible with democracy? Must fundamentalism win out in the Middle East, or will democracy ever be possible? In this now-classic book, Islamic sociologist Fatima Mernissi explores the ways in which progressive Muslims--defenders of democracy, feminists, and others trying to resist fundamentalism--must use the same sacred texts as Muslims who use them for violent ends, to prove different views. Updated with a new introduction by the author written in the wake of the September 11 terrorist attacks on the United States, Islam and Democracy serves as a guide to the players moving the pieces on the rather grim Muslim chessboard. It shines new light on the people behind today's terrorist acts and raises provocative questions about the possibilities for democracy and human rights in the Islamic world. Essential reading for anyone interested in the politics of the Middle East today, Islam and Democracy is as timely now as it was upon its initial, celebrated publication."
+    }
+  },
+  {
+    "pk": 33,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Josef Breuer",
+      "date_published": "2009-06-16",
+      "image_link": "http://books.google.com/books/content?id=Bo44DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=Bo44DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=13&source=gbs_api",
+      "rating": "N/A",
+      "title": "Studies on Hysteria",
+      "description": "The cornerstone of psychoanalysis—and legacy of the landmark Freud/Breuer collaboration—featuring the classic case of Anna O. and the evolution of the cathartic method, in the definitive Strachey translation. Re-packaged for the contemporary audience with what promises to be an unconventional foreword by Irvin Yalom, the novelist and psychiatrist who imagined Breuer in When Nietzsche Wept."
+    }
+  },
+  {
+    "pk": 34,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Irvin D. Yalom",
+      "date_published": "2008-08-01",
+      "image_link": "http://books.google.com/books/content?id=LvI4DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=LvI4DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=14&source=gbs_api",
+      "rating": "N/A",
+      "title": "Every Day Gets a Little Closer",
+      "description": "The many thousands of readers of the best-selling Love's Executioner will welcome this paperback edition of an earlier work by Dr. Irvin Yalom, written with Ginny Elkin, a pseudonymous patient whom he treated -- the first book to share the dual reflections of psychiatrist and patient. Ginny Elkin was a troubled young and talented writer whom the psychiatric world had labeled as \"schizoid.\" After trying a variety of therapies, she entered into private treatment with Dr. Irvin Yalom at Stanford University. As part of their work together, they agreed to write separate journals of each of their sessions. Every Day Gets a Little Closer is the product of that arrangement, in which they alternately relate their descriptions and feelings about their therapeutic relationship."
+    }
+  },
+  {
+    "pk": 35,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Technology & Engineering",
+      "author": "Siva Vaidhyanathan",
+      "date_published": "2005-05-11",
+      "image_link": "http://books.google.com/books/content?id=b-84DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=b-84DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=15&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Anarchist in the Library",
+      "description": "From Napster to Total Information Awareness to flash mobs, the debate over information technology in our lives has revolved around a single question: How closely do we want cyberspace to resemble the real world? Siva Vaidhyanathan enters this debate with a seminal insight: While we've been busy debating how to make cyberspace imitate the world, the world has been busy imitating cyberspace. More and more of our social, political, and religious activities are modeling themselves after the World Wide Web.Vaidhyanathan tells us the key information structure of our time, and the key import from cyberspace into the world, is the \"peer-to-peer network.\" Peer-to-peer networks have always existed -- but with the rise of electronic communication, they are suddenly coming into their own. And they are drawing the outlines of a battle for information that will determine much of the culture and politics of our century, affecting everything from society to terrorism, from religion to the latest social fads. The Anarchist in the Library is a radically original look at how this battle defines one of the major fault lines of twenty-first-century civilization."
+    }
+  },
+  {
+    "pk": 36,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Gilles Fauconnier",
+      "date_published": "2003-03-18",
+      "image_link": "http://books.google.com/books/content?id=frmnBiHJ0o4C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=frmnBiHJ0o4C&dq=inpublisher:basic&hl=&cd=16&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Way We Think",
+      "description": "Conceptual blending, say Fauconnier (cognitive science, U. of California-San Diego) and Turner (behavioral sciences, U. of Maryland), is a great mental capacity that in its most advanced, double-scope form, gave human ancestors superiority and allowed them to develop art, science, religion, culture, sophisticated tools, and language. They investigate its principles, dynamics, and role in human life. Annotation copyrighted by Book News Inc., Portland, OR."
+    }
+  },
+  {
+    "pk": 37,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "History",
+      "author": "Ralph D. Sawyer",
+      "date_published": "2011-03-01",
+      "image_link": "http://books.google.com/books/content?id=VLxPDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=VLxPDgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=17&source=gbs_api",
+      "rating": "N/A",
+      "title": "Ancient Chinese Warfare",
+      "description": "The history of China is a history of warfare. Rarely in its 3,000-year existence has the country not been beset by war, rebellion, or raids. Warfare was a primary source of innovation, social evolution, and material progress in the Legendary Era, Hsia dynasty, and Shang dynasty -- indeed, war was the force that formed the first cohesive Chinese empire, setting China on a trajectory of state building and aggressive activity that continues to this day. In Ancient Chinese Warfare, a preeminent expert on Chinese military history uses recently recovered documents and archaeological findings to construct a comprehensive guide to the developing technologies, strategies, and logistics of ancient Chinese militarism. The result is a definitive look at the tools and methods that won wars and shaped culture in ancient China."
+    }
+  },
+  {
+    "pk": 38,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Irvin D. Yalom",
+      "date_published": "2020-03-17",
+      "image_link": "http://books.google.com/books/content?id=CL_VDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=CL_VDwAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=18&source=gbs_api",
+      "rating": "N/A",
+      "title": "Existential Psychotherapy",
+      "description": "The definitive account of existential psychotherapy. First published in 1980, Existential Psychotherapy is widely considered to be the foundational text in its field— the first to offer a methodology for helping patients to develop more adaptive responses to life’s core existential dilemmas. In this seminal work, American psychiatrist Irvin Yalom finds the essence of existential psychotherapy and gives it a coherent structure, synthesizing its historical background, core tenets, and usefulness to the practice. Organized around what Yalom identifies as the four \"ultimate concerns of life\"—death, freedom, isolation, and meaninglessness—the book takes up the meaning of each existential concern and the type of conflict that springs from our confrontation with each. He shows how these concerns are manifest in personality and psychopathology, and how treatment can be helped by our knowledge of them. Drawing from clinical experience, empirical research, philosophy, and great literature, Yalom provides an intellectual home base for those psychotherapists who have sensed the incompatibility of orthodox theories with their own clinical experience, and opens new doors for empirical research. The fundamental concerns of therapy and the central issues of human existence are woven together here as never before, with intellectual and clinical results that have surprised and enlightened generations of readers."
+    }
+  },
+  {
+    "pk": 39,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Education",
+      "author": "Howard Gardner",
+      "date_published": "2011-03-29",
+      "image_link": "http://books.google.com/books/content?id=M-sWBQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=M-sWBQAAQBAJ&dq=inpublisher:basic&hl=&cd=19&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Unschooled Mind",
+      "description": "I like to invoke the image of figure and ground. In any scene, certain elements stand out as figures, as dominant foci, against a less prominent background, which (ideally) supports the central figure. At present, test scores and rankings have become figures, so dominant that they virtually occlude everything else. In my preferred portrait of education, a well-schooled mind becomes the central figure--a mind that truly understands disciplinary ways of thinking and one that also encourages respectful and ethical behavior. All the rest--including the instruments of accountability should be in the backgroud, providing support for that central, powerful image. Why the current ideal of school focuses so much on a certain view of knowledge, transmitted in a certain way, and documented in a certain way, is a question for historians and policy makers: That it has taken this turn is a source of regret to those of us who harbor a different view of knowledge and education."
+    }
+  },
+  {
+    "pk": 40,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Nature",
+      "author": "Thor Hanson",
+      "date_published": "2016-03-08",
+      "image_link": "http://books.google.com/books/content?id=bIrltAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=bIrltAEACAAJ&dq=inpublisher:basic&hl=&cd=20&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Triumph of Seeds",
+      "description": "As seen on PBS's American Spring LIVE, the award-winning author of Buzz and Feathers presents a natural and human history of seeds, the marvels of the plant kingdom \"The genius of Hanson's fascinating, inspiring, and entertaining book stems from the fact that it is not about how all kinds of things grow from seeds"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Daniel C. Dennett",
+      "date_published": "2008-08-04",
+      "image_link": "http://books.google.com/books/content?id=5fE4DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=5fE4DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=21&source=gbs_api",
+      "rating": "N/A",
+      "title": "Kinds Of Minds",
+      "description": "Combining ideas from philosophy, artificial intelligence, and neurobiology, Daniel Dennett leads the reader on a fascinating journey of inquiry, exploring such intriguing possibilities as: Can any of us really know what is going on in someone else's mind? What distinguishes the human mind from the minds of animals, especially those capable of complex behavior? If such animals, for instance, were magically given the power of language, would their communities evolve an intelligence as subtly discriminating as ours? Will robots, once they have been endowed with sensory systems like those that provide us with experience, ever exhibit the particular traits long thought to distinguish the human mind, including the ability to think about thinking? Dennett addresses these questions from an evolutionary perspective. Beginning with the macromolecules of DNA and RNA, the author shows how, step-by-step, animal life moved from the simple ability to respond to frequently recurring environmental conditions to much more powerful ways of beating the odds, ways of using patterns of past experience to predict the future in never-before-encountered situations. Whether talking about robots whose video-camera \"eyes\" give us the powerful illusion that \"there is somebody in there\" or asking us to consider whether spiders are just tiny robots mindlessly spinning their webs of elegant design, Dennett is a master at finding and posing questions sure to stimulate and even disturb."
+    }
+  },
+  {
+    "pk": 42,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Science",
+      "author": "Richard P. Feynman",
+      "date_published": "1996-04-10",
+      "image_link": "http://books.google.com/books/content?id=nQyVtwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=nQyVtwEACAAJ&dq=inpublisher:basic&hl=&cd=22&source=gbs_api",
+      "rating": "N/A",
+      "title": "Six Easy Pieces",
+      "description": "Richard P. Feynman (1918–1988) was widely recognized as the most creative physicist of the post–World War II period. His career was extraordinarily expansive. From his contributions to the development of the atomic bomb a Los Alamos during World War II to his work in quantum electrodynamics, for which he was awarded the Nobel Prize in 1965, Feynman was celebrated for his brilliant and irreverent approach to physics.It was Feynman's outrageous and scintillating method of teaching that earned him legendary status among students and professors of physics. From 1961–1963, Feynman, at the California Institute of Technology, delivered a series of lectures that revolutionized the teaching of physics around the world. Six Easy Pieces, taken from the famous Lectures on Physics, represents the most accessible material from this series. In these six chapters, Feynman introduces the general reader to the following topics: atoms, basic physics, the relationship of physics to other topics, energy, gravitation, and quantum force. With his dazzling and inimitable wit, Feynman presents each discussion without equations or technical jargon.Readers will remember how—using ice water and rubber—Feynman demonstrated with stunning simplicity to a nationally televised audience the physics of the 1986 Challenger disaster. It is precisely this ability—the clear and direct illustration of complex theories—that made Richard Feynman one of the most distinguished educators in the world. Filled with wonderful examples and clever illustrations, Six Easy Pieces is the ideal introduction to the fundamentals of physics by one of the most admired and accessible scientists of our time."
+    }
+  },
+  {
+    "pk": 43,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Jerome Kagan",
+      "date_published": "1994-05-27",
+      "image_link": "http://books.google.com/books/content?id=W7t9AAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=W7t9AAAAMAAJ&dq=inpublisher:basic&hl=&cd=23&source=gbs_api",
+      "rating": "N/A",
+      "title": "Galen's Prophecy",
+      "description": "Nearly two thousand years ago a physician called Galen of Pergamon suggested that much of the variation in human behavior could be explained by an individual's temperament. Since that time, ideas about inborn dispositions have fallen in and out of favor. Based on fifteen years of research, Galen's Prophecy now provides fresh insights into these complex questions, offering startling new evidence to support Galen's ancient classification of melancholic and sanguine adults."
+    }
+  },
+  {
+    "pk": 44,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Political Science",
+      "author": "Robert Axelrod",
+      "date_published": "2006-12-05",
+      "image_link": "http://books.google.com/books/content?id=GxiKtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=GxiKtAEACAAJ&dq=inpublisher:basic&hl=&cd=24&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Evolution of Cooperation",
+      "description": "The Evolution of Cooperation provides valuable insights into the age-old question of whether unforced cooperation is ever possible. Widely praised and much-discussed, this classic book explores how cooperation can emerge in a world of self-seeking egoists-whether superpowers, businesses, or individuals-when there is no central authority to police their actions. The problem of cooperation is central to many different fields. Robert Axelrod recounts the famous computer tournaments in which the \"cooperative\" program Tit for Tat recorded its stunning victories, explains its application to a broad spectrum of subjects, and suggests how readers can both apply cooperative principles to their own lives and teach cooperative principles to others."
+    }
+  },
+  {
+    "pk": 45,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Aromatherapy",
+      "author": "Carol Schiller",
+      "date_published": 2008,
+      "image_link": "http://books.google.com/books/content?id=HMztof1utg4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=HMztof1utg4C&printsec=frontcover&dq=inpublisher:basic&hl=&cd=25&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Aromatherapy Encyclopedia",
+      "description": "The power of essential oils has been recognized for thousands of years. Today, the use of aromatherapy is growing rapidly as greater numbers of people experience the benefits and life-enhancing properties of these precious substances. Aromatic essences can have a direct effect on our health, reduce our stress levels, and enable us to have a better overall outlook on life, as well as improve our relationship with our natural environment. These raw materials are also an important ingredient in perfumes, fragrances, cosmetics, and skin and body care products, and are extensively used for flavoring foods and drinks. Carol Schiller and David Schiller, recognized experts in the field of aromatherapy, have created the most comprehensive reference guide on the market to date. The Aromatherapy Encyclopedia: A Concise Guide to Over 385 Plant Oils includes information on the proper safety and handling of oils, extraction methods, practical everyday uses, documented properties, and methods of use. Chapters detail ancient historical to present-day uses from around the world for carrier oils, essential oils, CO[subscript 2] extracts, absolute oils, and infused oils. This guidebook also provides a convenient category listing of oil properties for quick access, and a useful resource of alphabetically arranged botanical names that cross-reference the common name of each oil. The user-friendly format and writing style of this book can be of great value as an indispensable learning tool for a novice as well as a vital source of information for researchers, formulators, practitioners, nurses, therapists, industry professionals, wholesalers, and retailers. Book jacket."
+    }
+  },
+  {
+    "pk": 46,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Culture",
+      "author": "Clifford Geertz",
+      "date_published": 1975,
+      "image_link": "N/A",
+      "preview_link": "http://books.google.co.id/books?id=5rtAnwEACAAJ&dq=inpublisher:basic&hl=&cd=26&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Interpretation of Cultures",
+      "description": "N/A"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Business & Economics",
+      "author": "Rosabeth Moss Kanter",
+      "date_published": "1993-11-03",
+      "image_link": "http://books.google.com/books/content?id=bb-3AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=bb-3AAAAIAAJ&dq=inpublisher:basic&hl=&cd=27&source=gbs_api",
+      "rating": "N/A",
+      "title": "Men and Women of the Corporation",
+      "description": "In this landmark work on corporate power, especially as it relates to women, Rosabeth Moss Kanter, the distinguished Harvard management thinker and consultant, shows how the careers and self-images of the managers, professionals, and executives, and also those of the secretaries, wives of managers, and women looking for a way up, are determined by the distribution of power and powerlessness within the corporation. This new edition of her award-winning book has a major new afterward in which the author reviews and analyzes how attitudes and practices within the corporate power structure have changed in the 1990s."
+    }
+  },
+  {
+    "pk": 48,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Just war doctrine",
+      "author": "Michael Walzer",
+      "date_published": "1977-12-19",
+      "image_link": "http://books.google.com/books/content?id=du-2AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=du-2AAAAIAAJ&dq=inpublisher:basic&hl=&cd=28&source=gbs_api",
+      "rating": "N/A",
+      "title": "Just And Unjust Wars",
+      "description": "This classic work examines the issues surrounding military theory, war crimes, and the spoils of war from the Athenian attack on Melos to the My Lai massacre."
+    }
+  },
+  {
+    "pk": 49,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Professions",
+      "author": "Donald A. Schon",
+      "date_published": 1983,
+      "image_link": "N/A",
+      "preview_link": "http://books.google.co.id/books?id=ApalAQAACAAJ&dq=inpublisher:basic&hl=&cd=29&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Reflective Practitioner",
+      "description": "N/A"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Science",
+      "author": "Isaac Asimov",
+      "date_published": "1984-11-21",
+      "image_link": "http://books.google.com/books/content?id=zpUIAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=zpUIAAAAIAAJ&dq=inpublisher:basic&hl=&cd=30&source=gbs_api",
+      "rating": "5",
+      "title": "Asimov's New Guide To Science",
+      "description": "Rev. ed. of: Asimov's Guide to science. c1972. Bibliography: p. 885-893. Includes indexes. Scientific terms and developments are described for the layman."
+    }
+  },
+  {
+    "pk": 51,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Social Science",
+      "author": "Anne Fausto-Sterling",
+      "date_published": 2000,
+      "image_link": "http://books.google.com/books/content?id=JilhwkWCvAYC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=JilhwkWCvAYC&dq=inpublisher:basic&hl=&cd=31&source=gbs_api",
+      "rating": "N/A",
+      "title": "Sexing the Body",
+      "description": "Why do some people prefer heterosexual love while others fancy the same sex? Is sexual identity biologically determined or a product of convention? In this brilliant and provocative book, the acclaimed author of Myths of Gender argues that even the most fundamental knowledge about sex is shaped by the culture in which scientific knowledge is produced.Drawing on astonishing real-life cases and a probing analysis of centuries of scientific research, Fausto-Sterling demonstrates how scientists have historically politicized the body. In lively and impassioned prose, she breaks down three key dualisms - sex/gender, nature/nurture, and real/constructed - and asserts that individuals born as mixtures of male and female exist as one of five natural human variants and, as such, should not be forced to compromise their differences to fit a flawed societal definition of normality."
+    }
+  },
+  {
+    "pk": 52,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Robert Jay Lifton",
+      "date_published": "1988-04-12",
+      "image_link": "http://books.google.com/books/content?id=zfH0l08UwusC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=zfH0l08UwusC&dq=inpublisher:basic&hl=&cd=32&source=gbs_api",
+      "rating": "4",
+      "title": "The Nazi Doctors",
+      "description": "Winner of the Los Angeles Times Book Prize With a new preface by the author In his most powerful and important book, renowned psychiatrist Robert Jay Lifton presents a brilliant analysis of the crucial role that German doctors played in the Nazi genocide. Now updated with a new preface, The Nazi Doctors remains the definitive work on the Nazi medical atrocities, a chilling exposé of the banality of evil at its epitome, and a sobering reminder of the darkest side of human nature."
+    }
+  },
+  {
+    "pk": 53,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Human behavior",
+      "author": "Erving Goffman",
+      "date_published": "1971-09-30",
+      "image_link": "http://books.google.com/books/content?id=AW3bAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=AW3bAAAAIAAJ&dq=inpublisher:basic&hl=&cd=33&source=gbs_api",
+      "rating": "N/A",
+      "title": "Relations In Public",
+      "description": "N/A"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Cultural pluralism)",
+      "author": "Michael Walzer",
+      "date_published": "1983-04-12",
+      "image_link": "http://books.google.com/books/content?id=eNIjAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=eNIjAQAAIAAJ&dq=inpublisher:basic&hl=&cd=34&source=gbs_api",
+      "rating": "N/A",
+      "title": "Spheres Of Justice",
+      "description": "The distinguished political philosopher and author of the widely acclaimed Just and Unjust Wars analyzes how society distributes not just wealth and power but other social "
+    }
+  },
+  {
+    "pk": 55,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Language Arts & Disciplines",
+      "author": "Lawrence Lessig",
+      "date_published": "2000-07-13",
+      "image_link": "http://books.google.com/books/content?id=2YH71OCHZ_8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=2YH71OCHZ_8C&dq=inpublisher:basic&hl=&cd=35&source=gbs_api",
+      "rating": "N/A",
+      "title": "Code",
+      "description": "There's a common belief that cyberspace cannot be regulated—that it is, in its very essence, immune from the government's (or anyone else's) control. Code argues that this belief is wrong. It is not in the nature of cyberspace to be unregulable"
+    }
+  },
+  {
+    "pk": 56,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Social Science",
+      "author": "Claude Levi-Strauss",
+      "date_published": "2008-08-05",
+      "image_link": "http://books.google.com/books/content?id=yv43DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=yv43DgAAQBAJ&printsec=frontcover&dq=inpublisher:basic&hl=&cd=36&source=gbs_api",
+      "rating": "N/A",
+      "title": "Structural Anthropology",
+      "description": "The “structural method,” first set forth in this epoch-making book, changed the very face of social anthropology. This reissue of a classic will reintroduce readers to Lévi-Strauss's understanding of man and society in terms of individuals—kinship, social organization, religion, mythology, and art."
+    }
+  },
+  {
+    "pk": 57,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Social Science",
+      "author": "Robert Fishman",
+      "date_published": "1987-11-03",
+      "image_link": "http://books.google.com/books/content?id=yi2zAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=yi2zAAAAIAAJ&dq=inpublisher:basic&hl=&cd=37&source=gbs_api",
+      "rating": "N/A",
+      "title": "Bourgeois Utopias",
+      "description": "A noted urban historian traces the story of the suburb from its origins in nineteenth-century London to its twentieth-century demise in decentralized cities like Los Angeles."
+    }
+  },
+  {
+    "pk": 58,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Business & Economics",
+      "author": "Thomas Sowell",
+      "date_published": "2007-04-03",
+      "image_link": "http://books.google.com/books/content?id=C2y7AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=C2y7AAAAIAAJ&dq=inpublisher:basic&hl=&cd=38&source=gbs_api",
+      "rating": "N/A",
+      "title": "Basic Economics 3rd Ed",
+      "description": "Basic Economics is a citizen's guide to economics-for those who want to understand how the economy works but have no interest in jargon or equations. Sowell reveals the general principles behind any kind of economy-capitalist, socialist, feudal, and so on. In readable language, he shows how to critique economic policies in terms of the incentives they create, rather than the goals they proclaim. With clear explanations of the entire field, from rent control and the rise and fall of businesses to the international balance of payments, this is the first book for anyone who wishes to understand how the economy functions."
+    }
+  },
+  {
+    "pk": 59,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Psychology",
+      "author": "Howard Gardner",
+      "date_published": "1982-12-07",
+      "image_link": "http://books.google.com/books/content?id=HVDuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=HVDuAAAAMAAJ&dq=inpublisher:basic&hl=&cd=39&source=gbs_api",
+      "rating": "N/A",
+      "title": "Art Mind & Brain",
+      "description": "In a provocative discussion of the sources of human creativity, Gardner explores all aspects of the subject, from the young child's ability to learn a new song through Mozart's conceiving a complete s"
+    }
+  },
+  {
+    "pk": 60,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Political Science",
+      "author": "Robert Nozick",
+      "date_published": 1974,
+      "image_link": "http://books.google.com/books/content?id=nGPuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=nGPuAAAAMAAJ&dq=inpublisher:basic&hl=&cd=40&source=gbs_api",
+      "rating": "N/A",
+      "title": "Anarchy, State, and Utopia",
+      "description": "Presents arguments in support of the author's libertarian views on the nature of the state, its legitimate functions, and its justifications."
+    }
+  },
+  {
+    "pk": 61,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Boy Candra",
+      "date_published": "2018-01-01",
+      "image_link": "http://books.google.com/books/content?id=3vpqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=3vpqDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=1&source=gbs_api",
+      "rating": "N/A",
+      "title": "Pada Senja yang Membawamu Pergi",
+      "description": "Apakah kau ingat saat kita berjanji untuk saling membahagiakan? Katamu, setiap perasaan yang tumbuh adalah sebuah alasan. Alasan bahwa hati patut dipertahankan. Namun, cinta saja belum cukup menyatukan mimpi yang berbeda di antara kita. Dan, menepati janji ternyata tak semudah mengucapkannya. Apakah kau juga tahu bahwa kenangan bersamamu selalu muncul tiba-tiba? Tak ada satu perasaan pun yang mampu kusembunyikan ketika mengingatmu. Namun, aku sadar. Harapan-harapan yang dulu sempat memudar, harus kubangun lagi dan kumulai. Bukankah tak salah bila aku ingin mengulang rasa yang dulu pernah ada? Meski kutahu, rasa itu tak akan benar-benar sama. Karena, cinta bukan tentang bagaimana rasa itu jatuh, melainkan bagaimana ia tetap bisa hidup di dada yang rapuh. Buku Persembahan Penerbit GagasMedia #18thGagasMedia"
+    }
+  },
+  {
+    "pk": 62,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Jack London",
+      "date_published": "2014-02-01",
+      "image_link": "http://books.google.com/books/content?id=G5-BAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=G5-BAwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=2&source=gbs_api",
+      "rating": "N/A",
+      "title": "White Fang",
+      "description": "Ia adalah anjing separuh serigala. Ia menghirup udara kali pertama dalam sebuah gua di antartika yang membeku, di tengah-tengah bencana kelaparan yang mengambil nyawa semua saudara sekandungnya. Di dunianya yang sunyi, ia harus mengikuti aturan keras di Utara—membunuh, atau terbunuh. Kemudian, manusia menangkap ia dan ibunya. Manusia mengajari White Fang untuk membenci. Ia dipukuli, disiksa, dan diserang. Ia dibeli, dijual lagi, lalu dilatih membunuh dalam permainan berdarah. Ia tidak pernah bersentuhan dengan kebaikan. Ia menjadi makhluk berbahaya yang dikuasai amarah. Hingga, seorang pria melihat hal lain dalam diri White Fang. Satu-satunya orang yang cukup berani untuk menawari White Fang kehidupan baru. Namun, apakah seekor serigala tahu arti kata “harapan”? Dapatkah makhluk yang penuh kebencian mengenal kata “cinta”? *** Sebuah buku novel fiksi persembahan penerbit Gagasmedia -GagasMedia-"
+    }
+  },
+  {
+    "pk": 63,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Self-Help",
+      "author": "Gita Savitri Devi",
+      "date_published": "2017-11-01",
+      "image_link": "http://books.google.com/books/content?id=wdA7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=wdA7DwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=3&source=gbs_api",
+      "rating": "5",
+      "title": "Rentang Kisah",
+      "description": "Apa tujuan hidupmu? Kalau itu ditanyakan kepadaku saat remaja, aku pasti nggak bisa menjawabnya. Jangankan tujuan hidup, cara belajar yang benar saja aku nggak tahu. Setiap hari aku ke sekolah lebih suka bertemu teman-teman dan bermain kartu. Aku nggak tahu apa yang menjadi passion-ku. Aku sekadar menjalani apa yang ibu pilihkan untukku—termasuk melanjutkan kuliah di Jerman. Tentu bukan keputusan mudah untuk hidup mandiri di negara baru. Selama 7 tahun tinggal di Jerman, banyak kendala aku alami"
+    }
+  },
+  {
+    "pk": 64,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "M Aan Mansyur",
+      "date_published": "2015-06-01",
+      "image_link": "http://books.google.com/books/content?id=ZhIhCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=ZhIhCgAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=4&source=gbs_api",
+      "rating": "N/A",
+      "title": "Lelaki Terakhir yang Menangis di Bumi",
+      "description": "“Kau percaya masa depan masih memiliki kita?” “Akan selalu ada kita. Aku percaya.” NANTI tidak bisa begitu saja menoleh dan pergi dari masa lalu meskipun ia sudah berkali-kali melakukannya. Terakhir, ia mengucapkan selamat tinggal dan menikah dengan lelaki yang kini berbaring di makamnya itu. Aku tidak pernah ingin mengucapkan selamat tinggal. Aku tidak pernah mau beranjak dari masa lalu. Masa lalu, bagiku, hanyalah masa depan yang pergi sementara. Namun, ada saatnya ingatan akan kelelahan dan meletakkan masa lalu di tepi jalan. Angin akan datang menerbangkannya ke penjuru tiada. Menepikannya ke liang lupa. Dengan menuliskannya, ke dalam buku, misalnya, masa lalu mungkin akan berbaring abadi di halaman-halamannya. Maka, akhirnya, kisah ini kuceritakan juga. *** Sebuah buku novel tentang kisah percintaan yang romantis, persembahan penerbit Gagasmedia -GagasMedia-"
+    }
+  },
+  {
+    "pk": 65,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Kaka HY",
+      "date_published": "2018-01-01",
+      "image_link": "http://books.google.com/books/content?id=yElTDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=yElTDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=5&source=gbs_api",
+      "rating": "N/A",
+      "title": "Back to Love",
+      "description": "Kepergian kekasih bisa membuat seseorang seolah jauh dari perputaran dunia. Kosong. Sepi. Begitulah hari-hari tersisa bagi ia yang patah hati, begitu juga Abid. Meski sang kekasih sudah lama meninggalkannya, entah sampai kapan, Abid masih menginginkannya kembali. Sosok Aline tak pernah berhenti mengisi hatinya. Aline kembali dengan cara yang tak terduga, bersama Fay perempuan yang kerap bersikap tak acuh dengan sekitarnya. Namun, Fay tahu hanya dirinyalah yang mampu mengakhiri kisah Abid dan Aline yang seharusnya telah lama usai. Kisah yang membuat mereka seperti tersesat. Back to Love akan membawamu pada kisah dua hati yang tak mungkin lagi bersatu. Menawarkan cerita bahwa bagaimanapun kau menolak, hidup terus berjalan. Begitu juga dirimu, yang harus menguatkan hati menghapus jejak yang ia tinggalkan. Buku Persembahan Penerbit GagasMedia"
+    }
+  },
+  {
+    "pk": 66,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Alvi Syahrin",
+      "date_published": "2018-12-01",
+      "image_link": "http://books.google.com/books/content?id=_ErhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=_ErhDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=6&source=gbs_api",
+      "rating": "N/A",
+      "title": "Jika Kita Tak Pernah Jatuh Cinta",
+      "description": "Jika kita tak pernah jatuh cinta, kita tak akan banyak belajar dari masa lalu. Bagaimana ia mengajari kita untuk tetap kuat ketika hati terserak. Kita tak akan menjadi tangguh. Jika kita tak pernah jatuh cinta, mungkinkah kita bisa lebih menghargai diri sendiri dengan melepaskan dia yang selalu menyakiti? Jika kita tak pernah jatuh cinta, akankah kita pernah merasa berharganya waktu bersama dengan seseorang yang kita cinta? Terkadang, cinta memang sakit dan rumit. Namun, bisa pula membuat bahagia dan senyum tidak ada habisnya. Keduanya bersimpangan, tetapi pasti kita rasakan. Jika Kita Tak Pernah Jatuh Cinta dituliskan untukmu yang pernah merasa terpuruk karena cinta, lalu bangkit lagi disebabkan hal yang sama. Buku persembahan penerbit GagasMedia #DirumahAja"
+    }
+  },
+  {
+    "pk": 67,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Dee",
+      "date_published": "2006-02-01",
+      "image_link": "http://books.google.com/books/content?id=EP6WCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=EP6WCgAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=7&source=gbs_api",
+      "rating": "N/A",
+      "title": "Filosofi kopi",
+      "description": "Pemaknaan kembali kembali kopi, Buddha, Herman, surat tak tarkirimkan, cinta sejenis yang manis atau apa pun, membuktikan Dee tetap memesona. Kalau kemarin panitia Nobel sastra masih maju mundur dengan nama Pramoedya, sekarang bisa memaknai kembali, melalui karya-karya ini. Ruang cerpen yang sempit dijadikannya wahana yang intens namun tidak sesak untuk mengungkapkan apa yang tak selalu mampu dikatakan. Lewat refleksi dan monolog interior yang digarap dengan cakap dan jernih. pembaca diajaknya menjelajahi halaman-halaman kecil dalam cerpen yang kini dijadikannya semesta kehidupan. Ruang cerpen yang sempit dijadikannya wahana yang intens namun tidak sesak untuk mengungkapkan apa yang tak selalu mampu dikatakan. Lewat refleksi dan monolog interior yang digarap dengan cakap dan jernih. pembaca diajaknya menjelajahi halaman-halaman kecil dalam cerpen yang kini dijadikannya semesta kehidupan. -GagasMedia-"
+    }
+  },
+  {
+    "pk": 68,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Orizuka",
+      "date_published": "2016-04-01",
+      "image_link": "http://books.google.com/books/content?id=RZM9DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=RZM9DAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=8&source=gbs_api",
+      "rating": "N/A",
+      "title": "Apa Pun Selain Hujan",
+      "description": "Wira membenci hujan. Hujan mengingatkannya akan sebuah memori buruk, menyakitinya.... Agar bisa terus melangkah, Wira meninggalkan semuanya. Ia meninggalkan kota tempat tinggalnya. Meninggalkan mimpi terbesarnya. Bahkan, meninggalkan perempuan yang disayanginya. Namun, seberapa pun jauh langkah Wira meninggalkan mimpi, mimpi itu justru semakin mendekat. Saat ia sedang berusaha keras melupakan masa lalu, saat itulah ia bertemu Kayla. Pertemuan itu mengubah segalanya. Sebuah novel tentang melepaskan mimpi di bawah hujan. Tentang cinta yang diam-diam tumbuh bersama luka. Juga tentang memaafkan diri sendiri. *** Persembahan penerbit Gagasmedia"
+    }
+  },
+  {
+    "pk": 69,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Raditya Dika",
+      "date_published": "2017-08-01",
+      "image_link": "http://books.google.com/books/content?id=SnEyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=SnEyDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=9&source=gbs_api",
+      "rating": "N/A",
+      "title": "Manusia Setengah Salmon",
+      "description": "Nyokap memandangi penjuru kamar gue. Dia diam sebentar, tersenyum, lalu bertanya, ‘Kamu takut ya? Makanya belom tidur?’ ‘Enggak, kenapa harus takut?’ ‘Ya, siapa tahu rumah baru ini ada hantunya, hiiiiii...,’ kata Nyokap, mencoba menakut-nakuti. ‘Enggak takut, Ma,’ jawab gue. ‘Kikkikikiki.’ Nyokap mencoba menirukan suara kuntilanak, yang malah terdengar seperti ABG kebanyakan ngisep lem sewaktu hendak photobox. ‘Kikikikikiki.’ ‘Aku enggak ta—’ ‘KIKIKIKIKIKIKIKI!’ Nyokap makin menjadi. ‘Ma,’ kata gue, ‘kata orang, kalo kita malem-malem niruin ketawa kuntilanak, dia bisa dateng lho.’ ‘JANGAN NGOMONG GITU, DIKA!’ Nyokap sewot. ‘Kamu durhaka ya nakut-nakutin orang tua kayak gitu! Awas, ya, kamu, Dika!’ ‘Lah, tadi yang nakut-nakutin siapa, yang ketakutan siapa.’ Manusia Setengah Salmon adalah kumpulan tulisan komedi Raditya Dika. Sembilan belas bab di dalam bercerita tentang pindah rumah, pindah hubungan keluarga, sampai pindah hati. Simak juga bab berisi tulisan galau, observasi ngawur, dan lelucon singkat khas Raditya Dika. GagasMedia"
+    }
+  },
+  {
+    "pk": 70,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Rintik Sedu",
+      "date_published": "2018-10-01",
+      "image_link": "http://books.google.com/books/content?id=lafdDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=lafdDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=10&source=gbs_api",
+      "rating": "N/A",
+      "title": "Buku Rahasia Geez",
+      "description": "Ann, kamu hanya seorang perempuan yang baru kutemui beberapa menit saja, tapi sebagian besar dari diriku sudah berhasil kamu curi. Kamu berbeda, dan hal itu akan selalu jadi jawaban untuk setiap pertanyaan, termasuk kenapa aku menyayangimu. Aku hanya ingin membuatmu bahagia. Kalau ternyata hasilnya tidak seperti yang kuperkirakan, berarti itu bukan rencanaku, Ann. Buku Rahasia Geez adalah ungkapan kejujuran Geez sejak awal mengenal Ann—perempuan yang ditemui di acara pensi sekolah, yang sangat ingin memiliki rumah pohon dengan teropong bintang. Bukan hanya tulisan, di buku ini juga terdapat ilustrasi manis yang akan membuatmu mengerti perasaan Geez kepada Ann. Bersiaplah untuk jatuh hati kepada Dewa Kejutan yang membuat Ann susah move on. Buku persembahan penerbit GagasMedia ﻿#16thGagasMedia #Dirumahaja"
+    }
+  },
+  {
+    "pk": 71,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Wulanfadi",
+      "date_published": "2017-10-01",
+      "image_link": "http://books.google.com/books/content?id=uq45DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=uq45DwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=11&source=gbs_api",
+      "rating": "N/A",
+      "title": "Story of Seth",
+      "description": "“Gue terlalu nerima lo apa adanya. Ya, apa adanya. Gue nerima lo jadi cowok terjorok yang pernah gue tahu. Gue nerima lo sebagai gamer, alergi bunga, dan nggak pernah ingat tanggal annive kita.” Bila kita selalu menerima baik-buruk seseorang, bisa membuat kita jenuh, bukan? Begitu juga yang terjadi kepada Seth dan Mourina. Perlahan, tetapi pasti, kebosanan mulai mengikis keinginan mereka untuk terus bersama. Bagi keduanya, sebelum bisa menyebutnya cinta, kebersamaan mereka perlu diuji. Namun, ujian yang semula dianggap biasa dan mudah dilewati justru membawa hati mereka semakin jauh. Perlahan, rasa di antara keduanya tak lagi utuh. Keberadaan orang lain di sisi mereka membuat jarak semakin bersiasat memisahkan. Seth dan Mourina tak pernah menyangka, menuntut pembuktian cinta bisa begini rumit. Tak boleh salah mengartikan tanda-tanda. Sekali saja mereka keliru, kisahnya akan sampai pada awal yang baru. Namun, jika mengikuti kata hati, mereka akan menemukan jalan kembali. _______ Buku terbitan penerbit GagasMedia"
+    }
+  },
+  {
+    "pk": 72,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Teguh Faluvie",
+      "date_published": "2023-01-01",
+      "image_link": "http://books.google.com/books/content?id=km2qEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=km2qEAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=12&source=gbs_api",
+      "rating": "N/A",
+      "title": "Ningsih",
+      "description": "Sebuah misteri turun temurun. Putra Dwika Wijaya harus menanggung beban atas dosa lama yang telah terjadi di dalam keluarganya, sebuah kejadian puluhan tahun yang ternyata memengaruhi kelangsungan sebuah pabrik tahu. Sebuah kisah tragedi yang Putra harus mengungkapkannya untuk terlepas dari gangguan makhluk tak kasatmata. “Tidak akan pernah berhenti, tidak akan pernah pergi, dia selalu ada untuk membalas apa yang sudah terjadi.” Buku persembahan penerbit GagasMedia #GagasMedia"
+    }
+  },
+  {
+    "pk": 73,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Humor",
+      "author": "Reza Pahlevi",
+      "date_published": "2016-09-01",
+      "image_link": "http://books.google.com/books/content?id=rx4qDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=rx4qDQAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=13&source=gbs_api",
+      "rating": "N/A",
+      "title": "(Ex)perience",
+      "description": "Gue sepertinya kurang beruntung dalam hal yang menyangkut hati. Dari sembilan kali pacaran, tujuh kali gue diselingkuhi. Alasannya pun macam-macam. “Kamu dulu pendiam banget, Za. Boring pacaran sama kamu.” “Kamu dulu nggak punya kendaraan. Aku nggak ada yang jemput.” “Kamu dulu jelek. Aku mau cari yang lebih ganteng.” Semua itu bikin gue belajar untuk mengubah diri. Sekarang gue hiperaktif, mandiri finansial, tapi soal muka… gue nggak bisa berbuat apa-apa. Yang jelas, gue nggak mau nyerah. Apa yang sudah terjadi gue anggap sebagai pengalaman. Saking seringnya patah hati, gue pun punya moto hidup"
+    }
+  },
+  {
+    "pk": 74,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Ashadi Siregar",
+      "date_published": "2004-03-01",
+      "image_link": "http://books.google.com/books/content?id=YheOCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=YheOCgAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=14&source=gbs_api",
+      "rating": "N/A",
+      "title": "Cintaku di kampus biru",
+      "description": "Novel ini adalah salah satu tonggak karya klasik novel pop Indonesia yang tetap abadi sampai saat ini. Pernah difilmkan dengan bintang Roy Martin dan Yenny Rachman, dan kini kembali disinetronkan dengan bintang-bintang muda seperti Dessy Ratnasari dan Indra Brugmann. Ashadi Siregar mulai menulis novel pada 1974. Karya-karya populer lainnya: Kugapai Cintamu, Terminal Cinta Terakhir, Sirkuit Kemelut, jentera Lepas, Sunyi Nirmala. -GagasMedia-"
+    }
+  },
+  {
+    "pk": 75,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Alvi Syahrin",
+      "date_published": "2021-01-01",
+      "image_link": "http://books.google.com/books/content?id=rYJKEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=rYJKEAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=15&source=gbs_api",
+      "rating": "N/A",
+      "title": "Jika Kita Tak Pernah Baik-baik Saja (Free Chapter)",
+      "description": "Jika Kita Tak Pernah Baik-Baik Saja Bagaimana caranya aku bisa mencintai diriku ketika yang kulakukan kepada diriku adalah kesalahan-kesalahan bodoh tanpa hentinya? Jika Kita Tak Pernah Baik-Baik Saja Susah mencintai seseorang yang terus melakukan kesalahan, lantas bagaimana kalau diri ini yang terus melakukan kesalahan? How can I even start loving myself? Jika Kita Tak Pernah Baik-Baik Saja Lalu, bagaimana caranya aku bisa menerima segala kekuranganku? Bagaimana aku bisa menjadi diriku sendiri kalau aku sendiri tidak suka diriku sendiri? Kita pernah mengalami krisis, tak pernah baik-baik saja menerima keadaan dan menyalahkan diri sendiri. Mengarungi hidup adalah tentang seni mencintai—termasuk mencintai diri sendiri dengan segala kekurangan, dan berusaha memperbaikinya. Jika Kita Tak Pernah Baik-Baik Saja, mengajak kita mengenal arti kecewa dan bahagia demi mencintai diri sendiri dan sesuatu yang lebih dari segalanya. Buku persembahan penerbit GagasMedia #Agromedia"
+    }
+  },
+  {
+    "pk": 76,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Comics & Graphic Novels",
+      "author": "Daniel Ahmad",
+      "date_published": "2022-01-01",
+      "image_link": "http://books.google.com/books/content?id=m3mXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=m3mXEAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=16&source=gbs_api",
+      "rating": "N/A",
+      "title": "Pesta Bunuh Diri",
+      "description": "Menuju barat. Kabarnya di barat sana ada kehidupan yang lebih baik. Tidak ada lagi hutan yang gelap dan menyeramkan. Itu pun kalau benar. Menuju timur. Di timur arah Telaga Merah tidak ada apa-apa lagi. Hanya hutan dan hutan yang dijumpai. Beberapa orang pernah ke sana dan tidak pernah kembali. Menuju utara. Pantai lepas itu berada di sana. Orang-orang dari hutan mencoba lari menuju pulau lain. Sayangnya, di sana tidak menjanjikan kebebasan. Harapan adalah satu-satunya jalan keluar bagi peliknya kehidupan manusia. Entah itu menuju barat, timur, utara, atau selatan, berbekal harapan, tak ada yang sia-sia. Namun, bagi warga Desa Taman Kembar, secercah harapan itu sulit hadir. Hidup tidak menjanjikan apa-apa bagi mereka. Di hutan itu mereka hidup dari keterbatasan pangan, minim pengetahuan, dan gangguan binatang. Lebih dari itu, ada banyak sosok misterius yang menghantui dan datang berkunjung tanpa permisi ke desa. Mereka yang hadir saat malam itu mengundang penduduk desa ke sebuah tempat entah di mana—pesta singkat yang selalu berakhir sebelum sempat dimulai. Hanya yang berkeras kepala atas hidup bisa melewatinya. Buku persembahan penerbit GagasMedia #GagasMedia"
+    }
+  },
+  {
+    "pk": 77,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Bernard Batubara",
+      "date_published": "2019-12-01",
+      "image_link": "http://books.google.com/books/content?id=qY7DDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=qY7DDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=17&source=gbs_api",
+      "rating": "N/A",
+      "title": "Espresso [free chapter]",
+      "description": "Hai, kehidupan! Terkadang aku bertanya-tanya mengapa kau keras sekali terhadapku . Sering menempatkanku di posisi sulit. Padahal, kau tahu, kan, bahwa gadis seumurku seharusnya masih menikamti akhir masa remaja? Hai, cinta! Aku tak banyak punya momen bersamamu. Namun, izinkan aku bertanya satu hal"
+    }
+  },
+  {
+    "pk": 78,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Helga Rif",
+      "date_published": "2015-05-01",
+      "image_link": "http://books.google.com/books/content?id=WychCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=WychCgAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=18&source=gbs_api",
+      "rating": "N/A",
+      "title": "Di Bawah Langit yang Sama",
+      "description": "Di kotaku, gadis-gadis berkebaya meriung merangkai bunga. Menyanyikan kidung. Juga membicarakan cinta, yang ternyata tak semudah yang kita sangka. Seperti cintaku, yang kini kupertanyakan di tepi pura dekat taman bunga. Dia dan aku sungguh berbeda meski berada di bawah langit yang sama. “Kau seperti kupu-kupu,” katanya, “yang sempurna dan cantik warnanya.” Seharusnya, aku bahagia mendengarnya. Namun, aku sadar, sayapku tak bisa terbang bebas. Cinta tumbuh di tempat yang jauh, sementara sayapku terikat di sini. Di pulau para dewa, yang menyimpan banyak rindu untuk memanggilku kembali. Yang nyanyian ombak di pantainya mampu mendamaikan risau di hati. Langit masih memiliki warna yang sama, aku dan dia berada di bawahnya. Kami mengirimkan cinta dan doa. Namun, diam-diam juga saling bertanya, apakah doa kami akan sampai ke tempat yang sama? Jika kau pernah mendengar kisah serupa, kabarkan kisahnya ke Pulau Dewata"
+    }
+  },
+  {
+    "pk": 79,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Geraldy Tan",
+      "date_published": "2018-01-01",
+      "image_link": "http://books.google.com/books/content?id=gfVaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=gfVaDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=19&source=gbs_api",
+      "rating": "N/A",
+      "title": "Pengabdi Netijen",
+      "description": "Dulu pas SD, tampilan gue tuh berkacamata putih, rambut gaya batok kelapa, poni belah tengah dan badan sekurus tiang listrik. Ketagihan main gameboy bikin gue betah di kamar aja dan nggak punya skill bersosialisasi. Makanya, teman gue hanya beberapa ekor. Nah, pas SMP, gue sempat minder banget. Saat cowok-cowok lain udah mulai berbulu, badannya gede-gede, punya kumis tipis yang melambai-lambai saat tertiup angin dari lubang hidung ketika mereka bernapas, pertumbuhan gue malah terhambat. Yang paling mengerikan, gue nggak berbulu. Lantas gue nekat pake minyak Firdaus punya bokap. Waktu mau mandi pagi, gue taruh minyaknya di ketek. Kelar mandi gue oles-olesin minyak Firdaus ke berbagai area di badan, lalu pake baju seragam sekolah. Lantas, apakah tumbuh bulu? Boro-Boro!!! Berbulu kagak, ketek gue malah jadi licin banget kayak arena ice skating. Pengabdi Netijen menceritakan pengalaman Geraldy Tan, seorang cowok yang tadinya bukan siapa-apa, tapi karena keinginan dan impian yang kuat, bisa meraih hal-hal yang tidak pernah dia bayangkan. Bahkan, kini ia dikenal banyak orang. Lewat video receh, Gerry sekarang punya banyak teman, juga banyak endorse-an. Buku Persembahan Penerbit GagasMedia"
+    }
+  },
+  {
+    "pk": 80,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Guntur Alam",
+      "date_published": "2015-01-01",
+      "image_link": "http://books.google.com/books/content?id=RoSoCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=RoSoCwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=20&source=gbs_api",
+      "rating": "N/A",
+      "title": "Satu Kisah Yang Tak Terucap",
+      "description": "Jika aku berbagi rahasia paling rahasia, bisakah kau memastikan hatimu akan tetap milikku? Laki-laki itu tampak asing di mata Ratna, tetapi tak sulit jatuh cinta kembali kepadanya. Dialah yang menuliskan nama mereka di pohon cinta yang melegenda di Pulau Kemaro. Tempat yang mengabadikan kisah cinta Putri Fatimah dan Pangeran Tan Bun An. Pulau di timur Kota Palembang itu pulalah yang menjadi saksi kisah Ratna dan Lee, belasan tahun silam. Dulu maupun sekarang, binar itu masih sama. Namun, sebuah cemas bersarang dan Ratna tak kuasa mengusirnya. Mungkin saja semua masih bisa sama saat hanya jarak yang memisahkan mereka. Hanya saja, sejauh mana kau bisa bertahan dalam sebuah rahasia dari orang yang kau cinta? Ratna dan Lee. Bagaimana jika kisah mereka seperti legenda Putri Melayu dan Pangeran Negeri Tionghoa di Pulau Kemaro? Bahwa cinta sejati tak selamanya berakhir bahagia…. #MariBaca -GagasMedia-"
+    }
+  },
+  {
+    "pk": 81,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Adhitya Mulya",
+      "date_published": "2014-05-01",
+      "image_link": "http://books.google.com/books/content?id=UhGBAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=UhGBAwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=21&source=gbs_api",
+      "rating": "N/A",
+      "title": "Gege Mengejar Cinta",
+      "description": "Cowok lebih memilih kepada siapa cinta akan mereka berikan, hingga mampu mengejarnya. Cewek lebih baik menunggu atau memberi 'kode' cinta. --- Mengejar cinta tak semudah yang dibayangkan. Dimulai dari menentukan target yang pas. Lalu, mengumpulkan energi untuk momen pas 'nembak' itu sering kali bikin mules. Bagaimana bila ternyata cinta itu tak berbalas? Duh, bisa jadi pingsan. Namun, mau tak mau, kita mesti menghadapi--berani mengejar cinta atau hanya mampu menunggunya? *** Sebuah buku novel tentang kisah percintaan yang romantis, persembahan penerbit Gagasmedia -GagasMedia-"
+    }
+  },
+  {
+    "pk": 82,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "@hujanmimpi",
+      "date_published": "2017-01-01",
+      "image_link": "http://books.google.com/books/content?id=lnpYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=lnpYEAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=22&source=gbs_api",
+      "rating": "N/A",
+      "title": "Sebatas Mimpi",
+      "description": "Nanti akan ada… Seseorang yang hadir mengobati lukamu tanpa pernah kamu minta Seseorang yang membawa bahagia di tengah dukamu Seseorang yang memberimu tawa yang sempat hilang Seseorang yang memahamimu dan selalu ada untukmu Seseorang itu… Mungkin saja bukan dia yang selama ini kamu mau Mungkin saja bukan seperti khayalanmu Atau, bisa jadi tak pernah kamu sangka-sangka sebelumnya Kamu ingat, Tuhan selalu memberikan yang kita butuh, bukan yang kita mau Kamu hanya harus percaya, bahwa saat itu akan ada Bukan hanya sebatas mimpi Buku persembahan penerbit GagasMedia #AgroMedia"
+    }
+  },
+  {
+    "pk": 83,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "@kisahtanahjawa",
+      "date_published": "2020-01-01",
+      "image_link": "http://books.google.com/books/content?id=Zi5KEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=Zi5KEAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=23&source=gbs_api",
+      "rating": "N/A",
+      "title": "Kisah Tanah Jawa",
+      "description": "Jalan yang berkelok dan menanjak, cukup membuatku mual. Sampai pada ujung jalan menanjak, sebuah cahaya lampu menembus dari arah berlawanan. Bunyi klakson terdengar bersahutan di telinga. Sepersekian detik kemudian hantaman pertama merusak bus bagian depan, membuat bus hampir terguling. Seluruh penumpang terlempar keluar dari kursinya. Belum sempat kami membetulkan posisi, dari belakang tiba-tiba datang lagi hantaman kedua. Kondisi bus kini ringsek terhimpit dua truk. Kemudian, terdengar suara ledakan, seketika api dengan cepat membakar bagian depan merambat ke bagian belakang bus. Teriakan kesakitan menyeruak bersama isak tangis yang memutus kehidupan. (Wati, korban) “Saya menyaksikan kobaran api begitu besar, ketika serombongan manusia dalam bus itu terpanggang hidup-hidup. Tidak ada bala bantuan.” (Saksi – pedagang pinggir jalan) Rabu malam, 8 Oktober, 2003, jadi hari terakhir bagi Wati dan juga teman-temannya yang kembali dari study tour ke Bali. Bus mereka terbakar dan meledak setelah dihantam dua truk di dekat pintu PLTU Paiton, Jawa Timur. Tim Kisah Tanah Jawa mendatangi tempat kejadian yang memang dikenal sebagai kawasan rawan kecelakaan ini. Apa yang sebenarnya terjadi? Buku Kisah Tanah Jawa: Tikungan Maut mencoba menjawabnya. Buku persembahan penerbit GagasMedia #Agromedia"
+    }
+  },
+  {
+    "pk": 84,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Mita Miranti",
+      "date_published": "2015-04-01",
+      "image_link": "http://books.google.com/books/content?id=xF9vCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=xF9vCQAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=24&source=gbs_api",
+      "rating": "N/A",
+      "title": "Bitter Winner",
+      "description": "Di antara banyak harapan yang belum juga terjawab, kau salah satunya. Namun, aku akan setia menunggu tiada henti. Lagi pula, siapa yang bisa melarikan diri dari patah hati? Aku tidak akan pernah menyesal menjatuhkan hati kepadamu. Juga tak akan pernah takut untuk kehilanganmu. Cinta tak akan pernah tersesat dan akan menentukan sendiri ke mana muara yang ia tuju. Jika di ujung jalan bercabang ini aku tak menemukanmu, aku akan berbalik arah dan kembali mencarimu. Kembali menyusuri jalan setapak yang kutemui. Tak peduli berapa putaran telah aku lewati. Berapa lama lagi aku akan menunggu? Berapa banyak lagi luka yang akan kurasa? Karena cinta adalah candu, luka tak akan masuk hitunganku. Bukankah hanya cinta yang akan membuat hati utuh? *** Sebuah buku novel tentang kisah percintaan yang romantis, persembahan penerbit Gagasmedia -GagasMedia-"
+    }
+  },
+  {
+    "pk": 85,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Moammar Emka",
+      "date_published": "2014-05-01",
+      "image_link": "http://books.google.com/books/content?id=Eg8LBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=Eg8LBAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=25&source=gbs_api",
+      "rating": "1",
+      "title": "Dear You",
+      "description": "Untuk apa jauh-jauh lagi mencari, sementara dalam dirimu saja aku sudah menemukan alasan hidup: bahagia bersamamu. Ini sudah benar dari awal. Aku mencintaimu tanpa tanda tanya. DEAR YOU, Buku ini dipersembahkan untuk cinta, demi cinta,dan kepada cinta. Ingat-ingatlah semua pagi yang kau syukuri karena masih bisa terbangun di sisinya, semua siang yang kau habiskan dengan merindukannya, juga malam-malam yang kau tutup dengan doa memohon kebahagiaannya. Temukan cerita tentang cintamu di buku ini—dan bersiaplah untuk jatuh cinta lagi.... -GagasMedia- #EbookHearts"
+    }
+  },
+  {
+    "pk": 86,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Alvi Syahrin",
+      "date_published": "2020-02-01",
+      "image_link": "http://books.google.com/books/content?id=WpjDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=WpjDDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=26&source=gbs_api",
+      "rating": "N/A",
+      "title": "Jika Kita Tak Pernah Jadi Apa-Apa",
+      "description": "Jika Kita Tak Pernah Jadi Apa-Apa Kau melihat teman-teman dan mereka sudah sudah mendapatkan impian, sementara kau masih termangu menggenggam harapan. Pelan, dalam hati kau berujar, \"Kapan mimpiku terwujud?\" *** Jika Kita Tak Pernah Jadi Apa-Apa Selama perjalanan mencapai tujuan, adakalanya kau melihat sekeliling... menakar jauh jangkauan. Atau, kau malah membandingkannya dengan orang lain. Lalu, lupa melanjutkan perjalanan. *** Jika Kita Tak Pernah Jadi Apa-Apa Benarkah segala usaha dan upayamu selama ini lebur bersama kecewa yang kau bangun sendiri? Sungguhkah sesuatu yang hanya kau lihat dalam dunia maya menjadikanmu merasa bukan apa-apa? *** Jika Kita Tak Pernah Jadi Apa-Apa akan menemanimu selama perjalanan. Buku ini untukmu yang khawatir tentang masa depan. Tenang saja, kau tidak sedang diburu waktu. Bacalah tiap lembarnya dengan penuh kesadaran bahwa hidup adalah tentang sebaik-baiknya berusaha, jatuh lalu bangun lagi, dan tidak berhenti percaya bahwa segala perjuanganmu tidak akan sia-sia. Bukankah sebaiknya apa-apa yang fana tidak selayaknya membuatmu kecewa? ---------------Sebuah buku inspiratif untuk pengembangan diri persembahan penerbit Gagasmedia."
+    }
+  },
+  {
+    "pk": 87,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "@kisahtanahjawa",
+      "date_published": "2019-12-01",
+      "image_link": "http://books.google.com/books/content?id=rnzDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=rnzDDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=27&source=gbs_api",
+      "rating": "N/A",
+      "title": "Kisah Tanah Jawa",
+      "description": "Suatu malam, sepasang suami-istri yang menantikan kelahiram anak pertam, sedang mencari perlengkapan bayi. Tiba-tiba sang istri merasakan sakit yang luar biasa di perutnya. Setelah bersusah payah mencari bantuan, sang suami akhirnya menemukan sebuah rumah sakit. Persalinan dibantu empat perawat dan seorang dokter berjalan dengan lancar. Namu, tidak ada tegur sapa apalagi ucapan selamat dari paramedis itu. Semuanya diam seribu bahasa. Keesokan harinya, hal tak terduga terjadi. Rumah sakit yang terlihat normal di malam hari, berubah menjadi banguan rumah sakit tua yang lama tak terpakai. Kisah di atas ramai diperbincangkan. Lewat buku Kisah Tanah Jawa"
+    }
+  },
+  {
+    "pk": 88,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Raditya Dika",
+      "date_published": "2017-08-01",
+      "image_link": "http://books.google.com/books/content?id=QnEyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=QnEyDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=28&source=gbs_api",
+      "rating": "5",
+      "title": "Koala Kumal",
+      "description": "Selain main perang-perangan, gue, Dodo, dan Bahri juga suka berjemur di atas mobil tua warna merah yang sering diparkir di pinggir sungai samping kompleks. Formasinya selalu sama: Bahri dan gue tiduran di atap mobil, sedangkan Dodo, seperti biasa, agak terbuang, di atas bagasi. Kadang kami tiduran selama setengah jam. Kadang, kalau cuaca lagi sangat terik, bisa sampai dua jam. Kalau cuacanya lagi sejuk dan tidak terlalu terik, kami biasanya sama-sama menatap ke arah matahari, memandangi langit sambil tiduran. Kalau sudah begini, Bahri menaruh kedua tangannya di belakang kepala, sambil tiduran dia berkata, ‘Rasanya kayak di Miami, ya?’ ‘Iya,’ jawab gue. ‘Iya,’ jawab Dodo. Kami bertiga gak ada yang pernah ke Miami. Koala Kumal adalah buku komedi yang menceritakan pengalaman Raditya Dika dari mulai jurit malam SMP yang berakhir dengan kekacauan sampai bertemu perempuan yang mahir bermain tombak. Seluruh cerita di dalamnya berasal dari kisah nyata. GagasMedia"
+    }
+  },
+  {
+    "pk": 89,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Gita Savitri Devi",
+      "date_published": "2020-01-01",
+      "image_link": "http://books.google.com/books/content?id=MUWEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=MUWEEAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=29&source=gbs_api",
+      "rating": "N/A",
+      "title": "A Cup of Tea",
+      "description": "“Mulut lo nggak sesuai sama jilbab lo.“ “Sekolah di Jerman tapi akhlaknya nol.“ “Bad influencer! Di mana manner lo?!“ “Halah banyak bacot lo. Dasar attention seeker!“ “Lo nggak dididik dengan benar sama orang tua lo.“ Kita nggak butuh pisau untuk membunuh seseorang. Kata-kata yang ditujukan ke gue itu tentu bikin gue down. Semuanya ingin gue hilangkan dari ingatan, tapi nggak pernah berhasil. Nggak mengacuhkan omongan orang lain ternyata nggak mudah. Gue udah coba segala cara"
+    }
+  },
+  {
+    "pk": 90,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Bernard Batubara",
+      "date_published": "2014-12-01",
+      "image_link": "http://books.google.com/books/content?id=9C5pBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=9C5pBgAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=30&source=gbs_api",
+      "rating": "N/A",
+      "title": "Jatuh Cinta Adalah Cara Terbaik Untuk Bunuh Diri",
+      "description": "“Aku tidak bersepakat dengan banyak hal, kau tahu. Kecuali, kalau kau bilang bahwa jatuh cinta adalah cara terbaik untuk bunuh diri. Untuk hal itu, aku setuju.” Kebanyakan orang lebih senang menceritakan sisi manis dari cinta. Sedikit sekali yang mampu berterus terang mengakui dan mengisahkan sisi gelapnya. Padahal, meski tak diinginkan, selalu ada keresahan yang tersembunyi dalam cinta. Bukankah kisah cinta selalu begitu? Di balik hangat pelukan dan panasnya rindu antara dua orang, selalu tersimpan bagian muram dan tak nyaman. Sementara, setiap orang menginginkan cinta yang tenang-tenang saja. Cinta adalah manis. Cinta adalah terang. Cinta adalah putih. Cinta adalah senyum. Cinta adalah tawa. Sayangnya, cinta tak sekadar manis. Cinta tak sekadar terang. Cinta tak melulu tentang senyum dan tawa. Ini kisah cinta yang sedikit berbeda. Masih beranikah kau untuk jatuh cinta? -GagasMedia-"
+    }
+  },
+  {
+    "pk": 91,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Fala Amalina",
+      "date_published": "2017-01-01",
+      "image_link": "http://books.google.com/books/content?id=lEMsDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=lEMsDwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=31&source=gbs_api",
+      "rating": "N/A",
+      "title": "The Great Teacher My Love",
+      "description": "Dear, Keynan. Rasanya, sudah lama sekali tak kutatap wajahmu yang menenangkan. Kau tahu, aku rela menukar apa pun yang kupunya dengan satu hari saja bersamamu. Kita bisa duduk di bawah pohon rindang belakang kampus, bicarakan apa pun yang kita rasa. Apa kau mengerti, berharap pada sesuatu yang tak pasti itu menyakitkan? Apa kau bisa merasa, mengulur perasaan yang tak ada ujungnya itu melelahkan? Ah, kisah kita memang sulit diterka akhirnya. Sama sepertimu, aku tak tahu apakah akhirnya kita berjalan menuju titik yang sama atau tak lagi bisa saling menyapa. Mungkin benar, kita tak seharusnya memulai apa pun yang tidak bisa kita akhiri. Namun, pikiran tak bisa mengendalikan hati. Jika harapan kecil itu masih ada, maukah kau memercayainya juga? With love, Dafeeya The Great Teacher My Love adalah romansa dua hati yang berusaha menyembunyikan cinta di antara keduanya karena status yang rumit—sang dosen dan mahasiswi. Namun, cinta itu terus tumbuh. Manakah yang mereka pilih? Membebaskan cinta itu atau mencari tempat persembunyian yang lebih besar? -GagasMedia-"
+    }
+  },
+  {
+    "pk": 92,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Body, Mind & Spirit",
+      "author": "Titoley Yubilate Yako",
+      "date_published": "2014-04-01",
+      "image_link": "http://books.google.com/books/content?id=BuKBAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=BuKBAwAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=32&source=gbs_api",
+      "rating": "N/A",
+      "title": "Men's Guide to Style",
+      "description": "Tanda-tanda jika pakaianmu telah fit, sesuai bentuk tubuhmu. • Menunjang bentuk tubuh sehingga terlihat lebih menarik. • Tetap bisa bernapas lega sekalipun bajumu terlihat slim. • Saat bercermin, you feel good about yourself. • Teman kerjamu memuji penampilanmu. Tip memilih jeans. Jika kakimu pendek dan kurus, maka skinny cut bisa menjadi pilihan utama karena memberikan kesan langsing dan lebih tinggi. Jika kamu tinggi—baik kurus ataupun gendut—straight leg cut merupakan pilihan yang tepat karena dapat menyeimbangkan proporsi badan agar kamu tidak terlihat sangat tinggi. *** Ada banyak hal sederhana yang perlu kamu perhatikan demi penampilan terlihat maksimal. Tak hanya soal fashion, kamu juga perlu memperhatikan urusan grooming, serta mengetahui aturan-aturan dasar tentang style. Buku ini memberikan banyak tip men’s style yang praktis. Setiap pembahasan bisa langsung diterapkan dalam kehidupan sehari-hari, plus dilengkapi dengan ilustrasi dan foto fashion. Men’s Guide to Style akan membantumu memahami dasar style dengan baik. Tentunya, kamu akan tampil maksimal dan penuh percaya diri! *** “It’s so exciting! Kami bisa berkolaborasi memvisualisasikan buku panduan basic yang begitu cemerlang dikemukakan oleh Tito.” —ADIBA MUSAWA, editor in chief Yess! Magazine “Men’s Guide to Style bukan hanya buku tentang cara berpakaian, tetapi memberikan banyak informasi dasar tentang menswear, secara umum. Buku ini ringan dan terstruktur sehingga mudah untuk dibaca.” —JESSY ISMOYO, kontributor Nylon Magazine Indonesia -GagasMedia-"
+    }
+  },
+  {
+    "pk": 93,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Ashadi Siregar",
+      "date_published": "2004-09-01",
+      "image_link": "http://books.google.com/books/content?id=m1KPCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=m1KPCgAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=33&source=gbs_api",
+      "rating": "N/A",
+      "title": "Terminal Cinta Terakhir",
+      "description": "Novel ini adalah bagian terakhir dari trilogi karya monumental Ashadi Siregar, Cintaku di Kampus Biru yang terbukti sukses, baik novel, film, maupun sinetronnya. Ashadi Siregar mulai menulis novel pada 1974. Karya-karya populer lainnya: Sirkuit Kemelut, Jentera Jepas, Sunyi Nirmala. -GagasMedia-"
+    }
+  },
+  {
+    "pk": 94,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Self-Help",
+      "author": "@denyutdetik",
+      "date_published": "2023-01-01",
+      "image_link": "http://books.google.com/books/content?id=xpS0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=xpS0EAAAQBAJ&printsec=frontcover&dq=inpublisher:GagasMedia&hl=&cd=34&source=gbs_api",
+      "rating": "N/A",
+      "title": "Lelah, Tapi untuk Masa Depan",
+      "description": "Kadang ngerasa capek banget sama keadaan, lalu berpikir bahwa menyerah adalah solusi terbaik. Merasa nggak sanggup dan nggak mungkin bisa, apalagi faktor keadaan yang memang buat semuanya jadi makin rumit. Mereka kurang mendukung kita untuk mencapai hal yang kita inginkan Tapi di satu sisi ada hal yang buat memikir kalo nyerah itu ga mungkin karena harapan orang sekitar udah sangat tinggi ke kita. Harapan juga bukan cuma dateng dari orang tua aja, karena orang sekitar pun kadang berharap sama kita. Jika udah seperti ini yang buat capek kayanya bukan lagi hal yang dilakukan deh, tapi yang bikin capek malah harapan dari orang sekitar yang ujung-ujungnya buat kita overthinking dan ga maksimal dalam ngelakuin banyak hal yang jadi tujuan kita, karena kita jadi takut jika hasilnya ga sesuai ekspektasi mereka. Buku persembahan penerbit GagasMedia #GagasMedia"
+    }
+  },
+  {
+    "pk": 95,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Juvenile Fiction",
+      "author": "Robert Louis Stevenson",
+      "date_published": "2004-12-28",
+      "image_link": "http://books.google.com/books/content?id=zR7TeYTMcSsC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=zR7TeYTMcSsC&dq=intitle:adventure&hl=&cd=33&source=gbs_api",
+      "rating": "N/A",
+      "title": "Treasure Island Adventure Classic",
+      "description": "When Jim Hawkins joins the crew of the Hispaniola as a cabin boy, little does he know of the danger that awaits him. With three red crosses on an old map as their only guide, he and a motley crew set sail for the mysterious Treasure Island. Paired with a snap–in–place model of the pirate ship, this Adventure Classic is perfect for young would–be deckhands. A rough and tumble seafaring saga complete with mutiny, pirates, and a one–legged cook, Treasure Island is one voyage kids will never forget! Ages 8 – 12"
+    }
+  },
+  {
+    "pk": 96,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Travel",
+      "author": "Charles Glass",
+      "date_published": "2012-09-13",
+      "image_link": "http://books.google.com/books/content?id=t3OGgy_jFgYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=t3OGgy_jFgYC&printsec=frontcover&dq=intitle:adventure&hl=&cd=37&source=gbs_api",
+      "rating": "N/A",
+      "title": "Tribes with Flags: Adventure and Kidnap in Greater Syria",
+      "description": "`Tribes With Flags` is the gripping story of Charles Glass's dramatic journey through Greater Syria which provides background context to a troubled region once again in the headlines."
+    }
+  },
+  {
+    "pk": 97,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "James Oliver Curwood",
+      "date_published": "2023-09-08",
+      "image_link": "http://books.google.com/books/content?id=hOLVEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=hOLVEAAAQBAJ&printsec=frontcover&dq=intitle:adventure&hl=&cd=34&source=gbs_api",
+      "rating": "N/A",
+      "title": "Nomads of the North; A Story of Romance and Adventure under the Open Stars",
+      "description": "Reproduction of the original. The publishing house Megali specialises in reproducing historical works in large print to make reading easier for people with impaired vision."
+    }
+  },
+  {
+    "pk": 98,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Fiction",
+      "author": "Lewis Carrol",
+      "date_published": "2020-10-29",
+      "image_link": "http://books.google.com/books/content?id=JCjZDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=JCjZDQAAQBAJ&printsec=frontcover&dq=intitle:what&hl=&cd=3&source=gbs_api",
+      "rating": "N/A",
+      "title": "Through the Looking-Glass and What Alice Found There",
+      "description": "Once again, Alice finds herself in a peculiar place. In this sequel to `Alice Adventures in Wonderland`, Alice has climbed through a mirror and arrived in a world in which everything is reversed, like a reflection - including logic. It makes for another absurdly funny story full of wonder and snark that, like the first book, never talks down to its young audience. The popular Tim Burton movie, ‘Alice in Wonderland’ (2010), starring Johnny Depp, Helena Bonham Carter, and Anne Hathaway, to name is few, is loosely based on both this and the previous novel. In some ways, ‘Through the Looking-Glass and What Alice Found There’ (1871) has had an even bigger impact on today’s popular culture than the first book. Lewis Caroll, pseudonym of Charles Lutwidge Dodgson, (1832-1898), was a British mathematician, photographer, and children’s book author. The idea for his most famous work, 'Alice's Adventures in Wonderland', came to Carroll when he was on a boat with friends, having to entertain three young girls, one of whose name was Alice. Despite his success as a children’s book author, Carroll considered himself, first and foremost, a man of science and mathematics."
+    }
+  },
+  {
+    "pk": 99,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "History",
+      "author": "James Raven",
+      "date_published": "2018-01-08",
+      "image_link": "http://books.google.com/books/content?id=6PdFDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=6PdFDwAAQBAJ&printsec=frontcover&dq=intitle:what&hl=&cd=12&source=gbs_api",
+      "rating": "N/A",
+      "title": "What is the History of the Book?",
+      "description": "James Raven, a leading historian of the book, offers a fresh and accessible guide to the global study of the production, dissemination and reception of written and printed texts across all societies and in all ages. Students, teachers, researchers and general readers will benefit from the book's investigation of the subject's origins, scope and future direction. Based on original research and a wide range of sources, What is the History of the Book? shows how book history crosses disciplinary boundaries and intersects with literary, historical, media, library, conservation and communications studies. Raven uses examples from around the world to explore different traditions in bibliography, palaeography and manuscript studies. He analyses book history's growing global ambition and demonstrates how the study of reading practices opens up new horizons in social history and the history of knowledge. He shows how book history is contributing to debates about intellectual and popular culture, colonialism and the communication of ideas. The first global, accessible introduction to the field of book history from ancient to modern times, What is the History of the Book? is essential reading for all those interested in one of society's most important cultural artefacts."
+    }
+  },
+  {
+    "pk": 100,
+    "model": "catalog.Book",
+    "fields": {
+      "category": "Language Arts & Disciplines",
+      "author": "Reuven Tsur",
+      "date_published": "1992",
+      "image_link": "http://books.google.com/books/content?id=1yh4p69MaI4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "preview_link": "http://books.google.co.id/books?id=1yh4p69MaI4C&printsec=frontcover&dq=intitle:what&hl=&cd=18&source=gbs_api",
+      "rating": "N/A",
+      "title": "What Makes Sound Patterns Expressive?",
+      "description": "Poets, academics, and those who simply speak a language are subject to mysterious intuitions about the perceptual qualities and emotional symbolism of the sounds of speech. Such intuitions are Reuven Tsur's point of departure in this investigation into the expressive effect of sound patterns, addressing questions of great concern for literary theorists and critics as well as for linguists and psychologists. Research in recent decades has established two distinct types of aural perception: a nonspeech mode, in which the acoustic signals are received in the manner of musical sounds or natural noises; and a speech mode, in which acoustic signals are excluded from awareness and only an abstract phonetic category is perceived. Here, Tsur proposes a third type of speech perception, a poetic mode in which some part of the acoustic signal becomes accessible, however faintly, to consciousness. Using Roman Jakobson's model of childhood acquisition of the phonological system, Tsur shows how the nonreferential babbling sounds made by infants form a basis for aesthetic valuation of language. He tests the intersubjective and intercultural validity of various spatial and tactile metaphors for certain sounds. Illustrating his insights with reference to particular literary texts, Tsur considers the relative merits of cognitive and psychoanalytic approaches to the emotional symbolism of speech sounds."
+    }
+  }
+]

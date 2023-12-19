@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block meta %}
+        {% endblock meta %}
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mochiy+Pop+P+One&family=Poppins:wght@400;500;600;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Darumadrop+One&family=EB+Garamond&family=Mochiy+Pop+P+One&display=swap');
+          </style>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    </head>
+
+    <body style="background-color: #F39B00;">
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>

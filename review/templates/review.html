@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel = "stylesheet"
+href = "https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One">
+<link rel = "stylesheet"
+href = "https://fonts.googleapis.com/css2?family=Darumadrop+One">
+
+<style>
+    body {
+        font-family: 'Mochiy Pop P One';
+        color: #724E2B;
+        margin-bottom: 60px;
+    }
+
+    h1 {
+        font-family: 'Darumadrop One';
+    }
+
+    #card-1, #card-2 {
+        border-radius: 20px;
+        border: 6px solid #724E2B;
+        background: #FEFADD;
+    }
+
+    #button-submit {
+        border-radius: 10px;
+            border: 4px solid #724E2B;
+            color: #724E2B;
+            background: #FEFADD;
+    }
+
+    #button-submit:hover {
+            color: #FEFADD;
+            background: #724E2B;
+        }
+
+    #content, #stars {
+        background-color: #DBBC7F;
+        color: #724E2B;
+        border: 4px solid #724E2B;
+    }
+
+</style>
+{% include 'navbar.html' %}
+
+
+<div class="p-4 space-below">
+    <hr class="my-4 border-b border-gray-300">
+
+    <div class="bg-white p-4 rounded shadow space-below" id = "card-2">
+        <h1 style = "text-align: center; font-size: 40px;"> REVIEWS </h1>
+        <div id="reviews-buku-weh" book-id-data="{{ id }}"></div>
+    </div>
+
+    <div class="p-4 space-below">
+        {% if request.user.is_authenticated %}
+        <div class="p-4 rounded shadow mb-4" id = "card-1">
+            <form id="form" method="post" onsubmit="return false;">
+                {% csrf_token %}
+                <h1 style = "text-align: center; font-size: 40px;"> ADD YOUR REVIEWS </h1>
+                <div class="mb-4">
+                    <label for="stars" class="block font-semibold">Stars</label>
+                    <div class="relative">
+                        <select name="stars" id="stars" class="block w-full bg-white border hover:border-gray-400 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="content" class="block font-semibold">Content</label>
+                    <div class="relative">
+                        <textarea name="content" id="content" class="block w-full hover:border-gray-400 px-4 py-2 rounded shadow leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <button id="button-submit" class="px-4 py-2 text-white font-semibold rounded hover:bg-green-600 focus:outline-none focus:shadow-outline" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        {% else %}
+        <div class="bg-white p-4 rounded shadow">
+            <p class="text-gray-700">Please sign in to add reviews</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<script>
+    const reviewsBookId = document.getElementById("reviews-buku-weh");
+    const bookId = reviewsBookId.getAttribute("book-id-data");
+
+    async function getReviews() {
+        return fetch("{% url 'review:get_book_reviews_json' 0 %}".replace('0', bookId)).then((res) => res.json());
+    }
+
+    function addReview() {
+        fetch("{% url 'review:add_book_reviews_ajax' book.id %}", {
+            method: "POST",
+            body: new FormData(document.querySelector('#form'))
+        })
+        .then(refreshReviews);
+    }
+
+    async function refreshReviews() {
+        console.log("gw hidup");
+        const reviews = await getReviews();
+        const cleanReviews = reviews.book_review;
+        let htmlString = `<table class="w-full mb-4">
+            <thead>
+                <tr>
+                    <th class="text-left">User</th>
+                    <th class="text-left">Content</th>
+                    <th class="text-left">Stars</th>
+                    <th class="text-left">Date Added</th>
+                </tr>
+            </thead>
+            <tbody>`;
+        cleanReviews.forEach((item) => {
+            htmlString += `<tr>
+                <td>${item.user}</td>
+                <td>${item.content}</td>
+                <td>${item.stars}</td>
+                <td>${item.date_added}</td>
+            </tr>`;
+        });
+        htmlString += `</tbody></table>`;
+
+        document.getElementById("reviews-buku-weh").innerHTML = htmlString;
+    }
+
+    document.getElementById("button-submit").onclick = addReview;
+
+    refreshReviews();
+</script>
+
+{% endblock content %}
