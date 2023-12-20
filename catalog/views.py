@@ -43,7 +43,7 @@ def get_books_json(request):
     data = Book.objects.all()
     return HttpResponse(serializers.serialize('json', data),
         content_type="application/json")
-
+    
 def search_book(request):
     search_title = request.GET.get('searchTitle')
     search_author = request.GET.get('searchAuthor')
