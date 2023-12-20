@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponse, HttpResponseNotFound, JsonResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import permission_required, login_required
 from main.models import User, Book
@@ -9,6 +9,8 @@ from django.contrib import messages
 from main.forms import RegisterUserForm
 from django.contrib.auth import authenticate, login, logout
 from django.db.models import Count
+from django.views.decorators.csrf import csrf_exempt
+import json
 
 @login_required(login_url='/login')
 def mybooks(request):
@@ -74,3 +76,25 @@ def promote_to_admin(request, id):
         user.user_type= "MEMBER"
     user.save()
     return redirect('mybooks:mybooks')
+
+@csrf_exempt
+def promote_to_admin_flutter(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        user = User.objects.get(email=data["email"])
+
+        user_books = Book.objects.filter(borrower=user)
+        for book in user_books:
+            book.is_borrowed = False
+            book.borrower = None
+            book.save()
+        if (user.user_type == "MEMBER"):
+            user.user_type = "ADMIN"
+        else:
+            user.user_type= "MEMBER"
+
+        user.save()
+
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)
