@@ -62,6 +62,15 @@ def book_return(request, id):
         return HttpResponse(b"SUCCESS", status=201)
     return HttpResponseNotFound()
 
+def book_return_flutter(request, id) :
+    if request.method == 'GET':
+        data = Book.objects.get(pk=id)
+        data.is_borrowed = False
+        data.borrower = None
+        data.save()
+        return JsonResponse({"status": "success"}, status=200)
+    return JsonResponse({"status": "error"}, status=401)
+
 def promote_to_admin(request, id):
     print('tes')
     user = User.objects.get(pk=id)
