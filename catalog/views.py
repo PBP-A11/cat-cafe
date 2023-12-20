@@ -93,6 +93,7 @@ def book_borrowed_flutter(request, id):
 
 @csrf_exempt
 def delete_book(request, id):
+    print(request.method)
     if request.method == 'GET':
         data = Book.objects.get(pk=id)
         data.delete()
@@ -135,13 +136,16 @@ def add_book_flutter(request):
         )
 
         book.save()
-
+        print("success")
         return JsonResponse({"status": "success"}, status=200)
     else:
         return JsonResponse({"status": "error"}, status=401)
     
 @csrf_exempt
 def delete_book_flutter(request, id):
-    data = Book.objects.get(pk=id)
-    data.delete()
-    return JsonResponse({"message": "Book deleted successfully"}, status=200)
+    if request.method == 'GET':
+        data = Book.objects.get(pk=id)
+        data.delete()
+        return JsonResponse({"status": "success"}, status=200)
+    else:
+        return JsonResponse({"status": "error"}, status=401)

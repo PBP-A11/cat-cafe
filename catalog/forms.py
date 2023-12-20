@@ -5,11 +5,11 @@ from django import forms
 class CreateBookForm(ModelForm):
     title = forms.CharField(
         max_length=255,
-        widget=forms.TextInput(attrs={'style': 'width: 125px;'})
+        widget=forms.TextInput(attrs={'style': 'width: 255px;'})
     )
     author = forms.CharField(
         max_length=255,
-        widget=forms.TextInput(attrs={'style': 'width: 125px;'})
+        widget=forms.TextInput(attrs={'style': 'width: 255px;'})
     )
     description = forms.CharField(
         max_length=255,
